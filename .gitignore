@@ -1,0 +1,15 @@
+# Block Vivado, HLS, and Vitis temporary junk
+*.log
+*.jou
+*.str
+*.bak
+.Xil/
+xsim.dir/
+_x/
+.ip_user_files/
+完美_x/
+*~
+
+# Block OS specific files
+Thumbs.db
+.DS_Store

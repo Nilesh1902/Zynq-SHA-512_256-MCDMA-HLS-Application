@@ -1,4 +1,0 @@
-16 warnings and 13 errors generated.
-Error while processing D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp.
-clang-tidy applied 13 of 13 suggested fixes.
-Suppressed 16 warnings (16 with check filters).

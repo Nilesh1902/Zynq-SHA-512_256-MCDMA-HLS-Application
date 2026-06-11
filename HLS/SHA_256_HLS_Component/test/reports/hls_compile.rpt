@@ -1,0 +1,369 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test'
+================================================================
++ General Information: 
+    * Date:           Wed Jun 10 15:15:09 2026
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        test
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+------------+------------+-----+
+    |                                    Modules                                    | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |    |            |            |     |
+    |                                    & Loops                                    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF     |     LUT    | URAM|
+    +-------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+------------+------------+-----+
+    |+ test*                                                                        |     -|  1.26|        -|          -|         -|        -|     -|  dataflow|  4 (~0%)|   -|  11208 (7%)|  9571 (13%)|    -|
+    | + entry_proc                                                                  |     -|  6.78|        0|      0.000|         -|        0|     -|        no|        -|   -|     3 (~0%)|    29 (~0%)|    -|
+    | + axis_to_core                                                                |     -|  6.75|        -|          -|         -|        -|     -|        no|        -|   -|   263 (~0%)|   549 (~0%)|    -|
+    |  + axis_to_core_Pipeline_FEED_LOOP                                            |     -|  6.75|        -|          -|         -|        -|     -|        no|        -|   -|   130 (~0%)|   326 (~0%)|    -|
+    |   o FEED_LOOP                                                                 |     -|  8.95|        -|          -|         2|        1|     -|       yes|        -|   -|           -|           -|    -|
+    | + sha512_t_64u_256u_s                                                         |     -|  1.26|      112|  1.120e+03|         -|      112|     -|        no|        -|   -|   9774 (6%)|  8131 (11%)|    -|
+    |  + sha512Top_64u_256u_s*                                                      |     -|  1.26|      111|  1.110e+03|         -|       93|     -|  dataflow|        -|   -|   9768 (6%)|  8104 (11%)|    -|
+    |   + preProcessing_64u_s                                                       |     -|  2.26|       42|    420.000|         -|       42|     -|        no|        -|   -|   3396 (2%)|   2088 (2%)|    -|
+    |    o LOOP_PREPROCESSING_MAIN                                                  |     -|  8.95|       41|    410.000|        41|        -|     1|        no|        -|   -|           -|           -|    -|
+    |     + preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS                           |     -|  5.00|       18|    180.000|         -|       18|     -|        no|        -|   -|  1102 (~0%)|   438 (~0%)|    -|
+    |      o LOOP_GEN_FULL_BLKS                                                     |     -|  8.95|       16|    160.000|        17|       16|     1|       yes|        -|   -|           -|           -|    -|
+    |     + preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1                     |     -|  6.04|       16|    160.000|         -|       16|     -|        no|        -|   -|   909 (~0%)|    914 (1%)|    -|
+    |      o LOOP_COPY_TAIL_AND_PAD_1                                               |     -|  8.95|       14|    140.000|         2|        1|    14|       yes|        -|   -|           -|           -|    -|
+    |   + dup_strm_128u_s                                                           |     -|  5.07|        6|     60.000|         -|        6|     -|        no|        -|   -|    16 (~0%)|   254 (~0%)|    -|
+    |    + dup_strm_128u_Pipeline_LOOP_DUP_STREAM                                   |     -|  5.07|        3|     30.000|         -|        3|     -|        no|        -|   -|     8 (~0%)|   119 (~0%)|    -|
+    |     o LOOP_DUP_STREAM                                                         |     -|  8.95|        1|     10.000|         2|        1|     1|       yes|        -|   -|           -|           -|    -|
+    |   + generateMsgSchedule_64u_s                                                 |     -|  5.29|       92|    920.000|         -|       92|     -|        no|        -|   -|   3614 (2%)|   1202 (1%)|    -|
+    |    o LOOP_GEN_W_MAIN                                                          |     -|  8.95|       91|    910.000|        91|        -|     1|        no|        -|   -|           -|           -|    -|
+    |     o LOOP_GEN_W_NBLK                                                         |     -|  8.95|       89|    890.000|        89|        -|     1|        no|        -|   -|           -|           -|    -|
+    |      + generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16                  |     -|  7.01|       18|    180.000|         -|       18|     -|        no|        -|   -|  1096 (~0%)|   139 (~0%)|    -|
+    |       o LOOP_SHA512_GEN_WT16                                                  |     -|  8.95|       16|    160.000|         2|        1|    16|       yes|        -|   -|           -|           -|    -|
+    |      + generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64                    |     -|  5.98|       66|    660.000|         -|       66|     -|        no|        -|   -|  1099 (~0%)|   676 (~0%)|    -|
+    |       o LOOP_SHA1_GEN_WT64                                                    |     -|  8.95|       64|    640.000|         2|        1|    64|       yes|        -|   -|           -|           -|    -|
+    |   + SHA512Digest_64u_256u_s                                                   |     -|  1.26|       87|    870.000|         -|       87|     -|        no|        -|   -|   1950 (1%)|   3868 (5%)|    -|
+    |    o LOOP_SHA1_MAIN                                                           |     -|  8.95|       86|    860.000|        86|        -|     1|        no|        -|   -|           -|           -|    -|
+    |     + SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS  |     -|  1.26|       82|    820.000|         -|       82|     -|        no|        -|   -|   1683 (1%)|   3630 (5%)|    -|
+    |      o LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS                       |     -|  8.95|       80|    800.000|         2|        1|    80|       yes|        -|   -|           -|           -|    -|
+    | + core_to_axis                                                                |     -|  5.86|        -|          -|         -|        -|     -|        no|        -|   -|   338 (~0%)|   148 (~0%)|    -|
+    |  + core_to_axis_Pipeline_DRAIN_LOOP                                           |     -|  5.86|        -|          -|         -|        -|     -|        no|        -|   -|     6 (~0%)|    55 (~0%)|    -|
+    |   o DRAIN_LOOP                                                                |     -|  8.95|        -|          -|         2|        1|     -|       yes|        -|   -|           -|           -|    -|
+    +-------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register  | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL      | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER      | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER    | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR    | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | msg_len_1 | 0x10   | 32    | W      | Data signal of msg_len           |                                                                      |
+| s_axi_control | msg_len_2 | 0x14   | 32    | W      | Data signal of msg_len           |                                                                      |
+| s_axi_control | msg_len_3 | 0x18   | 32    | W      | Data signal of msg_len           |                                                                      |
+| s_axi_control | msg_len_4 | 0x1c   | 32    | W      | Data signal of msg_len           |                                                                      |
+| s_axi_control | dest_id   | 0x24   | 32    | W      | Data signal of dest_id           |                                                                      |
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-------------+-----------+---------------+-------+-------+-------+-------+--------+-------+--------+
+| Interface   | Direction | Register Mode | TDATA | TDEST | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-------------+-----------+---------------+-------+-------+-------+-------+--------+-------+--------+
+| digest_strm | out       | both          | 256   | 3     | 32    | 1     | 1      | 32    | 1      |
+| msg_strm    | in        | both          | 64    | 3     | 8     | 1     | 1      | 8     | 1      |
++-------------+-----------+---------------+-------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+----------------------------------------------------------+
+| Argument    | Direction | Datatype                                                 |
++-------------+-----------+----------------------------------------------------------+
+| msg_strm    | in        | stream<hls::axis<ap_uint<64>, 0, 0, 3, '8', false>, 0>&  |
+| digest_strm | out       | stream<hls::axis<ap_uint<256>, 0, 0, 3, '8', false>, 0>& |
+| msg_len     | in        | ap_uint<128>                                             |
+| dest_id     | in        | ap_uint<2>                                               |
++-------------+-----------+----------------------------------------------------------+
+
+* SW-to-HW Mapping
++-------------+---------------+-----------+-------------------------------------+
+| Argument    | HW Interface  | HW Type   | HW Info                             |
++-------------+---------------+-----------+-------------------------------------+
+| msg_strm    | msg_strm      | interface |                                     |
+| digest_strm | digest_strm   | interface |                                     |
+| msg_len     | s_axi_control | register  | name=msg_len_1 offset=0x10 range=32 |
+| msg_len     | s_axi_control | register  | name=msg_len_2 offset=0x14 range=32 |
+| msg_len     | s_axi_control | register  | name=msg_len_3 offset=0x18 range=32 |
+| msg_len     | s_axi_control | register  | name=msg_len_4 offset=0x1c range=32 |
+| dest_id     | s_axi_control | register  | name=dest_id offset=0x24 range=32   |
++-------------+---------------+-----------+-------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------------------------------------+-----+--------+-----------------+-----------+--------------------------+---------+
+| Name                                                                         | DSP | Pragma | Variable        | Op        | Impl                     | Latency |
++------------------------------------------------------------------------------+-----+--------+-----------------+-----------+--------------------------+---------+
+| + test                                                                       | 0   |        |                 |           |                          |         |
+|  + axis_to_core                                                              | 0   |        |                 |           |                          |         |
+|    add_ln65_fu_106_p2                                                        |     |        | add_ln65        | add       | fabric                   | 0       |
+|   + axis_to_core_Pipeline_FEED_LOOP                                          | 0   |        |                 |           |                          |         |
+|     icmp_ln65_fu_91_p2                                                       |     |        | icmp_ln65       | seteq     | auto                     | 0       |
+|     i_3_fu_96_p2                                                             |     |        | i_3             | add       | fabric                   | 0       |
+|  + sha512_t_64u_256u_s                                                       | 0   |        |                 |           |                          |         |
+|   + sha512Top_64u_256u_s                                                     | 0   |        |                 |           |                          |         |
+|    + preProcessing_64u_s                                                     | 0   |        |                 |           |                          |         |
+|      icmp_ln90_fu_488_p2                                                     |     |        | icmp_ln90       | seteq     | auto                     | 0       |
+|      select_ln90_fu_494_p3                                                   |     |        | select_ln90     | select    | auto_sel                 | 0       |
+|      blk_num_fu_502_p2                                                       |     |        | blk_num         | add       | fabric                   | 0       |
+|      icmp_ln124_fu_545_p2                                                    |     |        | icmp_ln124      | seteq     | auto                     | 0       |
+|      icmp_ln146_fu_550_p2                                                    |     |        | icmp_ln146      | setlt     | auto                     | 0       |
+|      cmp_i_i930_fu_651_p2                                                    |     |        | cmp_i_i930      | seteq     | auto                     | 0       |
+|      cmp_i_i919_fu_656_p2                                                    |     |        | cmp_i_i919      | seteq     | auto                     | 0       |
+|      cmp_i_i879_fu_661_p2                                                    |     |        | cmp_i_i879      | seteq     | auto                     | 0       |
+|      cmp_i_i812_fu_666_p2                                                    |     |        | cmp_i_i812      | seteq     | auto                     | 0       |
+|      cmp_i_i718_fu_671_p2                                                    |     |        | cmp_i_i718      | seteq     | auto                     | 0       |
+|      cmp_i_i597_fu_676_p2                                                    |     |        | cmp_i_i597      | seteq     | auto                     | 0       |
+|      cmp_i_i449_fu_681_p2                                                    |     |        | cmp_i_i449      | seteq     | auto                     | 0       |
+|      icmp_ln243_fu_686_p2                                                    |     |        | icmp_ln243      | seteq     | auto                     | 0       |
+|      icmp_ln252_fu_841_p2                                                    |     |        | icmp_ln252      | setne     | auto                     | 0       |
+|      or_ln252_fu_846_p2                                                      |     |        | or_ln252        | or        | auto                     | 0       |
+|      select_ln252_fu_851_p3                                                  |     |        | select_ln252    | select    | auto_sel                 | 0       |
+|     + preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS                          | 0   |        |                 |           |                          |         |
+|       icmp_ln97_fu_181_p2                                                    |     |        | icmp_ln97       | seteq     | auto                     | 0       |
+|       j_2_fu_186_p2                                                          |     |        | j_2             | add       | fabric                   | 0       |
+|     + preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1                    | 0   |        |                 |           |                          |         |
+|       icmp_ln153_fu_412_p2                                                   |     |        | icmp_ln153      | seteq     | auto                     | 0       |
+|       add_ln153_fu_418_p2                                                    |     |        | add_ln153       | add       | fabric                   | 0       |
+|       icmp_ln155_fu_424_p2                                                   |     |        | icmp_ln155      | setlt     | auto                     | 0       |
+|       icmp_ln164_fu_430_p2                                                   |     |        | icmp_ln164      | setgt     | auto                     | 0       |
+|    + generateMsgSchedule_64u_s                                               | 0   |        |                 |           |                          |         |
+|      icmp_ln600_fu_276_p2                                                    |     |        | icmp_ln600      | seteq     | auto                     | 0       |
+|      i_2_fu_281_p2                                                           |     |        | i_2             | add       | fabric                   | 0       |
+|     + generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16                  | 0   |        |                 |           |                          |         |
+|       icmp_ln610_fu_435_p2                                                   |     |        | icmp_ln610      | seteq     | auto                     | 0       |
+|       add_ln610_fu_441_p2                                                    |     |        | add_ln610       | add       | fabric                   | 0       |
+|       sparsemux_33_4_64_1_1_U63                                              |     |        | W_16            | sparsemux | compactencoding_dontcare | 0       |
+|     + generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64                    | 0   |        |                 |           |                          |         |
+|       icmp_ln618_fu_404_p2                                                   |     |        | icmp_ln618      | seteq     | auto                     | 0       |
+|       xor_ln620_fu_535_p2                                                    |     |        | xor_ln620       | xor       | auto                     | 0       |
+|       xor_ln620_1_fu_541_p2                                                  |     |        | xor_ln620_1     | xor       | auto                     | 0       |
+|       xor_ln620_2_fu_547_p2                                                  |     |        | xor_ln620_2     | xor       | auto                     | 0       |
+|       xor_ln620_3_fu_553_p2                                                  |     |        | xor_ln620_3     | xor       | auto                     | 0       |
+|       add_ln620_1_fu_565_p2                                                  |     |        | add_ln620_1     | add       | fabric                   | 0       |
+|       t_2_fu_577_p2                                                          |     |        | t_2             | add       | fabric                   | 0       |
+|    + SHA512Digest_64u_256u_s                                                 | 0   |        |                 |           |                          |         |
+|      add_ln685_fu_178_p2                                                     |     |        | add_ln685       | add       | fabric                   | 0       |
+|     + SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS | 0   |        |                 |           |                          |         |
+|       icmp_ln735_fu_675_p2                                                   |     |        | icmp_ln735      | seteq     | auto                     | 0       |
+|       add_ln735_fu_680_p2                                                    |     |        | add_ln735       | add       | fabric                   | 0       |
+|       icmp_ln749_fu_760_p2                                                   |     |        | icmp_ln749      | seteq     | auto                     | 0       |
+|       select_ln735_fu_766_p3                                                 |     |        | select_ln735    | select    | auto_sel                 | 0       |
+|       select_ln735_1_fu_774_p3                                               |     |        | select_ln735_1  | select    | auto_sel                 | 0       |
+|       select_ln735_2_fu_782_p3                                               |     |        | select_ln735_2  | select    | auto_sel                 | 0       |
+|       select_ln735_3_fu_790_p3                                               |     |        | select_ln735_3  | select    | auto_sel                 | 0       |
+|       select_ln735_4_fu_798_p3                                               |     |        | select_ln735_4  | select    | auto_sel                 | 0       |
+|       select_ln735_5_fu_806_p3                                               |     |        | select_ln735_5  | select    | auto_sel                 | 0       |
+|       select_ln735_6_fu_814_p3                                               |     |        | select_ln735_6  | select    | auto_sel                 | 0       |
+|       select_ln735_7_fu_822_p3                                               |     |        | select_ln735_7  | select    | auto_sel                 | 0       |
+|       select_ln735_8_fu_830_p3                                               |     |        | select_ln735_8  | select    | auto_sel                 | 0       |
+|       select_ln735_9_fu_838_p3                                               |     |        | select_ln735_9  | select    | auto_sel                 | 0       |
+|       select_ln735_10_fu_846_p3                                              |     |        | select_ln735_10 | select    | auto_sel                 | 0       |
+|       select_ln735_11_fu_854_p3                                              |     |        | select_ln735_11 | select    | auto_sel                 | 0       |
+|       select_ln735_12_fu_862_p3                                              |     |        | select_ln735_12 | select    | auto_sel                 | 0       |
+|       select_ln735_13_fu_870_p3                                              |     |        | select_ln735_13 | select    | auto_sel                 | 0       |
+|       select_ln735_14_fu_878_p3                                              |     |        | select_ln735_14 | select    | auto_sel                 | 0       |
+|       select_ln735_15_fu_886_p3                                              |     |        | select_ln735_15 | select    | auto_sel                 | 0       |
+|       select_ln735_16_fu_894_p3                                              |     |        | select_ln735_16 | select    | auto_sel                 | 0       |
+|       sparsemux_161_7_64_1_1_U119                                            |     |        | tmp_s           | sparsemux | compactencoding_dontcare | 0       |
+|       xor_ln755_fu_1272_p2                                                   |     |        | xor_ln755       | xor       | auto                     | 0       |
+|       and_ln755_fu_1294_p2                                                   |     |        | and_ln755       | and       | auto                     | 0       |
+|       and_ln755_1_fu_1300_p2                                                 |     |        | and_ln755_1     | and       | auto                     | 0       |
+|       xor_ln755_1_fu_1314_p2                                                 |     |        | xor_ln755_1     | xor       | auto                     | 0       |
+|       xor_ln755_2_fu_1320_p2                                                 |     |        | xor_ln755_2     | xor       | auto                     | 0       |
+|       xor_ln755_3_fu_1326_p2                                                 |     |        | xor_ln755_3     | xor       | auto                     | 0       |
+|       e_3_fu_1398_p2                                                         |     |        | e_3             | add       | fabric                   | 0       |
+|       xor_ln764_fu_1404_p2                                                   |     |        | xor_ln764       | xor       | auto                     | 0       |
+|       and_ln764_fu_1410_p2                                                   |     |        | and_ln764       | and       | auto                     | 0       |
+|       and_ln764_1_fu_1416_p2                                                 |     |        | and_ln764_1     | and       | auto                     | 0       |
+|       xor_ln764_1_fu_1438_p2                                                 |     |        | xor_ln764_1     | xor       | auto                     | 0       |
+|       xor_ln764_2_fu_1452_p2                                                 |     |        | xor_ln764_2     | xor       | auto                     | 0       |
+|       xor_ln764_3_fu_1458_p2                                                 |     |        | xor_ln764_3     | xor       | auto                     | 0       |
+|       add_ln749_fu_1476_p2                                                   |     |        | add_ln749       | add       | fabric                   | 0       |
+|       add_ln778_fu_1482_p2                                                   |     |        | add_ln778       | add       | fabric                   | 0       |
+|       add_ln779_fu_1488_p2                                                   |     |        | add_ln779       | add       | fabric                   | 0       |
+|       add_ln780_fu_1494_p2                                                   |     |        | add_ln780       | add       | fabric                   | 0       |
+|       add_ln781_fu_1500_p2                                                   |     |        | add_ln781       | add       | fabric                   | 0       |
+|       add_ln782_fu_1506_p2                                                   |     |        | add_ln782       | add       | fabric                   | 0       |
+|       add_ln783_fu_1512_p2                                                   |     |        | add_ln783       | add       | fabric                   | 0       |
+|       add_ln784_fu_1518_p2                                                   |     |        | add_ln784       | add       | fabric                   | 0       |
+|       add_ln785_fu_1524_p2                                                   |     |        | add_ln785       | add       | fabric                   | 0       |
++------------------------------------------------------------------------------+-----+--------+-----------------+-----------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------------+--------------+-------------+------+------+--------+----------------------+--------+---------+------------------+
+| Name                     | Usage        | Type        | BRAM | URAM | Pragma | Variable             | Impl   | Latency | Bitwidth, Depth, |
+|                          |              |             |      |      |        |                      |        |         | Banks            |
++--------------------------+--------------+-------------+------+------+--------+----------------------+--------+---------+------------------+
+| + test                   |              |             | 4    | 0    |        |                      |        |         |                  |
+|   control_s_axi_U        | interface    | s_axilite   |      |      |        |                      |        |         |                  |
+|   dest_id_c_U            | fifo channel | scalar prop |      |      |        | dest_id_c            | srl    | 0       | 2, 4, 1          |
+|   core_msg_strm_U        | fifo channel | stream      | 4    |      |        | core_msg_strm        | memory | 0       | 64, 64, 1        |
+|   core_len_strm_U        | fifo channel | stream      |      |      |        | core_len_strm        | srl    | 0       | 128, 4, 1        |
+|   core_end_len_strm_U    | fifo channel | stream      |      |      |        | core_end_len_strm    | srl    | 0       | 1, 4, 1          |
+|   core_digest_strm_U     | fifo channel | stream      |      |      |        | core_digest_strm     | srl    | 0       | 256, 4, 1        |
+|   core_end_digest_strm_U | fifo channel | stream      |      |      |        | core_end_digest_strm | srl    | 0       | 1, 4, 1          |
+|  + sha512_t_64u_256u_s   |              |             | 0    | 0    |        |                      |        |         |                  |
+|   + sha512Top_64u_256u_s |              |             | 0    | 0    |        |                      |        |         |                  |
+|     blk_strm_U           | fifo channel | stream      |      |      |        | blk_strm             | lutram | 0       | 1024, 32, 1      |
+|     nblk_strm_U          | fifo channel | stream      |      |      |        | nblk_strm            | lutram | 0       | 128, 32, 1       |
+|     end_nblk_strm_U      | fifo channel | stream      |      |      |        | end_nblk_strm        | lutram | 0       | 1, 32, 1         |
+|     nblk_strm1_U         | fifo channel | stream      |      |      |        | nblk_strm1           | lutram | 0       | 128, 32, 1       |
+|     end_nblk_strm1_U     | fifo channel | stream      |      |      |        | end_nblk_strm1       | lutram | 0       | 1, 32, 1         |
+|     nblk_strm2_U         | fifo channel | stream      |      |      |        | nblk_strm2           | lutram | 0       | 128, 32, 1       |
+|     end_nblk_strm2_U     | fifo channel | stream      |      |      |        | end_nblk_strm2       | lutram | 0       | 1, 32, 1         |
+|     w_strm_U             | fifo channel | stream      |      |      |        | w_strm               | lutram | 0       | 64, 32, 1        |
++--------------------------+--------------+-------------+------+------+--------+----------------------+--------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++------------+-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+| Type       | Options                                                   | Location                                                                                                                          | Messages                                                                                       |
++------------+-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+| resource   | variable = blk_strm core = FIFO_LUTRAM                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:861 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = nblk_strm core = FIFO_LUTRAM                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:866 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = nblk_strm1 core = FIFO_LUTRAM                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:869 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = nblk_strm2 core = FIFO_LUTRAM                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:872 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = end_nblk_strm core = FIFO_LUTRAM               | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:877 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = end_nblk_strm1 core = FIFO_LUTRAM              | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:880 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = end_nblk_strm2 core = FIFO_LUTRAM              | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:883 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = w_strm core = FIFO_LUTRAM                      | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:888 in sha512top         | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = blk_strm core = FIFO_LUTRAM                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1165 in hmac_sha384_2in1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = msg_64_strm core = FIFO_LUTRAM                 | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1228 in hmac_sha384_2in1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = len_64_strm core = FIFO_LUTRAM                 | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1231 in hmac_sha384_2in1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| resource   | variable = blk_strm core = FIFO_LUTRAM                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1234 in hmac_sha384_2in1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead                     |
+| allocation | function instances = internal::HMAC_SHA384_2in1 limit = 1 | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1364 in hmac_sha384      | 'xlx_function_allocation' attribute cannot be applied to a statement                           |
+|            |                                                           |                                                                                                                                   | Allocation pragma is ignored, because Instances value is not valid function pointer expression |
+| allocation | function instances = internal::HMAC_SHA384_2in1 limit = 1 | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1405 in hmac_sha384      | 'xlx_function_allocation' attribute cannot be applied to a statement                           |
+|            |                                                           |                                                                                                                                   | Allocation pragma is ignored, because Instances value is not valid function pointer expression |
++------------+-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+| Type            | Options                                  | Location                                                                                                                                    |
++-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+| loop_tripcount  | min = 1 max = 1 avg = 1                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:82 in preprocessing                |
+| pipeline        | II = 16                                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:98 in preprocessing                |
+| loop_tripcount  | min = 0 max = 1                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:99 in preprocessing                |
+| array_partition | variable = b0.M complete                 | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:102 in preprocessing               |
+| unroll          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:107 in preprocessing               |
+| array_partition | variable = b.M complete                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:128 in preprocessing               |
+| unroll          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:136 in preprocessing               |
+| array_partition | variable = b.M complete                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:150 in preprocessing               |
+| pipeline        |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:154 in preprocessing               |
+| array_partition | variable = b.M complete                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:237 in preprocessing               |
+| unroll          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:242 in preprocessing               |
+| array_partition | variable = b1.M complete                 | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:321 in preprocessing               |
+| unroll          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:325 in preprocessing               |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:362 in shr                         |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:385 in rotr                        |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:410 in ch                          |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:435 in maj                         |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:456 in bsig0                       |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:477 in bsig1                       |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:498 in ssig0                       |
+| inline          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:519 in ssig1                       |
+| loop_tripcount  | min = 1 max = 1 avg = 1                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:554 in dup_strm                    |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:555 in dup_strm                    |
+| loop_tripcount  | min = 1 max = 1 avg = 1                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:597 in generatemsgschedule         |
+| loop_tripcount  | min = 1 max = 1 avg = 1                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:601 in generatemsgschedule         |
+| array_partition | variable = blk.M complete                | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:603 in generatemsgschedule         |
+| array_partition | variable = W complete                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:607 in generatemsgschedule         |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:611 in generatemsgschedule         |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:619 in generatemsgschedule         |
+| array_partition | variable = K complete                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:679 in sha512digest                |
+| loop_tripcount  | min = 1 max = 1 avg = 1                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:685 in sha512digest                |
+| array_partition | variable = H complete                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:729 in sha512digest                |
+| loop_tripcount  | min = 1 max = 1 avg = 1                  | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:736 in sha512digest                |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:750 in sha512digest                |
+| unroll          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:802 in sha512digest                |
+| dataflow        |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:856 in sha512top                   |
+| stream          | variable = blk_strm depth = 32           | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:860 in sha512top                   |
+| stream          | variable = nblk_strm depth = 32          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:865 in sha512top                   |
+| stream          | variable = nblk_strm1 depth = 32         | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:868 in sha512top                   |
+| stream          | variable = nblk_strm2 depth = 32         | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:871 in sha512top                   |
+| stream          | variable = end_nblk_strm depth = 32      | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:876 in sha512top                   |
+| stream          | variable = end_nblk_strm1 depth = 32     | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:879 in sha512top                   |
+| stream          | variable = end_nblk_strm2 depth = 32     | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:882 in sha512top                   |
+| stream          | variable = w_strm depth = 32             | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:887 in sha512top                   |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:923 in preprocessingonetripforhmac |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:941 in preprocessingonetripforhmac |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:947 in preprocessingonetripforhmac |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:966 in preprocessingonetripforhmac |
+| bind_storage    | variable = K type = ROM_1P impl = LUTRAM | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1044 in generatemsgscheduleonetrip |
+| array_partition | variable = H complete                    | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1047 in generatemsgscheduleonetrip |
+| array_partition | variable = W                             | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1089 in generatemsgscheduleonetrip |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1092 in generatemsgscheduleonetrip |
+| unroll          |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1147 in generatemsgscheduleonetrip |
+| inline          | off                                      | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1161 in hmac_sha384_2in1           |
+| dataflow        |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1162 in hmac_sha384_2in1           |
+| stream          | variable = blk_strm depth = 32           | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1164 in hmac_sha384_2in1           |
+| pipeline        | II = 1                                   | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1179 in convert32to64oneround      |
+| inline          | off                                      | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1224 in hmac_sha384_2in1           |
+| dataflow        |                                          | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1225 in hmac_sha384_2in1           |
+| stream          | variable = msg_64_strm depth = 32        | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1227 in hmac_sha384_2in1           |
+| stream          | variable = len_64_strm depth = 32        | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1230 in hmac_sha384_2in1           |
+| stream          | variable = blk_strm depth = 32           | C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:1233 in hmac_sha384_2in1           |
+| pipeline        | II=1                                     | test.cpp:66 in axis_to_core                                                                                                                 |
+| pipeline        | II=1                                     | test.cpp:95 in core_to_axis                                                                                                                 |
+| interface       | axis port=msg_strm depth=256             | test.cpp:138 in test, msg_strm                                                                                                              |
+| interface       | axis port=digest_strm depth=4            | test.cpp:139 in test, digest_strm                                                                                                           |
+| interface       | s_axilite port=msg_len bundle=control    | test.cpp:141 in test, msg_len                                                                                                               |
+| interface       | s_axilite port=dest_id bundle=control    | test.cpp:142 in test, dest_id                                                                                                               |
+| interface       | s_axilite port=return bundle=control     | test.cpp:143 in test, return                                                                                                                |
+| dataflow        |                                          | test.cpp:146 in test                                                                                                                        |
+| stream          | variable=core_msg_strm depth=64          | test.cpp:162 in test, core_msg_strm                                                                                                         |
+| stream          | variable=core_len_strm depth=4           | test.cpp:163 in test, core_len_strm                                                                                                         |
+| stream          | variable=core_end_len_strm depth=4       | test.cpp:164 in test, core_end_len_strm                                                                                                     |
+| stream          | variable=core_digest_strm depth=4        | test.cpp:165 in test, core_digest_strm                                                                                                      |
+| stream          | variable=core_end_digest_strm depth=4    | test.cpp:166 in test, core_end_digest_strm                                                                                                  |
++-----------------+------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+

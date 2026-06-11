@@ -1,0 +1,136 @@
+
+
+================================================================
+== Vitis HLS Report for 'core_to_axis'
+================================================================
+* Date:           Wed Jun 10 15:15:03 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.091 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.16>
+ST_1 : Operation 5 [1/1] ( I:2.16ns O:2.16ns )   --->   "%dest_id_1 = read i2 @_ssdm_op_Read.ap_fifo.i2P0A, i2 %dest_id"   --->   Operation 5 'read' 'dest_id_1' <Predicate = true> <Delay = 2.16> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 4> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%fence_ln94 = fence void @_ssdm_op_Fence, i2 %dest_id, i32 4294967295, i1 %core_end_digest_strm, i256 %core_digest_strm, i256 %digest_strm_V_data_V, i32 %digest_strm_V_keep_V, i32 %digest_strm_V_strb_V, i1 %digest_strm_V_last_V, i3 %digest_strm_V_dest_V" [test.cpp:94]   --->   Operation 6 'fence' 'fence_ln94' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln0 = call void @core_to_axis_Pipeline_DRAIN_LOOP, i1 %core_end_digest_strm, i256 %core_digest_strm, i2 %dest_id_1, i256 %digest_strm_V_data_V, i32 %digest_strm_V_keep_V, i32 %digest_strm_V_strb_V, i1 %digest_strm_V_last_V, i3 %digest_strm_V_dest_V"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 3.09>
+ST_3 : Operation 8 [1/2] (3.09ns)   --->   "%call_ln0 = call void @core_to_axis_Pipeline_DRAIN_LOOP, i1 %core_end_digest_strm, i256 %core_digest_strm, i2 %dest_id_1, i256 %digest_strm_V_data_V, i32 %digest_strm_V_keep_V, i32 %digest_strm_V_strb_V, i1 %digest_strm_V_last_V, i3 %digest_strm_V_dest_V"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 3.09> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2 %dest_id, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i256 %digest_strm_V_data_V, i32 %digest_strm_V_keep_V, i32 %digest_strm_V_strb_V, i1 0, i1 %digest_strm_V_last_V, i1 0, i3 %digest_strm_V_dest_V, void @empty_9"   --->   Operation 10 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %core_end_digest_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %core_digest_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %digest_strm_V_dest_V, i1 %digest_strm_V_last_V, i32 %digest_strm_V_strb_V, i32 %digest_strm_V_keep_V, i256 %digest_strm_V_data_V, void @empty_17, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%ret_ln114 = ret" [test.cpp:114]   --->   Operation 14 'ret' 'ret_ln114' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 1.050ns.
+
+ <State 1>: 2.167ns
+The critical path consists of the following:
+	fifo read operation ('dest_id') on port 'dest_id' [10]  (2.167 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 3.091ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'core_to_axis_Pipeline_DRAIN_LOOP' [16]  (3.091 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,232 @@
+{
+    "rules": {
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\test.cpp.0.bc', 'D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\test.cpp.0.bc.d']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include",
+                "-MD",
+                "-MF",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\test.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=d:\\version_2024.2\\vitis\\2024.2\\vcxx\\data\\autopilot",
+                "-vitis-hls=D:\\version_2024.2\\Vitis\\2024.2",
+                "--sysroot=D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-hls-clock-period=10.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=test",
+                "test.cpp",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\test.cpp.0.bc"
+            ],
+            "exectime": 1.7355220317840576,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\tb.cpp.0.o', 'D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\tb.cpp.0.o.d']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include",
+                "-MD",
+                "-MF",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\tb.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=d:\\version_2024.2\\vitis\\2024.2\\vcxx\\data\\include",
+                "-vitis-hls=D:\\version_2024.2\\Vitis\\2024.2",
+                "--sysroot=D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=test",
+                "D:/Nilesh_3/HLS/SHA_256_HLS_Component/tb.cpp",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\tb.cpp.0.o"
+            ],
+            "exectime": 1.219972848892212,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\test.cpp.0.o', 'D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\test.cpp.0.o.d']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include",
+                "-MD",
+                "-MF",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=d:\\version_2024.2\\vitis\\2024.2\\vcxx\\data\\include",
+                "-vitis-hls=D:\\version_2024.2\\Vitis\\2024.2",
+                "--sysroot=D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=test",
+                "test.cpp",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\test.cpp.0.o"
+            ],
+            "exectime": 2.026585578918457,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/llvm-link.exe",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\test.cpp.0.bc",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 0.19209837913513184,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 0.3142111301422119,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/clang++.exe",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\tb.cpp.0.o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\test.cpp.0.o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=test",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\win64\\tools\\dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\win64\\tools\\fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\win64\\tools\\fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\win64\\tools\\fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-lm",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\win64\\lib\\csim",
+                "-lhlsm-GCC95-x64",
+                "-lhlsmc++-GCC95-x64",
+                "-lgmp",
+                "-lmpfr",
+                "--sysroot=D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\x86_64-w64-mingw32\\lib",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc\\x86_64-w64-mingw32\\9.5.0",
+                "-LD:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\libexec\\gcc\\x86_64-w64-mingw32\\9.5.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
+                "-fslxpthreads",
+                "-lpthread"
+            ],
+            "exectime": 5.205349445343018,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\hls_ir_info.json']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/irInfoDump.exe",
+                "--ir-module",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--json-output",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\hls_ir_info.json",
+                "--hw-function",
+                "test"
+            ],
+            "exectime": 0.35399746894836426,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\libexec\\clang-scan-deps.exe",
+                "--compilation-database=D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
+            ],
+            "exectime": 0.2946207523345947,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
+            "command": [
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
+            ],
+            "exectime": 0.44383907318115234,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\annotated.bc']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/optimizer.exe",
+                "-DFGPass",
+                "-outputDir",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\output",
+                "-logDir",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\log",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "-staticFile",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-traceFile",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_0\\thread0000-trace.txt",
+                "-o",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc"
+            ],
+            "exectime": 2.0960371494293213,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        },
+        "['D:\\\\Nilesh_3\\\\HLS\\\\SHA_256_HLS_Component\\\\test\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
+            "command": [
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\/libexec/parallelismSelector.exe",
+                "--basepath",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component",
+                "--fpga-part",
+                "xczu3eg-sbva484-1-i",
+                "--device-totals",
+                "d:\\version_2024.2\\vitis\\2024.2\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F1541"
+            ],
+            "exectime": 1.712191104888916,
+            "cwd": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component"
+        }
+    }
+}

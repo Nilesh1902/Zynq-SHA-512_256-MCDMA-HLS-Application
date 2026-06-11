@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha512_t_64u_256u_s'
+================================================================
+* Date:           Wed Jun 10 15:15:07 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.686 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      112|      112|  1.120 us|  1.120 us|  112|  112|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------+----------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                                |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |            Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +--------------------------------+----------------------+---------+---------+----------+----------+-----+-----+----------+
+        |grp_sha512Top_64u_256u_s_fu_22  |sha512Top_64u_256u_s  |      111|      111|  1.110 us|  1.110 us|   93|   93|  dataflow|
+        +--------------------------------+----------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|    9768|   8102|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     23|    -|
+|Register         |        -|    -|       6|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|    9774|   8129|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       6|     11|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------+----------------------+---------+----+------+------+-----+
+    |            Instance            |        Module        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------------+----------------------+---------+----+------+------+-----+
+    |grp_sha512Top_64u_256u_s_fu_22  |sha512Top_64u_256u_s  |        0|   0|  9768|  8102|    0|
+    +--------------------------------+----------------------+---------+----+------+------+-----+
+    |Total                           |                      |        0|   0|  9768|  8102|    0|
+    +--------------------------------+----------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------------------------+----------+----+---+----+------------+------------+
+    |                  Variable Name                  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state1                                  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_grp_sha512Top_64u_256u_s_fu_22_ap_ready  |        or|   0|  0|   2|           1|           1|
+    +-------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                            |          |   0|  0|   4|           2|           2|
+    +-------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  14|          3|    1|          3|
+    |ap_done    |   9|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  23|          5|    2|          5|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------+---+----+-----+-----------+
+    |                         Name                        | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                            |  2|   0|    2|          0|
+    |ap_done_reg                                          |  1|   0|    1|          0|
+    |ap_sync_reg_grp_sha512Top_64u_256u_s_fu_22_ap_done   |  1|   0|    1|          0|
+    |ap_sync_reg_grp_sha512Top_64u_256u_s_fu_22_ap_ready  |  1|   0|    1|          0|
+    |grp_sha512Top_64u_256u_s_fu_22_ap_start_reg          |  1|   0|    1|          0|
+    +-----------------------------------------------------+---+----+-----+-----------+
+    |Total                                                |  6|   0|    6|          0|
+    +-----------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|ap_continue                          |   in|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|   sha512_t<64u, 256u>|  return value|
+|core_msg_strm_dout                   |   in|   64|     ap_fifo|         core_msg_strm|       pointer|
+|core_msg_strm_empty_n                |   in|    1|     ap_fifo|         core_msg_strm|       pointer|
+|core_msg_strm_read                   |  out|    1|     ap_fifo|         core_msg_strm|       pointer|
+|core_msg_strm_num_data_valid         |   in|    7|     ap_fifo|         core_msg_strm|       pointer|
+|core_msg_strm_fifo_cap               |   in|    7|     ap_fifo|         core_msg_strm|       pointer|
+|core_len_strm_dout                   |   in|  128|     ap_fifo|         core_len_strm|       pointer|
+|core_len_strm_empty_n                |   in|    1|     ap_fifo|         core_len_strm|       pointer|
+|core_len_strm_read                   |  out|    1|     ap_fifo|         core_len_strm|       pointer|
+|core_len_strm_num_data_valid         |   in|    3|     ap_fifo|         core_len_strm|       pointer|
+|core_len_strm_fifo_cap               |   in|    3|     ap_fifo|         core_len_strm|       pointer|
+|core_end_len_strm_dout               |   in|    1|     ap_fifo|     core_end_len_strm|       pointer|
+|core_end_len_strm_empty_n            |   in|    1|     ap_fifo|     core_end_len_strm|       pointer|
+|core_end_len_strm_read               |  out|    1|     ap_fifo|     core_end_len_strm|       pointer|
+|core_end_len_strm_num_data_valid     |   in|    3|     ap_fifo|     core_end_len_strm|       pointer|
+|core_end_len_strm_fifo_cap           |   in|    3|     ap_fifo|     core_end_len_strm|       pointer|
+|core_digest_strm_din                 |  out|  256|     ap_fifo|      core_digest_strm|       pointer|
+|core_digest_strm_full_n              |   in|    1|     ap_fifo|      core_digest_strm|       pointer|
+|core_digest_strm_write               |  out|    1|     ap_fifo|      core_digest_strm|       pointer|
+|core_digest_strm_num_data_valid      |   in|    3|     ap_fifo|      core_digest_strm|       pointer|
+|core_digest_strm_fifo_cap            |   in|    3|     ap_fifo|      core_digest_strm|       pointer|
+|core_end_digest_strm_din             |  out|    1|     ap_fifo|  core_end_digest_strm|       pointer|
+|core_end_digest_strm_full_n          |   in|    1|     ap_fifo|  core_end_digest_strm|       pointer|
+|core_end_digest_strm_write           |  out|    1|     ap_fifo|  core_end_digest_strm|       pointer|
+|core_end_digest_strm_num_data_valid  |   in|    3|     ap_fifo|  core_end_digest_strm|       pointer|
+|core_end_digest_strm_fifo_cap        |   in|    3|     ap_fifo|  core_end_digest_strm|       pointer|
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+

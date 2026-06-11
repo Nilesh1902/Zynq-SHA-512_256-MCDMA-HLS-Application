@@ -1,0 +1,186 @@
+---
+MainSourceFile:  'D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/.autopilot/db/test.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\version_2024.2\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          280383
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\version_2024.2\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          280849
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\version_2024.2\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          281316
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'D:\version_2024.2\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          564954
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_621_1:  '
+    FileOffset:      621
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1072864
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_621_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      861
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      866
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      869
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      872
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      877
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      880
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      883
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      888
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_922_1:  '
+    FileOffset:      922
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1082782
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_922_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_940_2:  '
+    FileOffset:      940
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1083389
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_940_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_946_3:  '
+    FileOffset:      946
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1083559
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_946_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_965_4:  '
+    FileOffset:      965
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1084067
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_965_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1009_5:  '
+    FileOffset:      1009
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1085174
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1009_5: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      1044
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1091_1:  '
+    FileOffset:      1091
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1089127
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1091_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1114_2:  '
+    FileOffset:      1114
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1089749
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1114_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1165
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1178_1:  '
+    FileOffset:      1178
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+      - FilePath:        'D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp'
+        Offset:          1091746
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1178_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1228
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1231
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      1234
+    FilePath:        'C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp'
+    Replacements:    
+...

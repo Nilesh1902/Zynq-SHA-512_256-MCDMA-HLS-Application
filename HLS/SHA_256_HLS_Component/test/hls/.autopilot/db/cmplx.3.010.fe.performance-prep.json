@@ -1,0 +1,96 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4 5 3",
+    "file": "test.cpp",
+    "fileloc": 131,
+    "instructions": 36,
+    "name": "test",
+    "total_instructions": 2329
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "2 8 6 7",
+    "file": "sha512_t.hpp",
+    "fileloc": 848,
+    "instructions": 37,
+    "name": "sha512Top<64, 256>",
+    "total_instructions": 2193
+  },
+  "2": {
+    "basicblocks": 206,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 69,
+    "instructions": 843,
+    "name": "preProcessing<64>",
+    "total_instructions": 1403
+  },
+  "3": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "test.cpp",
+    "fileloc": 87,
+    "instructions": 40,
+    "loads": {
+      "G": 3,
+      "L": 2
+    },
+    "name": "core_to_axis",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 60
+  },
+  "4": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "test.cpp",
+    "fileloc": 48,
+    "instructions": 33,
+    "loads": {
+      "L": 2
+    },
+    "name": "axis_to_core",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "sha512_t.hpp",
+    "fileloc": 1323,
+    "instructions": 2,
+    "name": "sha512_t<64, 256>",
+    "total_instructions": 2195
+  },
+  "6": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 586,
+    "instructions": 151,
+    "name": "generateMsgSchedule<64>",
+    "total_instructions": 247
+  },
+  "7": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 652,
+    "instructions": 491,
+    "name": "SHA512Digest<64, 256>",
+    "total_instructions": 491
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 541,
+    "instructions": 15,
+    "name": "dup_strm<128>",
+    "total_instructions": 15
+  }
+}

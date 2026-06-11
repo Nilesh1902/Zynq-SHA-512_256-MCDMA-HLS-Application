@@ -1,0 +1,186 @@
+
+
+================================================================
+== Vitis HLS Report for 'test'
+================================================================
+* Date:           Wed Jun 10 15:15:09 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.686 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------+---------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                      |                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |       Instance       |        Module       |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------+---------------------+---------+---------+----------+----------+-----+-----+---------+
+        |entry_proc_U0         |entry_proc           |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+        |axis_to_core_U0       |axis_to_core         |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |sha512_t_64u_256u_U0  |sha512_t_64u_256u_s  |      112|      112|  1.120 us|  1.120 us|  112|  112|       no|
+        |core_to_axis_U0       |core_to_axis         |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +----------------------+---------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     12|    -|
+|FIFO             |        4|    -|     650|    384|    -|
+|Instance         |        0|    -|   10556|   9153|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     18|    -|
+|Register         |        -|    -|       2|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        4|    0|   11208|   9567|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|    0|       7|     13|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------+---------------------+---------+----+------+------+-----+
+    |       Instance       |        Module       | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------+---------------------+---------+----+------+------+-----+
+    |axis_to_core_U0       |axis_to_core         |        0|   0|   263|   549|    0|
+    |control_s_axi_U       |control_s_axi        |        0|   0|   178|   300|    0|
+    |core_to_axis_U0       |core_to_axis         |        0|   0|   338|   146|    0|
+    |entry_proc_U0         |entry_proc           |        0|   0|     3|    29|    0|
+    |sha512_t_64u_256u_U0  |sha512_t_64u_256u_s  |        0|   0|  9774|  8129|    0|
+    +----------------------+---------------------+---------+----+------+------+-----+
+    |Total                 |                     |        0|   0| 10556|  9153|    0|
+    +----------------------+---------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+    |          Name          | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+    |core_digest_strm_U      |        0|   99|   0|    -|     4|  256|     1024|
+    |core_end_digest_strm_U  |        0|   99|   0|    -|     4|    1|        4|
+    |core_end_len_strm_U     |        0|   99|   0|    -|     4|    1|        4|
+    |core_len_strm_U         |        0|   99|   0|    -|     4|  128|      512|
+    |core_msg_strm_U         |        4|  155|   0|    -|    64|   64|     4096|
+    |dest_id_c_U             |        0|   99|   0|    -|     4|    2|        8|
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+    |Total                   |        4|  650|   0|    0|    84|  452|     5648|
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                           |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                     |       and|   0|  0|   2|           1|           1|
+    |axis_to_core_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |entry_proc_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_axis_to_core_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_entry_proc_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  12|           6|           6|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_axis_to_core_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_entry_proc_U0_ap_ready    |   9|          2|    1|          2|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  18|          4|    2|          4|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------+---+----+-----+-----------+
+    |                 Name                 | FF| LUT| Bits| Const Bits|
+    +--------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_axis_to_core_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_entry_proc_U0_ap_ready    |  1|   0|    1|          0|
+    +--------------------------------------+---+----+-----+-----------+
+    |Total                                 |  2|   0|    2|          0|
+    +--------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------+-----+-----+------------+----------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|               control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|               control|        scalar|
+|s_axi_control_AWADDR   |   in|    6|       s_axi|               control|        scalar|
+|s_axi_control_WVALID   |   in|    1|       s_axi|               control|        scalar|
+|s_axi_control_WREADY   |  out|    1|       s_axi|               control|        scalar|
+|s_axi_control_WDATA    |   in|   32|       s_axi|               control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|               control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|               control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|               control|        scalar|
+|s_axi_control_ARADDR   |   in|    6|       s_axi|               control|        scalar|
+|s_axi_control_RVALID   |  out|    1|       s_axi|               control|        scalar|
+|s_axi_control_RREADY   |   in|    1|       s_axi|               control|        scalar|
+|s_axi_control_RDATA    |  out|   32|       s_axi|               control|        scalar|
+|s_axi_control_RRESP    |  out|    2|       s_axi|               control|        scalar|
+|s_axi_control_BVALID   |  out|    1|       s_axi|               control|        scalar|
+|s_axi_control_BREADY   |   in|    1|       s_axi|               control|        scalar|
+|s_axi_control_BRESP    |  out|    2|       s_axi|               control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|                  test|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|                  test|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|                  test|  return value|
+|msg_strm_TDATA         |   in|   64|        axis|     msg_strm_V_data_V|       pointer|
+|msg_strm_TKEEP         |   in|    8|        axis|     msg_strm_V_keep_V|       pointer|
+|msg_strm_TSTRB         |   in|    8|        axis|     msg_strm_V_strb_V|       pointer|
+|msg_strm_TLAST         |   in|    1|        axis|     msg_strm_V_last_V|       pointer|
+|msg_strm_TDEST         |   in|    3|        axis|     msg_strm_V_dest_V|       pointer|
+|msg_strm_TVALID        |   in|    1|        axis|     msg_strm_V_dest_V|       pointer|
+|msg_strm_TREADY        |  out|    1|        axis|     msg_strm_V_dest_V|       pointer|
+|digest_strm_TDATA      |  out|  256|        axis|  digest_strm_V_data_V|       pointer|
+|digest_strm_TKEEP      |  out|   32|        axis|  digest_strm_V_keep_V|       pointer|
+|digest_strm_TSTRB      |  out|   32|        axis|  digest_strm_V_strb_V|       pointer|
+|digest_strm_TLAST      |  out|    1|        axis|  digest_strm_V_last_V|       pointer|
+|digest_strm_TDEST      |  out|    3|        axis|  digest_strm_V_dest_V|       pointer|
+|digest_strm_TVALID     |  out|    1|        axis|  digest_strm_V_dest_V|       pointer|
+|digest_strm_TREADY     |   in|    1|        axis|  digest_strm_V_dest_V|       pointer|
++-----------------------+-----+-----+------------+----------------------+--------------+
+

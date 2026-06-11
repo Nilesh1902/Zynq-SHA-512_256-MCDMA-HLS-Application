@@ -1,0 +1,587 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "D:/version_2024.2/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_test.cpp
+   Compiling test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_test_util.cpp
+   Compiling apatb_test_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+================================================
+  SHA-512/256 Dual-IP HLS Testbench
+  Vitis HLS 2024.2 | xczu3eg-sbva484-1-i
+  syn.top = test | 300 test cases
+================================================
+------------------------------------------------
+  Total tests : 300
+  Passed      : 300
+  Hash errors : 0
+  DEST errors : 0
+------------------------------------------------
+PASS: all 300 tests correct, TDEST routing verified.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 240
+
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\sim\verilog>set PATH= 
+
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\sim\verilog>call D:/version_2024.2/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_test_top glbl -Oenable_linking_all_libraries  -prj test.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s test  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/version_2024.2/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_test_top glbl -Oenable_linking_all_libraries -prj test.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s test 
+Multi-threading is on. Using 18 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_axi_s_digest_strm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_digest_strm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_axi_s_msg_strm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_msg_strm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_test_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_axis_to_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_axis_to_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_axis_to_core_Pipeline_FEED_LOOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_axis_to_core_Pipeline_FEED_LOOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_core_to_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_core_to_axis
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_core_to_axis_Pipeline_DRAIN_LOOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_core_to_axis_Pipeline_DRAIN_LOOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_dup_strm_128u_Pipeline_LOOP_DUP_STREAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_dup_strm_128u_Pipeline_LOOP_DUP_STREAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_dup_strm_128u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_dup_strm_128u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w1024_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w1024_d32_D
+INFO: [VRFC 10-311] analyzing module test_fifo_w1024_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w128_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w128_d32_D
+INFO: [VRFC 10-311] analyzing module test_fifo_w128_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w128_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w128_d4_S
+INFO: [VRFC 10-311] analyzing module test_fifo_w128_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w1_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w1_d32_D
+INFO: [VRFC 10-311] analyzing module test_fifo_w1_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w1_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w1_d4_S
+INFO: [VRFC 10-311] analyzing module test_fifo_w1_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w256_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w256_d4_S
+INFO: [VRFC 10-311] analyzing module test_fifo_w256_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w2_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w2_d4_S
+INFO: [VRFC 10-311] analyzing module test_fifo_w2_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w64_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w64_d32_D
+INFO: [VRFC 10-311] analyzing module test_fifo_w64_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_fifo_w64_d64_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_fifo_w64_d64_A
+INFO: [VRFC 10-311] analyzing module test_fifo_w64_d64_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_generateMsgSchedule_64u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_generateMsgSchedule_64u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_preProcessing_64u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_preProcessing_64u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_SHA512Digest_64u_256u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_SHA512Digest_64u_256u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_sha512Top_64u_256u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_sha512Top_64u_256u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_sha512_t_64u_256u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_sha512_t_64u_256u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_sparsemux_161_7_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_sparsemux_161_7_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_sparsemux_33_4_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_sparsemux_33_4_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_start_for_core_to_axis_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_start_for_core_to_axis_U0
+INFO: [VRFC 10-311] analyzing module test_start_for_core_to_axis_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_start_for_dup_strm_128u_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_start_for_dup_strm_128u_U0
+INFO: [VRFC 10-311] analyzing module test_start_for_dup_strm_128u_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_start_for_generateMsgSchedule_64u_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_start_for_generateMsgSchedule_64u_U0
+INFO: [VRFC 10-311] analyzing module test_start_for_generateMsgSchedule_64u_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_start_for_SHA512Digest_64u_256u_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_start_for_SHA512Digest_64u_256u_U0
+INFO: [VRFC 10-311] analyzing module test_start_for_SHA512Digest_64u_256u_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test_start_for_sha512_t_64u_256u_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_start_for_sha512_t_64u_256u_U0
+INFO: [VRFC 10-311] analyzing module test_start_for_sha512_t_64u_256u_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.test_control_s_axi
+Compiling module xil_defaultlib.test_entry_proc
+Compiling module xil_defaultlib.test_flow_control_loop_pipe_sequ...
+Compiling module xil_defaultlib.test_axis_to_core_Pipeline_FEED_...
+Compiling module xil_defaultlib.test_regslice_both(DataWidth=64)
+Compiling module xil_defaultlib.test_regslice_both
+Compiling module xil_defaultlib.test_regslice_both(DataWidth=1)
+Compiling module xil_defaultlib.test_regslice_both(DataWidth=3)
+Compiling module xil_defaultlib.test_axis_to_core
+Compiling module xil_defaultlib.test_preProcessing_64u_Pipeline_...
+Compiling module xil_defaultlib.test_preProcessing_64u_Pipeline_...
+Compiling module xil_defaultlib.test_preProcessing_64u_s
+Compiling module xil_defaultlib.test_dup_strm_128u_Pipeline_LOOP...
+Compiling module xil_defaultlib.test_dup_strm_128u_s
+Compiling module xil_defaultlib.test_sparsemux_33_4_64_1_1(din0_...
+Compiling module xil_defaultlib.test_generateMsgSchedule_64u_Pip...
+Compiling module xil_defaultlib.test_generateMsgSchedule_64u_Pip...
+Compiling module xil_defaultlib.test_generateMsgSchedule_64u_s
+Compiling module xil_defaultlib.test_sparsemux_161_7_64_1_1(din0...
+Compiling module xil_defaultlib.test_SHA512Digest_Pipeline_LOOP_...
+Compiling module xil_defaultlib.test_SHA512Digest_64u_256u_s
+Compiling module xil_defaultlib.test_fifo_w1024_d32_D_ram(DEPTH=...
+Compiling module xil_defaultlib.test_fifo_w1024_d32_D_default
+Compiling module xil_defaultlib.test_fifo_w128_d32_D_ram(DEPTH=3...
+Compiling module xil_defaultlib.test_fifo_w128_d32_D_default
+Compiling module xil_defaultlib.test_fifo_w1_d32_D_ram(DEPTH=31)
+Compiling module xil_defaultlib.test_fifo_w1_d32_D_default
+Compiling module xil_defaultlib.test_fifo_w64_d32_D_ram(DEPTH=31...
+Compiling module xil_defaultlib.test_fifo_w64_d32_D_default
+Compiling module xil_defaultlib.test_start_for_dup_strm_128u_U0_...
+Compiling module xil_defaultlib.test_start_for_dup_strm_128u_U0_...
+Compiling module xil_defaultlib.test_start_for_generateMsgSchedu...
+Compiling module xil_defaultlib.test_start_for_generateMsgSchedu...
+Compiling module xil_defaultlib.test_start_for_SHA512Digest_64u_...
+Compiling module xil_defaultlib.test_start_for_SHA512Digest_64u_...
+Compiling module xil_defaultlib.test_sha512Top_64u_256u_s
+Compiling module xil_defaultlib.test_sha512_t_64u_256u_s
+Compiling module xil_defaultlib.test_core_to_axis_Pipeline_DRAIN...
+Compiling module xil_defaultlib.test_regslice_both(DataWidth=256...
+Compiling module xil_defaultlib.test_regslice_both(DataWidth=32)
+Compiling module xil_defaultlib.test_core_to_axis
+Compiling module xil_defaultlib.test_fifo_w2_d4_S_ShiftReg
+Compiling module xil_defaultlib.test_fifo_w2_d4_S_default
+Compiling module xil_defaultlib.test_fifo_w64_d64_A_ram(DEPTH=63...
+Compiling module xil_defaultlib.test_fifo_w64_d64_A_default
+Compiling module xil_defaultlib.test_fifo_w128_d4_S_ShiftReg
+Compiling module xil_defaultlib.test_fifo_w128_d4_S_default
+Compiling module xil_defaultlib.test_fifo_w1_d4_S_ShiftReg
+Compiling module xil_defaultlib.test_fifo_w1_d4_S_default
+Compiling module xil_defaultlib.test_fifo_w256_d4_S_ShiftReg
+Compiling module xil_defaultlib.test_fifo_w256_d4_S_default
+Compiling module xil_defaultlib.test_start_for_core_to_axis_U0_S...
+Compiling module xil_defaultlib.test_start_for_core_to_axis_U0_d...
+Compiling module xil_defaultlib.test_start_for_sha512_t_64u_256u...
+Compiling module xil_defaultlib.test_start_for_sha512_t_64u_256u...
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=3)
+Compiling module xil_defaultlib.AESL_axi_s_msg_strm
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=256)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=3)
+Compiling module xil_defaultlib.AESL_axi_s_digest_strm
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_2
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_fifo_intf_default
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=23)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=7)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=16)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_test_top
+Compiling module work.glbl
+Built simulation snapshot test
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Jun 10 15:16:02 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -autoloadwcfg -tclbatch {test.tcl}
+Time resolution is 1 ps
+source test.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 300 [n/a] @ "125000"
+// RTL Simulation : 1 / 300 [n/a] @ "1695000"
+// RTL Simulation : 2 / 300 [n/a] @ "3225000"
+// RTL Simulation : 3 / 300 [n/a] @ "4755000"
+// RTL Simulation : 4 / 300 [n/a] @ "6285000"
+// RTL Simulation : 5 / 300 [n/a] @ "7815000"
+// RTL Simulation : 6 / 300 [n/a] @ "9345000"
+// RTL Simulation : 7 / 300 [n/a] @ "10875000"
+// RTL Simulation : 8 / 300 [n/a] @ "12405000"
+// RTL Simulation : 9 / 300 [n/a] @ "13935000"
+// RTL Simulation : 10 / 300 [n/a] @ "15465000"
+// RTL Simulation : 11 / 300 [n/a] @ "16995000"
+// RTL Simulation : 12 / 300 [n/a] @ "18525000"
+// RTL Simulation : 13 / 300 [n/a] @ "20055000"
+// RTL Simulation : 14 / 300 [n/a] @ "21585000"
+// RTL Simulation : 15 / 300 [n/a] @ "23115000"
+// RTL Simulation : 16 / 300 [n/a] @ "24645000"
+// RTL Simulation : 17 / 300 [n/a] @ "26175000"
+// RTL Simulation : 18 / 300 [n/a] @ "27705000"
+// RTL Simulation : 19 / 300 [n/a] @ "29235000"
+// RTL Simulation : 20 / 300 [n/a] @ "30765000"
+// RTL Simulation : 21 / 300 [n/a] @ "32295000"
+// RTL Simulation : 22 / 300 [n/a] @ "33825000"
+// RTL Simulation : 23 / 300 [n/a] @ "35355000"
+// RTL Simulation : 24 / 300 [n/a] @ "36885000"
+// RTL Simulation : 25 / 300 [n/a] @ "38415000"
+// RTL Simulation : 26 / 300 [n/a] @ "39945000"
+// RTL Simulation : 27 / 300 [n/a] @ "41475000"
+// RTL Simulation : 28 / 300 [n/a] @ "43005000"
+// RTL Simulation : 29 / 300 [n/a] @ "44535000"
+// RTL Simulation : 30 / 300 [n/a] @ "46065000"
+// RTL Simulation : 31 / 300 [n/a] @ "47595000"
+// RTL Simulation : 32 / 300 [n/a] @ "49125000"
+// RTL Simulation : 33 / 300 [n/a] @ "50655000"
+// RTL Simulation : 34 / 300 [n/a] @ "52185000"
+// RTL Simulation : 35 / 300 [n/a] @ "53715000"
+// RTL Simulation : 36 / 300 [n/a] @ "55245000"
+// RTL Simulation : 37 / 300 [n/a] @ "56775000"
+// RTL Simulation : 38 / 300 [n/a] @ "58305000"
+// RTL Simulation : 39 / 300 [n/a] @ "59835000"
+// RTL Simulation : 40 / 300 [n/a] @ "61365000"
+// RTL Simulation : 41 / 300 [n/a] @ "62895000"
+// RTL Simulation : 42 / 300 [n/a] @ "64425000"
+// RTL Simulation : 43 / 300 [n/a] @ "65955000"
+// RTL Simulation : 44 / 300 [n/a] @ "67485000"
+// RTL Simulation : 45 / 300 [n/a] @ "69015000"
+// RTL Simulation : 46 / 300 [n/a] @ "70545000"
+// RTL Simulation : 47 / 300 [n/a] @ "72075000"
+// RTL Simulation : 48 / 300 [n/a] @ "73605000"
+// RTL Simulation : 49 / 300 [n/a] @ "75135000"
+// RTL Simulation : 50 / 300 [n/a] @ "76665000"
+// RTL Simulation : 51 / 300 [n/a] @ "78195000"
+// RTL Simulation : 52 / 300 [n/a] @ "79725000"
+// RTL Simulation : 53 / 300 [n/a] @ "81255000"
+// RTL Simulation : 54 / 300 [n/a] @ "82785000"
+// RTL Simulation : 55 / 300 [n/a] @ "84315000"
+// RTL Simulation : 56 / 300 [n/a] @ "85845000"
+// RTL Simulation : 57 / 300 [n/a] @ "87375000"
+// RTL Simulation : 58 / 300 [n/a] @ "88905000"
+// RTL Simulation : 59 / 300 [n/a] @ "90435000"
+// RTL Simulation : 60 / 300 [n/a] @ "91965000"
+// RTL Simulation : 61 / 300 [n/a] @ "93495000"
+// RTL Simulation : 62 / 300 [n/a] @ "95025000"
+// RTL Simulation : 63 / 300 [n/a] @ "96555000"
+// RTL Simulation : 64 / 300 [n/a] @ "98085000"
+// RTL Simulation : 65 / 300 [n/a] @ "99615000"
+// RTL Simulation : 66 / 300 [n/a] @ "101145000"
+// RTL Simulation : 67 / 300 [n/a] @ "102675000"
+// RTL Simulation : 68 / 300 [n/a] @ "104205000"
+// RTL Simulation : 69 / 300 [n/a] @ "105735000"
+// RTL Simulation : 70 / 300 [n/a] @ "107265000"
+// RTL Simulation : 71 / 300 [n/a] @ "108795000"
+// RTL Simulation : 72 / 300 [n/a] @ "110325000"
+// RTL Simulation : 73 / 300 [n/a] @ "111855000"
+// RTL Simulation : 74 / 300 [n/a] @ "113385000"
+// RTL Simulation : 75 / 300 [n/a] @ "114915000"
+// RTL Simulation : 76 / 300 [n/a] @ "116445000"
+// RTL Simulation : 77 / 300 [n/a] @ "117975000"
+// RTL Simulation : 78 / 300 [n/a] @ "119505000"
+// RTL Simulation : 79 / 300 [n/a] @ "121035000"
+// RTL Simulation : 80 / 300 [n/a] @ "122565000"
+// RTL Simulation : 81 / 300 [n/a] @ "124095000"
+// RTL Simulation : 82 / 300 [n/a] @ "125625000"
+// RTL Simulation : 83 / 300 [n/a] @ "127155000"
+// RTL Simulation : 84 / 300 [n/a] @ "128685000"
+// RTL Simulation : 85 / 300 [n/a] @ "130215000"
+// RTL Simulation : 86 / 300 [n/a] @ "131745000"
+// RTL Simulation : 87 / 300 [n/a] @ "133275000"
+// RTL Simulation : 88 / 300 [n/a] @ "134805000"
+// RTL Simulation : 89 / 300 [n/a] @ "136335000"
+// RTL Simulation : 90 / 300 [n/a] @ "137865000"
+// RTL Simulation : 91 / 300 [n/a] @ "139395000"
+// RTL Simulation : 92 / 300 [n/a] @ "140925000"
+// RTL Simulation : 93 / 300 [n/a] @ "142455000"
+// RTL Simulation : 94 / 300 [n/a] @ "143985000"
+// RTL Simulation : 95 / 300 [n/a] @ "145515000"
+// RTL Simulation : 96 / 300 [n/a] @ "147045000"
+// RTL Simulation : 97 / 300 [n/a] @ "148575000"
+// RTL Simulation : 98 / 300 [n/a] @ "150105000"
+// RTL Simulation : 99 / 300 [n/a] @ "151635000"
+// RTL Simulation : 100 / 300 [n/a] @ "153165000"
+// RTL Simulation : 101 / 300 [n/a] @ "154695000"
+// RTL Simulation : 102 / 300 [n/a] @ "156225000"
+// RTL Simulation : 103 / 300 [n/a] @ "157755000"
+// RTL Simulation : 104 / 300 [n/a] @ "159285000"
+// RTL Simulation : 105 / 300 [n/a] @ "160815000"
+// RTL Simulation : 106 / 300 [n/a] @ "162345000"
+// RTL Simulation : 107 / 300 [n/a] @ "163875000"
+// RTL Simulation : 108 / 300 [n/a] @ "165405000"
+// RTL Simulation : 109 / 300 [n/a] @ "166935000"
+// RTL Simulation : 110 / 300 [n/a] @ "168465000"
+// RTL Simulation : 111 / 300 [n/a] @ "169995000"
+// RTL Simulation : 112 / 300 [n/a] @ "171525000"
+// RTL Simulation : 113 / 300 [n/a] @ "173895000"
+// RTL Simulation : 114 / 300 [n/a] @ "176265000"
+// RTL Simulation : 115 / 300 [n/a] @ "178635000"
+// RTL Simulation : 116 / 300 [n/a] @ "181005000"
+// RTL Simulation : 117 / 300 [n/a] @ "183375000"
+// RTL Simulation : 118 / 300 [n/a] @ "185745000"
+// RTL Simulation : 119 / 300 [n/a] @ "188115000"
+// RTL Simulation : 120 / 300 [n/a] @ "190485000"
+// RTL Simulation : 121 / 300 [n/a] @ "192855000"
+// RTL Simulation : 122 / 300 [n/a] @ "195225000"
+// RTL Simulation : 123 / 300 [n/a] @ "197595000"
+// RTL Simulation : 124 / 300 [n/a] @ "199965000"
+// RTL Simulation : 125 / 300 [n/a] @ "202335000"
+// RTL Simulation : 126 / 300 [n/a] @ "204705000"
+// RTL Simulation : 127 / 300 [n/a] @ "207075000"
+// RTL Simulation : 128 / 300 [n/a] @ "209445000"
+// RTL Simulation : 129 / 300 [n/a] @ "211875000"
+// RTL Simulation : 130 / 300 [n/a] @ "214425000"
+// RTL Simulation : 131 / 300 [n/a] @ "216975000"
+// RTL Simulation : 132 / 300 [n/a] @ "219525000"
+// RTL Simulation : 133 / 300 [n/a] @ "222075000"
+// RTL Simulation : 134 / 300 [n/a] @ "224625000"
+// RTL Simulation : 135 / 300 [n/a] @ "227175000"
+// RTL Simulation : 136 / 300 [n/a] @ "229725000"
+// RTL Simulation : 137 / 300 [n/a] @ "232275000"
+// RTL Simulation : 138 / 300 [n/a] @ "234825000"
+// RTL Simulation : 139 / 300 [n/a] @ "237375000"
+// RTL Simulation : 140 / 300 [n/a] @ "239925000"
+// RTL Simulation : 141 / 300 [n/a] @ "242475000"
+// RTL Simulation : 142 / 300 [n/a] @ "245025000"
+// RTL Simulation : 143 / 300 [n/a] @ "247575000"
+// RTL Simulation : 144 / 300 [n/a] @ "250125000"
+// RTL Simulation : 145 / 300 [n/a] @ "252675000"
+// RTL Simulation : 146 / 300 [n/a] @ "255225000"
+// RTL Simulation : 147 / 300 [n/a] @ "257775000"
+// RTL Simulation : 148 / 300 [n/a] @ "260325000"
+// RTL Simulation : 149 / 300 [n/a] @ "262875000"
+// RTL Simulation : 150 / 300 [n/a] @ "265425000"
+// RTL Simulation : 151 / 300 [n/a] @ "267975000"
+// RTL Simulation : 152 / 300 [n/a] @ "270525000"
+// RTL Simulation : 153 / 300 [n/a] @ "273075000"
+// RTL Simulation : 154 / 300 [n/a] @ "275625000"
+// RTL Simulation : 155 / 300 [n/a] @ "278175000"
+// RTL Simulation : 156 / 300 [n/a] @ "280725000"
+// RTL Simulation : 157 / 300 [n/a] @ "283275000"
+// RTL Simulation : 158 / 300 [n/a] @ "285825000"
+// RTL Simulation : 159 / 300 [n/a] @ "288375000"
+// RTL Simulation : 160 / 300 [n/a] @ "290925000"
+// RTL Simulation : 161 / 300 [n/a] @ "293475000"
+// RTL Simulation : 162 / 300 [n/a] @ "296025000"
+// RTL Simulation : 163 / 300 [n/a] @ "298575000"
+// RTL Simulation : 164 / 300 [n/a] @ "301125000"
+// RTL Simulation : 165 / 300 [n/a] @ "303675000"
+// RTL Simulation : 166 / 300 [n/a] @ "306225000"
+// RTL Simulation : 167 / 300 [n/a] @ "308775000"
+// RTL Simulation : 168 / 300 [n/a] @ "311325000"
+// RTL Simulation : 169 / 300 [n/a] @ "313875000"
+// RTL Simulation : 170 / 300 [n/a] @ "316425000"
+// RTL Simulation : 171 / 300 [n/a] @ "318975000"
+// RTL Simulation : 172 / 300 [n/a] @ "321525000"
+// RTL Simulation : 173 / 300 [n/a] @ "324075000"
+// RTL Simulation : 174 / 300 [n/a] @ "326625000"
+// RTL Simulation : 175 / 300 [n/a] @ "329175000"
+// RTL Simulation : 176 / 300 [n/a] @ "331725000"
+// RTL Simulation : 177 / 300 [n/a] @ "334275000"
+// RTL Simulation : 178 / 300 [n/a] @ "336825000"
+// RTL Simulation : 179 / 300 [n/a] @ "339375000"
+// RTL Simulation : 180 / 300 [n/a] @ "341925000"
+// RTL Simulation : 181 / 300 [n/a] @ "344475000"
+// RTL Simulation : 182 / 300 [n/a] @ "347025000"
+// RTL Simulation : 183 / 300 [n/a] @ "349575000"
+// RTL Simulation : 184 / 300 [n/a] @ "352125000"
+// RTL Simulation : 185 / 300 [n/a] @ "354675000"
+// RTL Simulation : 186 / 300 [n/a] @ "357225000"
+// RTL Simulation : 187 / 300 [n/a] @ "359775000"
+// RTL Simulation : 188 / 300 [n/a] @ "362325000"
+// RTL Simulation : 189 / 300 [n/a] @ "364875000"
+// RTL Simulation : 190 / 300 [n/a] @ "367425000"
+// RTL Simulation : 191 / 300 [n/a] @ "369975000"
+// RTL Simulation : 192 / 300 [n/a] @ "372525000"
+// RTL Simulation : 193 / 300 [n/a] @ "375075000"
+// RTL Simulation : 194 / 300 [n/a] @ "377625000"
+// RTL Simulation : 195 / 300 [n/a] @ "380175000"
+// RTL Simulation : 196 / 300 [n/a] @ "382725000"
+// RTL Simulation : 197 / 300 [n/a] @ "385275000"
+// RTL Simulation : 198 / 300 [n/a] @ "387825000"
+// RTL Simulation : 199 / 300 [n/a] @ "390375000"
+// RTL Simulation : 200 / 300 [n/a] @ "392925000"
+// RTL Simulation : 201 / 300 [n/a] @ "395475000"
+// RTL Simulation : 202 / 300 [n/a] @ "398025000"
+// RTL Simulation : 203 / 300 [n/a] @ "400575000"
+// RTL Simulation : 204 / 300 [n/a] @ "403125000"
+// RTL Simulation : 205 / 300 [n/a] @ "405675000"
+// RTL Simulation : 206 / 300 [n/a] @ "408225000"
+// RTL Simulation : 207 / 300 [n/a] @ "410775000"
+// RTL Simulation : 208 / 300 [n/a] @ "413325000"
+// RTL Simulation : 209 / 300 [n/a] @ "415875000"
+// RTL Simulation : 210 / 300 [n/a] @ "418425000"
+// RTL Simulation : 211 / 300 [n/a] @ "420975000"
+// RTL Simulation : 212 / 300 [n/a] @ "423525000"
+// RTL Simulation : 213 / 300 [n/a] @ "426075000"
+// RTL Simulation : 214 / 300 [n/a] @ "428625000"
+// RTL Simulation : 215 / 300 [n/a] @ "431175000"
+// RTL Simulation : 216 / 300 [n/a] @ "433725000"
+// RTL Simulation : 217 / 300 [n/a] @ "436275000"
+// RTL Simulation : 218 / 300 [n/a] @ "438825000"
+// RTL Simulation : 219 / 300 [n/a] @ "441375000"
+// RTL Simulation : 220 / 300 [n/a] @ "443925000"
+// RTL Simulation : 221 / 300 [n/a] @ "446475000"
+// RTL Simulation : 222 / 300 [n/a] @ "449025000"
+// RTL Simulation : 223 / 300 [n/a] @ "451575000"
+// RTL Simulation : 224 / 300 [n/a] @ "454125000"
+// RTL Simulation : 225 / 300 [n/a] @ "456675000"
+// RTL Simulation : 226 / 300 [n/a] @ "459225000"
+// RTL Simulation : 227 / 300 [n/a] @ "461775000"
+// RTL Simulation : 228 / 300 [n/a] @ "464325000"
+// RTL Simulation : 229 / 300 [n/a] @ "466875000"
+// RTL Simulation : 230 / 300 [n/a] @ "469425000"
+// RTL Simulation : 231 / 300 [n/a] @ "471975000"
+// RTL Simulation : 232 / 300 [n/a] @ "474525000"
+// RTL Simulation : 233 / 300 [n/a] @ "477075000"
+// RTL Simulation : 234 / 300 [n/a] @ "479625000"
+// RTL Simulation : 235 / 300 [n/a] @ "482175000"
+// RTL Simulation : 236 / 300 [n/a] @ "484725000"
+// RTL Simulation : 237 / 300 [n/a] @ "487275000"
+// RTL Simulation : 238 / 300 [n/a] @ "489825000"
+// RTL Simulation : 239 / 300 [n/a] @ "492375000"
+// RTL Simulation : 240 / 300 [n/a] @ "494925000"
+// RTL Simulation : 241 / 300 [n/a] @ "498315000"
+// RTL Simulation : 242 / 300 [n/a] @ "501705000"
+// RTL Simulation : 243 / 300 [n/a] @ "505095000"
+// RTL Simulation : 244 / 300 [n/a] @ "508485000"
+// RTL Simulation : 245 / 300 [n/a] @ "511875000"
+// RTL Simulation : 246 / 300 [n/a] @ "515265000"
+// RTL Simulation : 247 / 300 [n/a] @ "518655000"
+// RTL Simulation : 248 / 300 [n/a] @ "522045000"
+// RTL Simulation : 249 / 300 [n/a] @ "525435000"
+// RTL Simulation : 250 / 300 [n/a] @ "528825000"
+// RTL Simulation : 251 / 300 [n/a] @ "532215000"
+// RTL Simulation : 252 / 300 [n/a] @ "535605000"
+// RTL Simulation : 253 / 300 [n/a] @ "538995000"
+// RTL Simulation : 254 / 300 [n/a] @ "542385000"
+// RTL Simulation : 255 / 300 [n/a] @ "545775000"
+// RTL Simulation : 256 / 300 [n/a] @ "549165000"
+// RTL Simulation : 257 / 300 [n/a] @ "550575000"
+// RTL Simulation : 258 / 300 [n/a] @ "552105000"
+// RTL Simulation : 259 / 300 [n/a] @ "553635000"
+// RTL Simulation : 260 / 300 [n/a] @ "555165000"
+// RTL Simulation : 261 / 300 [n/a] @ "556695000"
+// RTL Simulation : 262 / 300 [n/a] @ "558225000"
+// RTL Simulation : 263 / 300 [n/a] @ "559755000"
+// RTL Simulation : 264 / 300 [n/a] @ "561285000"
+// RTL Simulation : 265 / 300 [n/a] @ "562815000"
+// RTL Simulation : 266 / 300 [n/a] @ "564345000"
+// RTL Simulation : 267 / 300 [n/a] @ "565875000"
+// RTL Simulation : 268 / 300 [n/a] @ "567405000"
+// RTL Simulation : 269 / 300 [n/a] @ "568935000"
+// RTL Simulation : 270 / 300 [n/a] @ "570465000"
+// RTL Simulation : 271 / 300 [n/a] @ "571995000"
+// RTL Simulation : 272 / 300 [n/a] @ "573525000"
+// RTL Simulation : 273 / 300 [n/a] @ "575055000"
+// RTL Simulation : 274 / 300 [n/a] @ "576585000"
+// RTL Simulation : 275 / 300 [n/a] @ "578115000"
+// RTL Simulation : 276 / 300 [n/a] @ "579645000"
+// RTL Simulation : 277 / 300 [n/a] @ "581175000"
+// RTL Simulation : 278 / 300 [n/a] @ "582705000"
+// RTL Simulation : 279 / 300 [n/a] @ "584235000"
+// RTL Simulation : 280 / 300 [n/a] @ "585765000"
+// RTL Simulation : 281 / 300 [n/a] @ "587295000"
+// RTL Simulation : 282 / 300 [n/a] @ "588825000"
+// RTL Simulation : 283 / 300 [n/a] @ "590355000"
+// RTL Simulation : 284 / 300 [n/a] @ "591885000"
+// RTL Simulation : 285 / 300 [n/a] @ "593415000"
+// RTL Simulation : 286 / 300 [n/a] @ "594945000"
+// RTL Simulation : 287 / 300 [n/a] @ "596475000"
+// RTL Simulation : 288 / 300 [n/a] @ "598005000"
+// RTL Simulation : 289 / 300 [n/a] @ "599535000"
+// RTL Simulation : 290 / 300 [n/a] @ "601065000"
+// RTL Simulation : 291 / 300 [n/a] @ "602595000"
+// RTL Simulation : 292 / 300 [n/a] @ "604125000"
+// RTL Simulation : 293 / 300 [n/a] @ "605655000"
+// RTL Simulation : 294 / 300 [n/a] @ "607185000"
+// RTL Simulation : 295 / 300 [n/a] @ "608715000"
+// RTL Simulation : 296 / 300 [n/a] @ "610245000"
+// RTL Simulation : 297 / 300 [n/a] @ "611775000"
+// RTL Simulation : 298 / 300 [n/a] @ "613305000"
+// RTL Simulation : 299 / 300 [n/a] @ "614835000"
+// RTL Simulation : 300 / 300 [n/a] @ "616365000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 616425 ns : File "D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/sim/verilog/test.autotb.v" Line 428
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jun 10 15:16:07 2026...
+================================================
+  SHA-512/256 Dual-IP HLS Testbench
+  Vitis HLS 2024.2 | xczu3eg-sbva484-1-i
+  syn.top = test | 300 test cases
+================================================
+------------------------------------------------
+  Total tests : 300
+  Passed      : 300
+  Hash errors : 0
+  DEST errors : 0
+------------------------------------------------
+PASS: all 300 tests correct, TDEST routing verified.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 32
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,0 +1,731 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date              : Wed Jun 10 16:30:42 2026
+| Host              : nileshnadekar running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+| Design            : design_1_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Temperature Grade : I
+| Design State      : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Clock Regions : Clock Primitives
+5. Clock Regions : Load Primitives
+6. Clock Regions : Global Clock Summary
+7. Clock Regions : Routing Resource Utilization
+8. Device Cell Placement Summary for Global Clock g0
+9. Device Cell Placement Summary for Global Clock g1
+10. Device Cell Placement Summary for Global Clock g2
+11. Device Cell Placement Summary for Global Clock g3
+12. Device Cell Placement Summary for Global Clock g4
+13. Device Cell Placement Summary for Global Clock g5
+14. Device Cell Placement Summary for Global Clock g6
+15. Device Cell Placement Summary for Global Clock g7
+16. Device Cell Placement Summary for Global Clock g8
+17. Device Cell Placement Summary for Global Clock g9
+18. Device Cell Placement Summary for Global Clock g10
+19. Device Cell Placement Summary for Global Clock g11
+20. Device Cell Placement Summary for Global Clock g12
+21. Device Cell Placement Summary for Global Clock g13
+22. Device Cell Placement Summary for Global Clock g14
+23. Device Cell Placement Summary for Global Clock g15
+24. Device Cell Placement Summary for Global Clock g16
+25. Device Cell Placement Summary for Global Clock g17
+26. Clock Region Cell Placement per Global Clock: Region X0Y0
+27. Clock Region Cell Placement per Global Clock: Region X1Y0
+28. Clock Region Cell Placement per Global Clock: Region X0Y1
+29. Clock Region Cell Placement per Global Clock: Region X1Y1
+30. Clock Region Cell Placement per Global Clock: Region X0Y2
+31. Clock Region Cell Placement per Global Clock: Region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++------------+------+-----------+-----+--------------+--------+
+| Type       | Used | Available | LOC | Clock Region | Pblock |
++------------+------+-----------+-----+--------------+--------+
+| BUFGCE     |   17 |        88 |   0 |            0 |      0 |
+| BUFGCE_DIV |    0 |        12 |   0 |            0 |      0 |
+| BUFGCTRL   |    0 |        24 |   0 |            0 |      0 |
+| BUFG_PS    |    1 |        72 |   0 |            0 |      0 |
+| MMCM       |    0 |         3 |   0 |            0 |      0 |
+| PLL        |    0 |         6 |   0 |            0 |      0 |
++------------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Root | Clock Delay Group | Clock Low Fanout | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock    | Driver Pin                                                                                                                                                                                                                                                  | Net                                                                                                                                                                                                                                                   |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | src0      | BUFG_PS/O       | None       | BUFG_PS_X0Y58 | X0Y2         | X0Y1 |                   |                  |                 6 |       77483 |               0 |       10.000 | clk_pl_0 | design_1_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O                                                                                                                                                                                           | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                                                                                                                                                                             |
+| g1        | src1      | BUFGCE/O        | None       | BUFGCE_X0Y2   | X1Y0         | X1Y0 | n/a               |                  |                 2 |           0 |            1940 |          n/a | n/a      | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/m_axis_updt_sts_tready_i_1_bufg_place/O                                                                                                                                                   | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_ASYNC_RESET.scndry_resetn_reg_0                                                                                                                                                 |
+| g2        | src2      | BUFGCE/O        | None       | BUFGCE_X0Y50  | X1Y2         | X1Y2 | n/a               |                  |                 2 |           0 |            1483 |          n/a | n/a      | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2_bufg_place/O                                          | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g3        | src3      | BUFGCE/O        | None       | BUFGCE_X0Y30  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            1042 |          n/a | n/a      | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1_bufg_place/O | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g4        | src4      | BUFGCE/O        | None       | BUFGCE_X0Y24  | X1Y1         | X1Y1 | n/a               |                  |                 3 |           0 |            1152 |          n/a | n/a      | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1_bufg_place/O                                                                                                                     | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g5        | src5      | BUFGCE/O        | None       | BUFGCE_X0Y37  | X1Y1         | X1Y1 | n/a               |                  |                 1 |           0 |            1024 |          n/a | n/a      | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1_bufg_place/O   | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g6        | src6      | BUFGCE/O        | None       | BUFGCE_X0Y56  | X1Y2         | X1Y2 | n/a               |                  |                 2 |           0 |            1483 |          n/a | n/a      | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2_bufg_place/O                                          | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g7        | src7      | BUFGCE/O        | None       | BUFGCE_X0Y31  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            1042 |          n/a | n/a      | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1_bufg_place/O | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g8        | src8      | BUFGCE/O        | None       | BUFGCE_X0Y25  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            1152 |          n/a | n/a      | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1_bufg_place/O                                                                                                                     | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g9        | src9      | BUFGCE/O        | None       | BUFGCE_X0Y39  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            1024 |          n/a | n/a      | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1_bufg_place/O   | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g10       | src10     | BUFGCE/O        | None       | BUFGCE_X0Y62  | X1Y2         | X1Y2 | n/a               |                  |                 3 |           0 |            1483 |          n/a | n/a      | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2_bufg_place/O                                          | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g11       | src11     | BUFGCE/O        | None       | BUFGCE_X0Y33  | X1Y1         | X1Y1 | n/a               |                  |                 3 |           0 |            1042 |          n/a | n/a      | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1_bufg_place/O | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g12       | src12     | BUFGCE/O        | None       | BUFGCE_X0Y27  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            1152 |          n/a | n/a      | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1_bufg_place/O                                                                                                                     | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g13       | src13     | BUFGCE/O        | None       | BUFGCE_X0Y40  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            1024 |          n/a | n/a      | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1_bufg_place/O   | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g14       | src14     | BUFGCE/O        | None       | BUFGCE_X0Y68  | X1Y2         | X1Y2 | n/a               |                  |                 3 |           0 |            1483 |          n/a | n/a      | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2_bufg_place/O                                          | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g15       | src15     | BUFGCE/O        | None       | BUFGCE_X0Y36  | X1Y1         | X1Y1 | n/a               |                  |                 3 |           0 |            1042 |          n/a | n/a      | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1_bufg_place/O | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g16       | src16     | BUFGCE/O        | None       | BUFGCE_X0Y28  | X1Y1         | X1Y1 | n/a               |                  |                 1 |           0 |            1152 |          n/a | n/a      | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1_bufg_place/O                                                                                                                     | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g17       | src17     | BUFGCE/O        | None       | BUFGCE_X0Y42  | X1Y1         | X1Y1 | n/a               |                  |                 1 |           0 |            1024 |          n/a | n/a      | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1_bufg_place/O   | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site          | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                                                                                                                                                                                                       | Net                                                                                                                                                                                                                                                              |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| src0      | g0        | PS8/PLCLK[0]    | None       | PS8_X0Y0      | X0Y0         |           1 |               0 |              10.000 | clk_pl_0     | design_1_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]                                                                                                                                                                                                 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]                                                                                                                                                                                                           |
+| src1      | g1        | LUT2/O          | None       | SLICE_X27Y20  | X0Y0         |           1 |              90 |                     |              | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/m_axis_updt_sts_tready_i_1/O                                                                                                                                                   | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_ASYNC_RESET.scndry_resetn_reg_0_bufg_place                                                                                                                                                 |
+| src2      | g2        | LUT3/O          | None       | SLICE_X30Y115 | X1Y1         |           1 |              15 |                     |              | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2/O                                          | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]_bufg_place                                                            |
+| src3      | g3        | LUT5/O          | None       | SLICE_X30Y113 | X1Y1         |           1 |               0 |                     |              | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1/O | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3_bufg_place |
+| src4      | g4        | LUT4/O          | None       | SLICE_X17Y132 | X0Y2         |           1 |               0 |                     |              | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1/O                                                                                                                     | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960_bufg_place                                                                                                                                 |
+| src5      | g5        | LUT5/O          | None       | SLICE_X8Y100  | X0Y1         |           1 |               0 |                     |              | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1/O   | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]_bufg_place                                    |
+| src6      | g6        | LUT3/O          | None       | SLICE_X48Y118 | X1Y1         |           1 |              15 |                     |              | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2/O                                          | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]_bufg_place                                                            |
+| src7      | g7        | LUT5/O          | None       | SLICE_X48Y118 | X1Y1         |           1 |               0 |                     |              | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1/O | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3_bufg_place |
+| src8      | g8        | LUT4/O          | None       | SLICE_X48Y130 | X1Y2         |           1 |               0 |                     |              | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1/O                                                                                                                     | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960_bufg_place                                                                                                                                 |
+| src9      | g9        | LUT5/O          | None       | SLICE_X45Y61  | X1Y1         |           1 |               0 |                     |              | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1/O   | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]_bufg_place                                    |
+| src10     | g10       | LUT3/O          | None       | SLICE_X36Y150 | X1Y2         |           1 |              15 |                     |              | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2/O                                          | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]_bufg_place                                                            |
+| src11     | g11       | LUT5/O          | None       | SLICE_X42Y149 | X1Y2         |           1 |               0 |                     |              | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1/O | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3_bufg_place |
+| src12     | g12       | LUT4/O          | None       | SLICE_X41Y162 | X1Y2         |           1 |               0 |                     |              | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1/O                                                                                                                     | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960_bufg_place                                                                                                                                 |
+| src13     | g13       | LUT5/O          | None       | SLICE_X32Y173 | X1Y2         |           1 |               0 |                     |              | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1/O   | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]_bufg_place                                    |
+| src14     | g14       | LUT3/O          | None       | SLICE_X16Y147 | X0Y2         |           1 |              15 |                     |              | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2/O                                          | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]_bufg_place                                                            |
+| src15     | g15       | LUT5/O          | None       | SLICE_X17Y148 | X0Y2         |           1 |               0 |                     |              | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1/O | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3_bufg_place |
+| src16     | g16       | LUT4/O          | None       | SLICE_X19Y154 | X0Y2         |           1 |               0 |                     |              | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1/O                                                                                                                     | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960_bufg_place                                                                                                                                 |
+| src17     | g17       | LUT5/O          | None       | SLICE_X12Y156 | X0Y2         |           1 |               0 |                     |              | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1/O   | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]_bufg_place                                    |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+
+
+4. Clock Regions : Clock Primitives
+-----------------------------------
+
++-------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                   |  Global Clock |     BUFGCE    |   BUFGCE_DIV  |    BUFGCTRL   |    BUFG_GT    |    BUFG_PS    |      MMCM     |      PLL      |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| Clock Region Name | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| X0Y0              |     2 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X1Y0              |     4 |    24 |     1 |    28 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X0Y1              |     9 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X1Y1              |    13 |    24 |    12 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X0Y2              |    10 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     1 |    24 |     0 |     0 |     0 |     0 |
+| X1Y2              |    10 |    24 |     4 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+5. Clock Regions : Load Primitives
+----------------------------------
+
++-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+|                   |   Global Clock   |        FF        |      LUTRAM      |  Block RAM (18K) |        DSP       |        GT        |      HARD IP     |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| Clock Region Name | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| X0Y0              |      2 |      24 |  15325 |   27840 |    706 |    4800 |      4 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y0              |      4 |      24 |  10323 |   19200 |    179 |    4800 |      9 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
+| X0Y1              |      9 |      24 |  13985 |   27840 |    721 |    4800 |      6 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y1              |     13 |      24 |   9444 |   19200 |    753 |    4800 |      4 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
+| X0Y2              |     10 |      24 |  15389 |   27840 |    397 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y2              |     10 |      24 |   9755 |   19200 |    491 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+6. Clock Regions : Global Clock Summary
+---------------------------------------
+
+All Modules
++----+----+----+
+|    | X0 | X1 |
++----+----+----+
+| Y2 | 10 | 12 |
+| Y1 |  9 | 17 |
+| Y0 |  2 |  4 |
++----+----+----+
+
+
+7. Clock Regions : Routing Resource Utilization
+-----------------------------------------------
+
+All Modules
++-------------------+----------------------+----------------------+----------------------+----------------------+
+|                   |        HROUTES       |        HDISTRS       |        VROUTES       |        VDISTRS       |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+| Clock Region Name | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+| X0Y0              |    0 |    24 |  0.00 |    2 |    24 |  8.33 |    0 |    24 |  0.00 |    1 |    24 |  4.17 |
+| X1Y0              |    0 |    24 |  0.00 |    4 |    24 | 16.67 |    0 |    24 |  0.00 |    2 |    24 |  8.33 |
+| X0Y1              |    0 |    24 |  0.00 |    9 |    24 | 37.50 |    1 |    24 |  4.17 |    1 |    24 |  4.17 |
+| X1Y1              |    0 |    24 |  0.00 |   13 |    24 | 54.17 |    0 |    24 |  0.00 |   13 |    24 | 54.17 |
+| X0Y2              |    1 |    24 |  4.17 |   10 |    24 | 41.67 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |
+| X1Y2              |    0 |    24 |  0.00 |   10 |    24 | 41.67 |    0 |    24 |  0.00 |    4 |    24 | 16.67 |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+
+
+8. Device Cell Placement Summary for Global Clock g0
+----------------------------------------------------
+
++-----------+-----------------+-------------------+----------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock    | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                       |
++-----------+-----------------+-------------------+----------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------+
+| g0        | BUFG_PS/O       | X0Y2              | clk_pl_0 |      10.000 | {0.000 5.000} | X0Y1     |       77483 |        0 |              0 |        0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0 |
++-----------+-----------------+-------------------+----------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------------+--------+-----------------------+
+|    | X0         | X1     | HORIZONTAL PROG DELAY |
++----+------------+--------+-----------------------+
+| Y2 |  (D) 15786 |  10246 |                     1 |
+| Y1 |  (R) 14709 |  10199 |                     1 |
+| Y0 |      16035 |  10508 |                     0 |
++----+------------+--------+-----------------------+
+
+
+9. Device Cell Placement Summary for Global Clock g1
+----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------+
+| g1        | BUFGCE/O        | X1Y0              |       |             |               | X1Y0     |        1940 |        0 |              0 |        0 | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_ASYNC_RESET.scndry_resetn_reg_0 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+--------------+-----------------------+
+|    | X0   | X1           | HORIZONTAL PROG DELAY |
++----+------+--------------+-----------------------+
+| Y2 |    0 |            0 |                     - |
+| Y1 |    0 |            0 |                     - |
+| Y0 |  188 | (R) (D) 1752 |                     0 |
++----+------+--------------+-----------------------+
+
+
+10. Device Cell Placement Summary for Global Clock g2
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                        |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g2        | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1483 |        0 |              0 |        0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-----------+-----------------------+
+|    | X0   | X1        | HORIZONTAL PROG DELAY |
++----+------+-----------+-----------------------+
+| Y2 |    0 | (R) (D) 0 |                     - |
+| Y1 |  864 |       619 |                     0 |
+| Y0 |    0 |         0 |                     - |
++----+------+-----------+-----------------------+
+
+
+11. Device Cell Placement Summary for Global Clock g3
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g3        | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1042 |        0 |              0 |        0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-------------+-----------------------+
+|    | X0   | X1          | HORIZONTAL PROG DELAY |
++----+------+-------------+-----------------------+
+| Y2 |    0 |           0 |                     - |
+| Y1 |  743 | (R) (D) 299 |                     0 |
+| Y0 |    0 |           0 |                     - |
++----+------+-------------+-----------------------+
+
+
+12. Device Cell Placement Summary for Global Clock g4
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| g4        | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1152 |        0 |              0 |        0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-----------+-----------------------+
+|    | X0   | X1        | HORIZONTAL PROG DELAY |
++----+------+-----------+-----------------------+
+| Y2 |  382 |         0 |                     0 |
+| Y1 |  769 | (R) (D) 1 |                     0 |
+| Y0 |    0 |         0 |                     - |
++----+------+-----------+-----------------------+
+
+
+13. Device Cell Placement Summary for Global Clock g5
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g5        | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1024 |        0 |              0 |        0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-------+-----------+-----------------------+
+|    | X0    | X1        | HORIZONTAL PROG DELAY |
++----+-------+-----------+-----------------------+
+| Y2 |     0 |         0 |                     - |
+| Y1 |  1024 | (R) (D) 0 |                     0 |
+| Y0 |     0 |         0 |                     - |
++----+-------+-----------+-----------------------+
+
+
+14. Device Cell Placement Summary for Global Clock g6
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                        |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g6        | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1483 |        0 |              0 |        0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-----+-----------+-----------------------+
+|    | X0  | X1        | HORIZONTAL PROG DELAY |
++----+-----+-----------+-----------------------+
+| Y2 |   0 | (R) (D) 0 |                     - |
+| Y1 |  16 |      1467 |                     0 |
+| Y0 |   0 |         0 |                     - |
++----+-----+-----------+-----------------------+
+
+
+15. Device Cell Placement Summary for Global Clock g7
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g7        | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1042 |        0 |              0 |        0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-----+--------------+-----------------------+
+|    | X0  | X1           | HORIZONTAL PROG DELAY |
++----+-----+--------------+-----------------------+
+| Y2 |   0 |            0 |                     - |
+| Y1 |  16 | (R) (D) 1026 |                     0 |
+| Y0 |   0 |            0 |                     - |
++----+-----+--------------+-----------------------+
+
+
+16. Device Cell Placement Summary for Global Clock g8
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| g8        | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1152 |        0 |              0 |        0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+-------------+-----------------------+
+|    | X0 | X1          | HORIZONTAL PROG DELAY |
++----+----+-------------+-----------------------+
+| Y2 |  0 |           0 |                     - |
+| Y1 |  0 | (R) (D) 442 |                     0 |
+| Y0 |  0 |         710 |                     0 |
++----+----+-------------+-----------------------+
+
+
+17. Device Cell Placement Summary for Global Clock g9
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g9        | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1024 |        0 |              0 |        0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+-------------+-----------------------+
+|    | X0 | X1          | HORIZONTAL PROG DELAY |
++----+----+-------------+-----------------------+
+| Y2 |  0 |           0 |                     - |
+| Y1 |  0 | (R) (D) 251 |                     0 |
+| Y0 |  0 |         773 |                     0 |
++----+----+-------------+-----------------------+
+
+
+18. Device Cell Placement Summary for Global Clock g10
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                        |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g10       | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1483 |        0 |              0 |        0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+--------------+-----------------------+
+|    | X0   | X1           | HORIZONTAL PROG DELAY |
++----+------+--------------+-----------------------+
+| Y2 |  257 | (R) (D) 1079 |                     0 |
+| Y1 |    0 |          147 |                     0 |
+| Y0 |    0 |            0 |                     - |
++----+------+--------------+-----------------------+
+
+
+19. Device Cell Placement Summary for Global Clock g11
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g11       | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1042 |        0 |              0 |        0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-------------+-----------------------+
+|    | X0   | X1          | HORIZONTAL PROG DELAY |
++----+------+-------------+-----------------------+
+| Y2 |  193 |         732 |                     0 |
+| Y1 |    0 | (R) (D) 117 |                     0 |
+| Y0 |    0 |           0 |                     - |
++----+------+-------------+-----------------------+
+
+
+20. Device Cell Placement Summary for Global Clock g12
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| g12       | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1152 |        0 |              0 |        0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+-----------+-----------------------+
+|    | X0 | X1        | HORIZONTAL PROG DELAY |
++----+----+-----------+-----------------------+
+| Y2 |  5 |      1147 |                     0 |
+| Y1 |  0 | (R) (D) 0 |                     - |
+| Y0 |  0 |         0 |                     - |
++----+----+-----------+-----------------------+
+
+
+21. Device Cell Placement Summary for Global Clock g13
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g13       | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1024 |        0 |              0 |        0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-----------+-----------------------+
+|    | X0   | X1        | HORIZONTAL PROG DELAY |
++----+------+-----------+-----------------------+
+| Y2 |  877 |       147 |                     0 |
+| Y1 |    0 | (R) (D) 0 |                     - |
+| Y0 |    0 |         0 |                     - |
++----+------+-----------+-----------------------+
+
+
+22. Device Cell Placement Summary for Global Clock g14
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                        |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g14       | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1483 |        0 |              0 |        0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-------+-----------+-----------------------+
+|    | X0    | X1        | HORIZONTAL PROG DELAY |
++----+-------+-----------+-----------------------+
+| Y2 |     4 | (R) (D) 0 |                     0 |
+| Y1 |  1420 |        59 |                     0 |
+| Y0 |     0 |         0 |                     - |
++----+-------+-----------+-----------------------+
+
+
+23. Device Cell Placement Summary for Global Clock g15
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g15       | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1042 |        0 |              0 |        0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+------------+-----------------------+
+|    | X0   | X1         | HORIZONTAL PROG DELAY |
++----+------+------------+-----------------------+
+| Y2 |  139 |          0 |                     0 |
+| Y1 |  844 | (R) (D) 59 |                     0 |
+| Y0 |    0 |          0 |                     - |
++----+------+------------+-----------------------+
+
+
+24. Device Cell Placement Summary for Global Clock g16
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                   |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+| g16       | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1152 |        0 |              0 |        0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-------+-----------+-----------------------+
+|    | X0    | X1        | HORIZONTAL PROG DELAY |
++----+-------+-----------+-----------------------+
+| Y2 |  1152 |         0 |                     0 |
+| Y1 |     0 | (R) (D) 0 |                     - |
+| Y0 |     0 |         0 |                     - |
++----+-------+-----------+-----------------------+
+
+
+25. Device Cell Placement Summary for Global Clock g17
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g17       | BUFGCE/O        | X1Y1              |       |             |               | X1Y1     |        1024 |        0 |              0 |        0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-------+-----------+-----------------------+
+|    | X0    | X1        | HORIZONTAL PROG DELAY |
++----+-------+-----------+-----------------------+
+| Y2 |  1024 |         0 |                     0 |
+| Y1 |     0 | (R) (D) 0 |                     - |
+| Y0 |     0 |         0 |                     - |
++----+-------+-----------+-----------------------+
+
+
+26. Clock Region Cell Placement per Global Clock: Region X0Y0
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                   |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------+
+| g0        | 10    | BUFG_PS/O       | None       |       16035 |               0 | 15325 |         706 |    3 |   0 |  0 |    0 |   0 |       0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                             |
+| g1        | 2     | BUFGCE/O        | None       |           0 |             188 |   188 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_ASYNC_RESET.scndry_resetn_reg_0 |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+27. Clock Region Cell Placement per Global Clock: Region X1Y0
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 10    | BUFG_PS/O       | None       |       10508 |               0 | 10323 |         179 |    6 |   0 |  0 |    0 |   0 |       0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                                                                                                                                          |
+| g1        | 2     | BUFGCE/O        | None       |           0 |            1752 |  1752 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/axi_mcdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_ASYNC_RESET.scndry_resetn_reg_0                                                                                                              |
+| g8        | 1     | BUFGCE/O        | None       |           0 |             710 |   710 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                              |
+| g9        | 15    | BUFGCE/O        | None       |           0 |             773 |   773 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+28. Clock Region Cell Placement per Global Clock: Region X0Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                   |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 10    | BUFG_PS/O       | None       |       14709 |               0 | 13985 |         721 |    3 |   0 |  0 |    0 |   0 |       0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                                                                                                                                                                             |
+| g2        | 2     | BUFGCE/O        | None       |           0 |             864 |   864 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g3        | 6     | BUFGCE/O        | None       |           0 |             743 |   743 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g4        | 0     | BUFGCE/O        | None       |           0 |             769 |   769 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g5        | 13    | BUFGCE/O        | None       |           0 |            1024 |  1024 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g6        | 8     | BUFGCE/O        | None       |           0 |              16 |    16 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g7        | 7     | BUFGCE/O        | None       |           0 |              16 |    16 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g14       | 20    | BUFGCE/O        | None       |           0 |            1420 |  1420 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g15       | 12    | BUFGCE/O        | None       |           0 |             844 |   844 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+29. Clock Region Cell Placement per Global Clock: Region X1Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                   |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 10    | BUFG_PS/O       | None       |       10199 |               0 | 9444 |         753 |    2 |   0 |  0 |    0 |   0 |       0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                                                                                                                                                                             |
+| g2        | 2     | BUFGCE/O        | None       |           0 |             619 |  619 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g3        | 6     | BUFGCE/O        | None       |           0 |             299 |  299 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g4        | 0     | BUFGCE/O        | None       |           0 |               1 |    1 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g5+       | 13    | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g6        | 8     | BUFGCE/O        | None       |           0 |            1467 | 1467 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g7        | 7     | BUFGCE/O        | None       |           0 |            1026 | 1026 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g8        | 1     | BUFGCE/O        | None       |           0 |             442 |  442 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g9        | 15    | BUFGCE/O        | None       |           0 |             251 |  251 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g10       | 14    | BUFGCE/O        | None       |           0 |             147 |  147 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g11       | 9     | BUFGCE/O        | None       |           0 |             117 |  117 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g12+      | 3     | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g13+      | 16    | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g14       | 20    | BUFGCE/O        | None       |           0 |              59 |   59 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g15       | 12    | BUFGCE/O        | None       |           0 |              59 |   59 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g16+      | 4     | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g17+      | 18    | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+30. Clock Region Cell Placement per Global Clock: Region X0Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                   |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 10    | BUFG_PS/O       | None       |       15786 |               0 | 15389 |         397 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                                                                                                                                                                             |
+| g4        | 0     | BUFGCE/O        | None       |           0 |             382 |   382 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g10       | 14    | BUFGCE/O        | None       |           0 |             257 |   257 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g11       | 9     | BUFGCE/O        | None       |           0 |             193 |   193 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g12       | 3     | BUFGCE/O        | None       |           0 |               5 |     5 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g13       | 16    | BUFGCE/O        | None       |           0 |             877 |   877 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g14       | 20    | BUFGCE/O        | None       |           0 |               4 |     4 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g15       | 12    | BUFGCE/O        | None       |           0 |             139 |   139 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g16       | 4     | BUFGCE/O        | None       |           0 |            1152 |  1152 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g17       | 18    | BUFGCE/O        | None       |           0 |            1024 |  1024 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+31. Clock Region Cell Placement per Global Clock: Region X1Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                   |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 10    | BUFG_PS/O       | None       |       10246 |               0 | 9755 |         491 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk0                                                                                                                                                                                                             |
+| g2+       | 2     | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g4+       | 0     | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_0/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g6+       | 8     | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_1/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g10       | 14    | BUFGCE/O        | None       |           0 |            1079 | 1079 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g11       | 9     | BUFGCE/O        | None       |           0 |             732 |  732 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g12       | 3     | BUFGCE/O        | None       |           0 |            1147 | 1147 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g13       | 16    | BUFGCE/O        | None       |           0 |             147 |  147 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_2/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
+| g14+      | 20    | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g15+      | 12    | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g16+      | 4     | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g17+      | 18    | BUFGCE/O        | None       |           0 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | design_1_i/test_3/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+

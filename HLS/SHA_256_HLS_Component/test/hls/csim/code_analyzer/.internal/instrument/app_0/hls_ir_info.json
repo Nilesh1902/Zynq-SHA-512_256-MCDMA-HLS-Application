@@ -1,0 +1,455 @@
+{
+    "top_level_hw_fn_id": 1541,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_tb.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_tb",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\tb.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\tb.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "203": {
+            "fn_id": 203,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "563": {
+            "fn_id": 563,
+            "mangled_name": "_GLOBAL__sub_I_test.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_test",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "564": {
+            "fn_id": 564,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "565": {
+            "fn_id": 565,
+            "mangled_name": "__dtor__ZStL8__ioinit.4",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "1538": {
+            "fn_id": 1538,
+            "mangled_name": "_GLOBAL__sub_I_test.cpp.73",
+            "fully_qualified_name": "_GLOBAL__sub_I_test",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "1539": {
+            "fn_id": 1539,
+            "mangled_name": "__cxx_global_var_init.74",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "1540": {
+            "fn_id": 1540,
+            "mangled_name": "__dtor__ZStL8__ioinit.76",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "1541": {
+            "fn_id": 1541,
+            "mangled_name": "_Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELy0ELy0ELy3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELy0ELy0ELy3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE",
+            "fully_qualified_name": "test",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 131,
+                "column": 1
+            }
+        },
+        "1542": {
+            "fn_id": 1542,
+            "mangled_name": "_ZL12axis_to_coreRN3hls6streamINS_4axisI7ap_uintILi64EELy0ELy0ELy3ELh56ELb0EEELi0EEES2_ILi128EERNS0_IS3_Li0EEERNS0_IS7_Li0EEERNS0_IbLi0EEE",
+            "fully_qualified_name": "axis_to_core",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 48,
+                "column": 1
+            }
+        },
+        "1543": {
+            "fn_id": 1543,
+            "mangled_name": "_ZN2xf8security8sha512_tILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS3_IS4_ILi128EELi0EEERNS3_IbLi0EEERNS3_IS4_IXT0_EELi0EEESC_",
+            "fully_qualified_name": "xf::security::sha512_t<64u, 256u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 1323,
+                "column": 1
+            }
+        },
+        "1544": {
+            "fn_id": 1544,
+            "mangled_name": "_ZL12core_to_axisRN3hls6streamI7ap_uintILi256EELi0EEERNS0_IbLi0EEERNS0_INS_4axisIS2_Ly0ELy0ELy3ELh56ELb0EEELi0EEES1_ILi2EE",
+            "fully_qualified_name": "core_to_axis",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                "line": 87,
+                "column": 1
+            }
+        },
+        "21": {
+            "fn_id": 21,
+            "mangled_name": "llvm.fpga.fifo.push.s_struct.xf::security::internal::blockTypes.p0s_struct.xf::security::internal::blockTypes",
+            "fully_qualified_name": "llvm.fpga.fifo.push.s_struct.xf::security::internal::blockTypes.p0s_struct.xf::security::internal::blockTypes",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "20": {
+            "fn_id": 20,
+            "mangled_name": "llvm.fpga.fifo.pop.s_struct.hls::axis.39s.p0s_struct.hls::axis.39s",
+            "fully_qualified_name": "llvm.fpga.fifo.pop.s_struct.hls::axis.39s.p0s_struct.hls::axis.39s",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "1545": {
+            "fn_id": 1545,
+            "mangled_name": "_ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_",
+            "fully_qualified_name": "xf::security::internal::sha512Top<64u, 256u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 848,
+                "column": 1
+            }
+        },
+        "1546": {
+            "fn_id": 1546,
+            "mangled_name": "_ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_",
+            "fully_qualified_name": "xf::security::internal::preProcessing<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 69,
+                "column": 1
+            }
+        },
+        "1547": {
+            "fn_id": 1547,
+            "mangled_name": "_ZN2xf8security8internal8dup_strmILj128EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IbLi0EEES8_SA_S8_SA_",
+            "fully_qualified_name": "xf::security::internal::dup_strm<128u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 541,
+                "column": 1
+            }
+        },
+        "1548": {
+            "fn_id": 1548,
+            "mangled_name": "_ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE",
+            "fully_qualified_name": "xf::security::internal::generateMsgSchedule<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 586,
+                "column": 1
+            }
+        },
+        "1549": {
+            "fn_id": 1549,
+            "mangled_name": "_ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_",
+            "fully_qualified_name": "xf::security::internal::SHA512Digest<64u, 256u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 652,
+                "column": 1
+            }
+        },
+        "1550": {
+            "fn_id": 1550,
+            "mangled_name": "_ZN2xf8security8internal5BSIG1ILj64EEE7ap_uintIXT_EES4_",
+            "fully_qualified_name": "xf::security::internal::BSIG1<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 474,
+                "column": 1
+            }
+        },
+        "1551": {
+            "fn_id": 1551,
+            "mangled_name": "_ZN2xf8security8internal2ChILj64EEE7ap_uintIXT_EES4_S4_S4_",
+            "fully_qualified_name": "xf::security::internal::Ch<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 405,
+                "column": 1
+            }
+        },
+        "1552": {
+            "fn_id": 1552,
+            "mangled_name": "_ZN2xf8security8internal5BSIG0ILj64EEE7ap_uintIXT_EES4_",
+            "fully_qualified_name": "xf::security::internal::BSIG0<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 453,
+                "column": 1
+            }
+        },
+        "1553": {
+            "fn_id": 1553,
+            "mangled_name": "_ZN2xf8security8internal3MajILj64EEE7ap_uintIXT_EES4_S4_S4_",
+            "fully_qualified_name": "xf::security::internal::Maj<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 430,
+                "column": 1
+            }
+        },
+        "1554": {
+            "fn_id": 1554,
+            "mangled_name": "_ZN2xf8security8internal4ROTRILj64EEE7ap_uintIXT_EEjS4_",
+            "fully_qualified_name": "xf::security::internal::ROTR<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 381,
+                "column": 1
+            }
+        },
+        "1555": {
+            "fn_id": 1555,
+            "mangled_name": "_ZN2xf8security8internal5SSIG1ILj64EEE7ap_uintIXT_EES4_",
+            "fully_qualified_name": "xf::security::internal::SSIG1<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 516,
+                "column": 1
+            }
+        },
+        "1556": {
+            "fn_id": 1556,
+            "mangled_name": "_ZN2xf8security8internal5SSIG0ILj64EEE7ap_uintIXT_EES4_",
+            "fully_qualified_name": "xf::security::internal::SSIG0<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 495,
+                "column": 1
+            }
+        },
+        "1557": {
+            "fn_id": 1557,
+            "mangled_name": "_ZN2xf8security8internal3SHRILj64EEE7ap_uintIXT_EEjS4_",
+            "fully_qualified_name": "xf::security::internal::SHR<64u>",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                "line": 358,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "177": {
+            "fn_id": 1542,
+            "lp_id": 177,
+            "label": "FEED_LOOP"
+        },
+        "178": {
+            "fn_id": 1544,
+            "lp_id": 178,
+            "label": "DRAIN_LOOP"
+        },
+        "179": {
+            "fn_id": 1546,
+            "lp_id": 179,
+            "label": "LOOP_PREPROCESSING_MAIN"
+        },
+        "180": {
+            "fn_id": 1546,
+            "lp_id": 180,
+            "label": "LOOP_GEN_FULL_BLKS"
+        },
+        "181": {
+            "fn_id": 1546,
+            "lp_id": 181,
+            "label": "LOOP_GEN_ONE_FULL_BLK"
+        },
+        "182": {
+            "fn_id": 1546,
+            "lp_id": 182,
+            "label": "LOOP_COPY_AND_PAD_1"
+        },
+        "183": {
+            "fn_id": 1546,
+            "lp_id": 183,
+            "label": "LOOP_PAD_14_ZERO_WORDS"
+        },
+        "184": {
+            "fn_id": 1546,
+            "lp_id": 184,
+            "label": "LOOP_COPY_TAIL_AND_PAD_1"
+        },
+        "185": {
+            "fn_id": 1546,
+            "lp_id": 185,
+            "label": "LOOP_PAD_13_ZERO_WORDS"
+        },
+        "186": {
+            "fn_id": 1547,
+            "lp_id": 186,
+            "label": "LOOP_DUP_STREAM"
+        },
+        "187": {
+            "fn_id": 1548,
+            "lp_id": 187,
+            "label": "LOOP_GEN_W_MAIN"
+        },
+        "188": {
+            "fn_id": 1548,
+            "lp_id": 188,
+            "label": "LOOP_GEN_W_NBLK"
+        },
+        "189": {
+            "fn_id": 1548,
+            "lp_id": 189,
+            "label": "LOOP_SHA512_GEN_WT16"
+        },
+        "190": {
+            "fn_id": 1548,
+            "lp_id": 190,
+            "label": "LOOP_SHA1_GEN_WT64"
+        },
+        "191": {
+            "fn_id": 1548,
+            "lp_id": 191
+        },
+        "192": {
+            "fn_id": 1549,
+            "lp_id": 192,
+            "label": "LOOP_SHA1_MAIN"
+        },
+        "193": {
+            "fn_id": 1549,
+            "lp_id": 193,
+            "label": "LOOP_SHA1_DIGEST_NBLK"
+        },
+        "194": {
+            "fn_id": 1549,
+            "lp_id": 194,
+            "label": "LOOP_SHA1_UPDATE_80_ROUNDS"
+        },
+        "195": {
+            "fn_id": 1549,
+            "lp_id": 195,
+            "label": "LOOP_SHA512_EMIT"
+        }
+    }
+}

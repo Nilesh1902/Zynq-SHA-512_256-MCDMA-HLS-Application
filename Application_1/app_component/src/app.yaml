@@ -1,0 +1,4 @@
+domain_path: D:\Nilesh_3\Application\platform\export\platform\sw\standalone_psu_cortexa53_0
+app_src_dir: D:\version_2024.2\Vitis\2024.2\data\embeddedsw\lib\sw_apps\empty_application
+template: empty_application
+lang: c

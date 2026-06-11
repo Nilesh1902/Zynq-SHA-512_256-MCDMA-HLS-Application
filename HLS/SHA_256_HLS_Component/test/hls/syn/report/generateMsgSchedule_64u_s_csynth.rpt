@@ -1,0 +1,196 @@
+
+
+================================================================
+== Vitis HLS Report for 'generateMsgSchedule_64u_s'
+================================================================
+* Date:           Wed Jun 10 15:15:07 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.657 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       92|       92|  0.920 us|  0.920 us|   92|   92|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                                  |                                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                             Instance                             |                         Module                        |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16_fu_216  |generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16  |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254    |generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64    |       66|       66|  0.660 us|  0.660 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- LOOP_GEN_W_MAIN   |       91|       91|        91|          -|          -|     1|        no|
+        | + LOOP_GEN_W_NBLK  |       89|       89|        89|          -|          -|     1|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    276|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|    2195|    815|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    111|    -|
+|Register         |        -|    -|    1419|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|    3614|   1202|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       2|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-----+-----+
+    |                             Instance                             |                         Module                        | BRAM_18K| DSP|  FF  | LUT | URAM|
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-----+-----+
+    |grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254    |generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64    |        0|   0|  1099|  676|    0|
+    |grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16_fu_216  |generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16  |        0|   0|  1096|  139|    0|
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-----+-----+
+    |Total                                                             |                                                       |        0|   0|  2195|  815|    0|
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+-----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+-----+------------+------------+
+    |i_2_fu_281_p2         |         +|   0|  0|  135|         128|           1|
+    |ap_block_state2       |       and|   0|  0|    2|           1|           1|
+    |icmp_ln600_fu_276_p2  |      icmp|   0|  0|  135|         128|         128|
+    |ap_block_state1       |        or|   0|  0|    2|           1|           1|
+    |ap_block_state3       |        or|   0|  0|    2|           1|           1|
+    +----------------------+----------+----+---+-----+------------+------------+
+    |Total                 |          |   0|  0|  276|         259|         132|
+    +----------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm             |  43|          8|    1|          8|
+    |ap_done               |   9|          2|    1|          2|
+    |blk_strm_blk_n        |   9|          2|    1|          2|
+    |end_nblk_strm1_blk_n  |   9|          2|    1|          2|
+    |i_reg_205             |   9|          2|  128|        256|
+    |nblk_strm1_blk_n      |   9|          2|    1|          2|
+    |w_strm_din            |   9|          2|   64|        128|
+    |w_strm_write          |  14|          3|    1|          3|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 | 111|         23|  198|        403|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------------------+-----+----+-----+-----------+
+    |                                      Name                                     |  FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                                                                      |    7|   0|    7|          0|
+    |ap_done_reg                                                                    |    1|   0|    1|          0|
+    |blk_10_reg_696                                                                 |   64|   0|   64|          0|
+    |blk_11_reg_701                                                                 |   64|   0|   64|          0|
+    |blk_12_reg_706                                                                 |   64|   0|   64|          0|
+    |blk_13_reg_711                                                                 |   64|   0|   64|          0|
+    |blk_14_reg_716                                                                 |   64|   0|   64|          0|
+    |blk_15_reg_691                                                                 |   64|   0|   64|          0|
+    |blk_1_reg_646                                                                  |   64|   0|   64|          0|
+    |blk_2_reg_651                                                                  |   64|   0|   64|          0|
+    |blk_3_reg_656                                                                  |   64|   0|   64|          0|
+    |blk_4_reg_661                                                                  |   64|   0|   64|          0|
+    |blk_5_reg_666                                                                  |   64|   0|   64|          0|
+    |blk_6_reg_671                                                                  |   64|   0|   64|          0|
+    |blk_7_reg_676                                                                  |   64|   0|   64|          0|
+    |blk_8_reg_681                                                                  |   64|   0|   64|          0|
+    |blk_9_reg_686                                                                  |   64|   0|   64|          0|
+    |blk_reg_641                                                                    |   64|   0|   64|          0|
+    |end_1_reg_196                                                                  |    1|   0|    1|          0|
+    |grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254_ap_start_reg    |    1|   0|    1|          0|
+    |grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16_fu_216_ap_start_reg  |    1|   0|    1|          0|
+    |i_2_reg_636                                                                    |  128|   0|  128|          0|
+    |i_reg_205                                                                      |  128|   0|  128|          0|
+    |numBlk_reg_628                                                                 |  128|   0|  128|          0|
+    +-------------------------------------------------------------------------------+-----+----+-----+-----------+
+    |Total                                                                          | 1419|   0| 1419|          0|
+    +-------------------------------------------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+------+------------+--------------------------+--------------+
+|           RTL Ports           | Dir | Bits |  Protocol  |       Source Object      |    C Type    |
++-------------------------------+-----+------+------------+--------------------------+--------------+
+|ap_clk                         |   in|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|ap_rst                         |   in|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|ap_start                       |   in|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|ap_done                        |  out|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|ap_continue                    |   in|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|ap_idle                        |  out|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|ap_ready                       |  out|     1|  ap_ctrl_hs|  generateMsgSchedule<64u>|  return value|
+|blk_strm_dout                  |   in|  1024|     ap_fifo|                  blk_strm|       pointer|
+|blk_strm_empty_n               |   in|     1|     ap_fifo|                  blk_strm|       pointer|
+|blk_strm_read                  |  out|     1|     ap_fifo|                  blk_strm|       pointer|
+|blk_strm_num_data_valid        |   in|     6|     ap_fifo|                  blk_strm|       pointer|
+|blk_strm_fifo_cap              |   in|     6|     ap_fifo|                  blk_strm|       pointer|
+|nblk_strm1_dout                |   in|   128|     ap_fifo|                nblk_strm1|       pointer|
+|nblk_strm1_empty_n             |   in|     1|     ap_fifo|                nblk_strm1|       pointer|
+|nblk_strm1_read                |  out|     1|     ap_fifo|                nblk_strm1|       pointer|
+|nblk_strm1_num_data_valid      |   in|     6|     ap_fifo|                nblk_strm1|       pointer|
+|nblk_strm1_fifo_cap            |   in|     6|     ap_fifo|                nblk_strm1|       pointer|
+|end_nblk_strm1_dout            |   in|     1|     ap_fifo|            end_nblk_strm1|       pointer|
+|end_nblk_strm1_empty_n         |   in|     1|     ap_fifo|            end_nblk_strm1|       pointer|
+|end_nblk_strm1_read            |  out|     1|     ap_fifo|            end_nblk_strm1|       pointer|
+|end_nblk_strm1_num_data_valid  |   in|     6|     ap_fifo|            end_nblk_strm1|       pointer|
+|end_nblk_strm1_fifo_cap        |   in|     6|     ap_fifo|            end_nblk_strm1|       pointer|
+|w_strm_din                     |  out|    64|     ap_fifo|                    w_strm|       pointer|
+|w_strm_full_n                  |   in|     1|     ap_fifo|                    w_strm|       pointer|
+|w_strm_write                   |  out|     1|     ap_fifo|                    w_strm|       pointer|
+|w_strm_num_data_valid          |   in|    32|     ap_fifo|                    w_strm|       pointer|
+|w_strm_fifo_cap                |   in|    32|     ap_fifo|                    w_strm|       pointer|
++-------------------------------+-----+------+------------+--------------------------+--------------+
+

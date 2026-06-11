@@ -1,0 +1,1229 @@
+--- !Failure
+Pass:            reflow-check-pragma-conflict
+Name:            IgnoreTopHLSStreamDepth
+DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - String:          'Ignore depth setting for top argument '''
+  - String:          msg_strm
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-check-pragma-conflict
+Name:            IgnoreTopHLSStreamDepth
+DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - String:          'Ignore depth setting for top argument '''
+  - String:          digest_strm
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 521, Column: 10 }
+Function:        _ZN2xf8security8internal5SSIG1ILj64EEE7ap_uintIXT_EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 384, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<64u> xf::security::internal::SSIG1<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 518, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 521, Column: 44 }
+Function:        _ZN2xf8security8internal5SSIG1ILj64EEE7ap_uintIXT_EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::SHR<64u>(unsigned int, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 361, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<64u> xf::security::internal::SSIG1<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 518, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 500, Column: 10 }
+Function:        _ZN2xf8security8internal5SSIG0ILj64EEE7ap_uintIXT_EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 384, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<64u> xf::security::internal::SSIG0<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 497, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 500, Column: 42 }
+Function:        _ZN2xf8security8internal5SSIG0ILj64EEE7ap_uintIXT_EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::SHR<64u>(unsigned int, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 361, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<64u> xf::security::internal::SSIG0<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 497, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 620, Column: 43 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::SSIG0<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 497, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 592, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 620, Column: 18 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::SSIG1<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 518, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 592, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 479, Column: 10 }
+Function:        _ZN2xf8security8internal5BSIG1ILj64EEE7ap_uintIXT_EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 384, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<64u> xf::security::internal::BSIG1<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 476, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 458, Column: 10 }
+Function:        _ZN2xf8security8internal5BSIG0ILj64EEE7ap_uintIXT_EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 384, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_uint<64u> xf::security::internal::BSIG0<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 455, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 756, Column: 47 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::Maj<64u>(ap_uint<64u>, ap_uint<64u>, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 434, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 756, Column: 33 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::BSIG0<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 455, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 755, Column: 51 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::Ch<64u>(ap_uint<64u>, ap_uint<64u>, ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 409, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 755, Column: 37 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<64u> xf::security::internal::BSIG1<64u>(ap_uint<64u>)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 476, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 891, Column: 2 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::preProcessing<64u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 894, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::dup_strm<128u>(hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 549, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 897, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 592, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 900, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 1331, Column: 5 }
+Function:        _ZN2xf8security8sha512_tILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS3_IS4_ILi128EELi0EEERNS3_IbLi0EEERNS3_IS4_IXT0_EELi0EEESC_
+Args:            
+  - Callee:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::sha512_t<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 171, Column: 2 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'axis_to_core(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: test.cpp, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 181, Column: 5 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'void xf::security::sha512_t<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 189, Column: 5 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'core_to_axis(hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 92, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 321, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 237, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b276
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 150, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b71
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 128, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 102, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 603, Column: 9 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            blk
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 321, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 237, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b276
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 150, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b71
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 128, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 102, Column: 9 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Adding '''
+  - Name:            b0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 603, Column: 9 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            blk
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 320, Column: 23 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b1
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 236, Column: 23 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b276
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 149, Column: 23 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b71
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 127, Column: 23 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 101, Column: 12 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b0
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 602, Column: 12 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            blk
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 621, Column: 35 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_621_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 106, Column: 13 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        LOOP_GEN_ONE_FULL_BLK
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 659, Column: 0 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_SHA512_EMIT
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:801:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::SHA512Digest<64u, 256u>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 592, Column: 0 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_621_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:621:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::generateMsgSchedule<64u>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 77, Column: 0 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_GEN_ONE_FULL_BLK
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:106:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing<64u>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 77, Column: 0 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_COPY_AND_PAD_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:241:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing<64u>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 77, Column: 0 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_PAD_14_ZERO_WORDS
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:324:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing<64u>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '14'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 77, Column: 0 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_PAD_13_ZERO_WORDS
+  - String:          ''' ('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:135:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing<64u>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '13'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 891, Column: 2 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::preProcessing<64u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 894, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::dup_strm<128u>(hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 549, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 897, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 592, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 900, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 1331, Column: 5 }
+Function:        _ZN2xf8security8sha512_tILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS3_IS4_ILi128EELi0EEERNS3_IbLi0EEERNS3_IS4_IXT0_EELi0EEESC_
+Args:            
+  - Callee:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::sha512_t<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 171, Column: 2 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'axis_to_core(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: test.cpp, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 181, Column: 5 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'void xf::security::sha512_t<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 189, Column: 5 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'core_to_axis(hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 92, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_test_ir
+Args:            
+  - Callee:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_test_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 661, Column: 0 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_E1K
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 149, Column: 23 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b71
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 602, Column: 12 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          blk
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 606, Column: 13 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          W
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 687, Column: 13 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          H
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 859, Column: 25 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            blk_strm
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1024'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 81, Column: 5 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        LOOP_PREPROCESSING_MAIN
+  - String:          ' '
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:81:5'
+  - String:          ' '
+  - Function:        'void xf::security::internal::preProcessing<64u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 553, Column: 5 }
+Function:        _ZN2xf8security8internal8dup_strmILj128EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IbLi0EEES8_SA_S8_SA_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        LOOP_DUP_STREAM
+  - String:          ' '
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:553:5'
+  - String:          ' '
+  - Function:        'void xf::security::internal::dup_strm<128u>(hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 549, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 596, Column: 5 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        LOOP_GEN_W_MAIN
+  - String:          ' '
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:596:5'
+  - String:          ' '
+  - Function:        'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 592, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 684, Column: 5 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        LOOP_SHA1_MAIN
+  - String:          ' '
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5'
+  - String:          ' '
+  - Function:        'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: test.cpp, Line: 94, Column: 5 }
+Function:        _ZL12core_to_axisRN3hls6streamI7ap_uintILi256EELi0EEERNS0_IbLi0EEERNS0_INS_4axisIS2_Lm0ELm0ELm3ELh56ELb0EEELi0EEES1_ILi2EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        DRAIN_LOOP
+  - String:          ' '
+  - LoopLoc:         'test.cpp:94:5'
+  - String:          ' '
+  - Function:        'core_to_axis(hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 92, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 81, Column: 5 }
+Function:        _ZN2xf8security8internalL13preProcessingILj64EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_INS1_9blockTypeELi0EEESB_SD_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        LOOP_PREPROCESSING_MAIN
+  - String:          '''('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:81:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 553, Column: 5 }
+Function:        _ZN2xf8security8internal8dup_strmILj128EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IbLi0EEES8_SA_S8_SA_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        LOOP_DUP_STREAM
+  - String:          '''('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:553:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 596, Column: 5 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleILj64EEEvRN3hls6streamINS1_9blockTypeELi0EEERNS4_I7ap_uintILi128EELi0EEERNS4_IbLi0EEERNS4_IS8_IXT_EELi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        LOOP_GEN_W_MAIN
+  - String:          '''('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:596:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 684, Column: 5 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        LOOP_SHA1_MAIN
+  - String:          '''('
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: test.cpp, Line: 94, Column: 5 }
+Function:        _ZL12core_to_axisRN3hls6streamI7ap_uintILi256EELi0EEERNS0_IbLi0EEERNS0_INS_4axisIS2_Lm0ELm0ELm3ELh56ELb0EEELi0EEES1_ILi2EE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        DRAIN_LOOP
+  - String:          '''('
+  - LoopLoc:         'test.cpp:94:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 684, Column: 5 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        LOOP_SHA1_MAIN
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 684, Column: 5 }
+Function:        _ZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'xf::security::internal::SHA512Digest<64u, 256u>'
+  - String:          ' '
+  - PragmaSrcLoc:    'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 684, Column: 5 }
+  - LoopName:        LOOP_SHA1_MAIN
+  - String:          ' '
+  - LoopLoc:         'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 684, Column: 5 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 891, Column: 2 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::preProcessing<64u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 894, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::dup_strm<128u>(hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<128u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 549, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 897, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 592, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 900, Column: 5 }
+Function:        _ZN2xf8security8internal9sha512TopILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - Callee:          'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 659, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                   Line: 1331, Column: 5 }
+Function:        _ZN2xf8security8sha512_tILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS3_IS4_ILi128EELi0EEERNS3_IbLi0EEERNS3_IS4_IXT0_EELi0EEESC_
+Args:            
+  - Callee:          'void xf::security::internal::sha512Top<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 855, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void xf::security::sha512_t<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 171, Column: 2 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'axis_to_core(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: test.cpp, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 181, Column: 5 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'void xf::security::sha512_t<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: 'C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: test.cpp, Line: 189, Column: 5 }
+Function:        _Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELm0ELm0ELm3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELm0ELm0ELm3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE
+Args:            
+  - Callee:          'core_to_axis(hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 92, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'test(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<256>, 0ul, 0ul, 3ul, (unsigned char)56, false>, 0>&, ap_uint<128>, ap_uint<2>)'
+    DebugLoc:        { File: test.cpp, Line: 136, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

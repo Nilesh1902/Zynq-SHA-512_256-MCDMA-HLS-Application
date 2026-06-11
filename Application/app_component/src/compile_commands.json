@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/Nilesh_3/Application/app_component/build",
+  "command": "D:\\version_2024.2\\Vitis\\2024.2\\gnu\\aarch64\\nt\\aarch64-none\\bin\\aarch64-none-elf-gcc.exe -isystem D:/Nilesh_3/Application/platform/export/platform/sw/standalone_psu_cortexa53_0/include -isystem D:/version_2024.2/Vitis/2024.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include -isystem D:/version_2024.2/Vitis/2024.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include-fixed -isystem D:/version_2024.2/Vitis/2024.2/gnu/aarch64/nt/aarch64-none/aarch64-xilinx-elf/usr/include  -O2 -DSDT  -MMD -MP -specs=D:/Nilesh_3/Application/platform/export/platform/sw/standalone_psu_cortexa53_0/Xilinx.spec -ID:/Nilesh_3/Application/platform/export/platform/sw/standalone_psu_cortexa53_0/include -Wall -Wextra      -O0  -g3     -U__clang__ \"-D__FILENAME__='__FILE__'\" -o CMakeFiles\\app_component.elf.dir\\main_user.c.obj -c D:\\Nilesh_3\\Application\\app_component\\src\\main_user.c",
+  "file": "D:\\Nilesh_3\\Application\\app_component\\src\\main_user.c"
+},
+{
+  "directory": "D:/Nilesh_3/Application/app_component/build",
+  "command": "D:\\version_2024.2\\Vitis\\2024.2\\gnu\\aarch64\\nt\\aarch64-none\\bin\\aarch64-none-elf-gcc.exe -isystem D:/Nilesh_3/Application/platform/export/platform/sw/standalone_psu_cortexa53_0/include -isystem D:/version_2024.2/Vitis/2024.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include -isystem D:/version_2024.2/Vitis/2024.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include-fixed -isystem D:/version_2024.2/Vitis/2024.2/gnu/aarch64/nt/aarch64-none/aarch64-xilinx-elf/usr/include  -O2 -DSDT  -MMD -MP -specs=D:/Nilesh_3/Application/platform/export/platform/sw/standalone_psu_cortexa53_0/Xilinx.spec -ID:/Nilesh_3/Application/platform/export/platform/sw/standalone_psu_cortexa53_0/include -Wall -Wextra      -O0  -g3     -U__clang__ \"-D__FILENAME__='__FILE__'\" -o CMakeFiles\\app_component.elf.dir\\sha_api.c.obj -c D:\\Nilesh_3\\Application\\app_component\\src\\sha_api.c",
+  "file": "D:\\Nilesh_3\\Application\\app_component\\src\\sha_api.c"
+}
+]

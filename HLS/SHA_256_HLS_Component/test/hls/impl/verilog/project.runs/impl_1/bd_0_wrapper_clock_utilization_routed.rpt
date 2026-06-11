@@ -1,0 +1,298 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date              : Wed Jun 10 15:39:17 2026
+| Host              : nileshnadekar running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Temperature Grade : I
+| Design State      : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Clock Regions : Clock Primitives
+5. Clock Regions : Load Primitives
+6. Clock Regions : Global Clock Summary
+7. Clock Regions : Routing Resource Utilization
+8. Device Cell Placement Summary for Global Clock g0
+9. Device Cell Placement Summary for Global Clock g1
+10. Device Cell Placement Summary for Global Clock g2
+11. Device Cell Placement Summary for Global Clock g3
+12. Clock Region Cell Placement per Global Clock: Region X0Y1
+13. Clock Region Cell Placement per Global Clock: Region X1Y1
+14. Clock Region Cell Placement per Global Clock: Region X0Y2
+15. Clock Region Cell Placement per Global Clock: Region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++------------+------+-----------+-----+--------------+--------+
+| Type       | Used | Available | LOC | Clock Region | Pblock |
++------------+------+-----------+-----+--------------+--------+
+| BUFGCE     |    4 |        88 |   0 |            0 |      0 |
+| BUFGCE_DIV |    0 |        12 |   0 |            0 |      0 |
+| BUFGCTRL   |    0 |        24 |   0 |            0 |      0 |
+| BUFG_PS    |    0 |        72 |   0 |            0 |      0 |
+| MMCM       |    0 |         3 |   0 |            0 |      0 |
+| PLL        |    0 |         6 |   0 |            0 |      0 |
++------------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+--------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site         | Clock Region | Root | Clock Delay Group | Clock Low Fanout | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                                                                                                                                                                                                                                | Net                                                                                                                                                                                                                                                 |
++-----------+-----------+-----------------+------------+--------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | src0      | BUFGCE/O        | None       | BUFGCE_X0Y50 | X1Y2         | X1Y2 | n/a               |                  |                 3 |           0 |            1483 |          n/a | n/a   | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2_bufg_place/O                                          | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g1        | src1      | BUFGCE/O        | None       | BUFGCE_X0Y62 | X1Y2         | X1Y2 | n/a               |                  |                 3 |           0 |            1042 |          n/a | n/a   | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1_bufg_place/O | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g2        | src2      | BUFGCE/O        | None       | BUFGCE_X0Y56 | X1Y2         | X1Y2 | n/a               |                  |                 3 |           0 |            1152 |          n/a | n/a   | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1_bufg_place/O                                                                                                                     | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g3        | src3      | BUFGCE/O        | None       | BUFGCE_X0Y68 | X1Y2         | X1Y2 | n/a               |                  |                 2 |           0 |            1024 |          n/a | n/a   | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1_bufg_place/O   | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
++-----------+-----------+-----------------+------------+--------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site          | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                                                                                                                                                                                                     | Net                                                                                                                                                                                                                                                            |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| src0      | g0        | LUT3/O          | None       | SLICE_X33Y147 | X1Y2         |           1 |              15 |                     |              | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[6]_i_2/O                                          | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]_bufg_place                                                            |
+| src1      | g1        | LUT5/O          | None       | SLICE_X34Y147 | X1Y2         |           1 |               0 |                     |              | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/t_fu_456[6]_i_1/O | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3_bufg_place |
+| src2      | g2        | LUT4/O          | None       | SLICE_X25Y160 | X0Y2         |           1 |               0 |                     |              | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/i_2_reg_636[127]_i_1/O                                                                                                                     | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960_bufg_place                                                                                                                                 |
+| src3      | g3        | LUT5/O          | None       | SLICE_X31Y143 | X1Y2         |           1 |               0 |                     |              | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/p_0_0_0296_1424_fu_170[63]_i_1/O   | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]_bufg_place                                    |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+
+
+4. Clock Regions : Clock Primitives
+-----------------------------------
+
++-------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                   |  Global Clock |     BUFGCE    |   BUFGCE_DIV  |    BUFGCTRL   |    BUFG_GT    |    BUFG_PS    |      MMCM     |      PLL      |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| Clock Region Name | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| X0Y0              |     0 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X1Y0              |     0 |    24 |     0 |    28 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X0Y1              |     3 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X1Y1              |     3 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X0Y2              |     2 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X1Y2              |     4 |    24 |     4 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+5. Clock Regions : Load Primitives
+----------------------------------
+
++-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+|                   |   Global Clock   |        FF        |      LUTRAM      |  Block RAM (18K) |        DSP       |        GT        |      HARD IP     |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| Clock Region Name | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| X0Y0              |      0 |      24 |      0 |   27840 |      0 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y0              |      0 |      24 |      0 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
+| X0Y1              |      3 |      24 |    894 |   27840 |      0 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y1              |      3 |      24 |    589 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
+| X0Y2              |      2 |      24 |   1706 |   27840 |      0 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y2              |      4 |      24 |    605 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+6. Clock Regions : Global Clock Summary
+---------------------------------------
+
+All Modules
++----+----+----+
+|    | X0 | X1 |
++----+----+----+
+| Y2 |  2 |  4 |
+| Y1 |  3 |  3 |
+| Y0 |  0 |  0 |
++----+----+----+
+
+
+7. Clock Regions : Routing Resource Utilization
+-----------------------------------------------
+
+All Modules
++-------------------+----------------------+----------------------+----------------------+----------------------+
+|                   |        HROUTES       |        HDISTRS       |        VROUTES       |        VDISTRS       |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+| Clock Region Name | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+| X0Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X0Y1              |    0 |    24 |  0.00 |    3 |    24 | 12.50 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y1              |    0 |    24 |  0.00 |    3 |    24 | 12.50 |    0 |    24 |  0.00 |    3 |    24 | 12.50 |
+| X0Y2              |    0 |    24 |  0.00 |    2 |    24 |  8.33 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y2              |    0 |    24 |  0.00 |    4 |    24 | 16.67 |    0 |    24 |  0.00 |    3 |    24 | 12.50 |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+
+
+8. Device Cell Placement Summary for Global Clock g0
+----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                      |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1483 |        0 |              0 |        0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-----------+-----------------------+
+|    | X0   | X1        | HORIZONTAL PROG DELAY |
++----+------+-----------+-----------------------+
+| Y2 |    0 | (R) (D) 5 |                     0 |
+| Y1 |  889 |       589 |                     0 |
+| Y0 |    0 |         0 |                     - |
++----+------+-----------+-----------------------+
+
+
+9. Device Cell Placement Summary for Global Clock g1
+----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                                                                 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g1        | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1042 |        0 |              0 |        0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-------------+-----------------------+
+|    | X0   | X1          | HORIZONTAL PROG DELAY |
++----+------+-------------+-----------------------+
+| Y2 |    0 | (R) (D) 140 |                     0 |
+| Y1 |  633 |         269 |                     0 |
+| Y0 |    0 |           0 |                     - |
++----+------+-------------+-----------------------+
+
+
+10. Device Cell Placement Summary for Global Clock g2
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g2        | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1152 |        0 |              0 |        0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960 |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-------+-------------+-----------------------+
+|    | X0    | X1          | HORIZONTAL PROG DELAY |
++----+-------+-------------+-----------------------+
+| Y2 |  1019 | (R) (D) 128 |                     0 |
+| Y1 |     5 |           0 |                     0 |
+| Y0 |     0 |           0 |                     - |
++----+-------+-------------+-----------------------+
+
+
+11. Device Cell Placement Summary for Global Clock g3
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                                                                              |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g3        | BUFGCE/O        | X1Y2              |       |             |               | X1Y2     |        1024 |        0 |              0 |        0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-------------+-----------------------+
+|    | X0   | X1          | HORIZONTAL PROG DELAY |
++----+------+-------------+-----------------------+
+| Y2 |  687 | (R) (D) 337 |                     0 |
+| Y1 |    0 |           0 |                     - |
+| Y0 |    0 |           0 |                     - |
++----+------+-------------+-----------------------+
+
+
+12. Clock Region Cell Placement per Global Clock: Region X0Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 2     | BUFGCE/O        | None       |           0 |             889 | 889 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g1        | 14    | BUFGCE/O        | None       |           0 |             633 | 633 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g2        | 8     | BUFGCE/O        | None       |           0 |               5 |   5 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+13. Clock Region Cell Placement per Global Clock: Region X1Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 2     | BUFGCE/O        | None       |           0 |             589 | 589 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g1        | 14    | BUFGCE/O        | None       |           0 |             269 | 269 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g2+       | 8     | BUFGCE/O        | None       |           0 |               0 |   0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+14. Clock Region Cell Placement per Global Clock: Region X0Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                              |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g2        | 8     | BUFGCE/O        | None       |           0 |            1019 | 1019 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                              |
+| g3        | 20    | BUFGCE/O        | None       |           0 |             687 |  687 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0] |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+15. Clock Region Cell Placement per Global Clock: Region X1Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                                                                                                                 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 2     | BUFGCE/O        | None       |           0 |               5 |   5 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/E[0]                                                            |
+| g1        | 14    | BUFGCE/O        | None       |           0 |             140 | 140 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_3 |
+| g2        | 8     | BUFGCE/O        | None       |           0 |             128 | 128 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/blk_10_reg_6960                                                                                                                                 |
+| g3        | 20    | BUFGCE/O        | None       |           0 |             337 | 337 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U/E[0]                                    |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+

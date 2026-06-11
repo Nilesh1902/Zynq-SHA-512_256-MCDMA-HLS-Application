@@ -1,0 +1,200 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha512Top_64u_256u_s'
+================================================================
+* Date:           Wed Jun 10 15:15:01 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.686 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      111|      111|  1.110 us|  1.110 us|   93|   93|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%blk_strm = alloca i64 1"   --->   Operation 9 'alloca' 'blk_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 32> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%nblk_strm = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:864]   --->   Operation 10 'alloca' 'nblk_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 32> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%nblk_strm1 = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:867]   --->   Operation 11 'alloca' 'nblk_strm1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 32> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%nblk_strm2 = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:870]   --->   Operation 12 'alloca' 'nblk_strm2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 32> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%end_nblk_strm = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:875]   --->   Operation 13 'alloca' 'end_nblk_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 32> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%end_nblk_strm1 = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:878]   --->   Operation 14 'alloca' 'end_nblk_strm1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 32> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%end_nblk_strm2 = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:881]   --->   Operation 15 'alloca' 'end_nblk_strm2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 32> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%w_strm = alloca i64 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:886]   --->   Operation 16 'alloca' 'w_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32> <FIFO>
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln891 = call void @preProcessing<64u>, i64 %core_msg_strm, i128 %core_len_strm, i1 %core_end_len_strm, i1024 %blk_strm, i128 %nblk_strm, i1 %end_nblk_strm" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:891]   --->   Operation 17 'call' 'call_ln891' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln891 = call void @preProcessing<64u>, i64 %core_msg_strm, i128 %core_len_strm, i1 %core_end_len_strm, i1024 %blk_strm, i128 %nblk_strm, i1 %end_nblk_strm" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:891]   --->   Operation 18 'call' 'call_ln891' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln894 = call void @dup_strm<128u>, i128 %nblk_strm, i1 %end_nblk_strm, i128 %nblk_strm1, i1 %end_nblk_strm1, i128 %nblk_strm2, i1 %end_nblk_strm2" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:894]   --->   Operation 19 'call' 'call_ln894' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln894 = call void @dup_strm<128u>, i128 %nblk_strm, i1 %end_nblk_strm, i128 %nblk_strm1, i1 %end_nblk_strm1, i128 %nblk_strm2, i1 %end_nblk_strm2" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:894]   --->   Operation 20 'call' 'call_ln894' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln897 = call void @generateMsgSchedule<64u>, i1024 %blk_strm, i128 %nblk_strm1, i1 %end_nblk_strm1, i64 %w_strm" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:897]   --->   Operation 21 'call' 'call_ln897' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln897 = call void @generateMsgSchedule<64u>, i1024 %blk_strm, i128 %nblk_strm1, i1 %end_nblk_strm1, i64 %w_strm" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:897]   --->   Operation 22 'call' 'call_ln897' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 23 [2/2] (0.00ns)   --->   "%call_ln900 = call void @SHA512Digest<64u, 256u>, i64 %w_strm, i128 %nblk_strm2, i1 %end_nblk_strm2, i256 %core_digest_strm, i1 %core_end_digest_strm" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:900]   --->   Operation 23 'call' 'call_ln900' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln856 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:856]   --->   Operation 24 'specdataflowpipeline' 'specdataflowpipeline_ln856' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %core_msg_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %core_len_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %core_end_len_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %core_digest_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %core_end_digest_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @blk_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i1024 %blk_strm, i1024 %blk_strm"   --->   Operation 30 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %blk_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%empty_44 = specchannel i32 @_ssdm_op_SpecChannel, void @nblk_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i128 %nblk_strm, i128 %nblk_strm"   --->   Operation 32 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %nblk_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%empty_45 = specchannel i32 @_ssdm_op_SpecChannel, void @nblk_strm1_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i128 %nblk_strm1, i128 %nblk_strm1"   --->   Operation 34 'specchannel' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %nblk_strm1, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @nblk_strm2_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i128 %nblk_strm2, i128 %nblk_strm2"   --->   Operation 36 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %nblk_strm2, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @end_nblk_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i1 %end_nblk_strm, i1 %end_nblk_strm"   --->   Operation 38 'specchannel' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %end_nblk_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%empty_48 = specchannel i32 @_ssdm_op_SpecChannel, void @end_nblk_strm1_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i1 %end_nblk_strm1, i1 %end_nblk_strm1"   --->   Operation 40 'specchannel' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %end_nblk_strm1, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%empty_49 = specchannel i32 @_ssdm_op_SpecChannel, void @end_nblk_strm2_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i1 %end_nblk_strm2, i1 %end_nblk_strm2"   --->   Operation 42 'specchannel' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %end_nblk_strm2, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%empty_50 = specchannel i32 @_ssdm_op_SpecChannel, void @w_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i64 %w_strm, i64 %w_strm"   --->   Operation 44 'specchannel' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %w_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%specmemcore_ln861 = specmemcore void @_ssdm_op_SpecMemCore, i1024 %blk_strm, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:861]   --->   Operation 46 'specmemcore' 'specmemcore_ln861' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%specmemcore_ln866 = specmemcore void @_ssdm_op_SpecMemCore, i128 %nblk_strm, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:866]   --->   Operation 47 'specmemcore' 'specmemcore_ln866' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%specmemcore_ln869 = specmemcore void @_ssdm_op_SpecMemCore, i128 %nblk_strm1, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:869]   --->   Operation 48 'specmemcore' 'specmemcore_ln869' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%specmemcore_ln872 = specmemcore void @_ssdm_op_SpecMemCore, i128 %nblk_strm2, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:872]   --->   Operation 49 'specmemcore' 'specmemcore_ln872' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%specmemcore_ln877 = specmemcore void @_ssdm_op_SpecMemCore, i1 %end_nblk_strm, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:877]   --->   Operation 50 'specmemcore' 'specmemcore_ln877' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%specmemcore_ln880 = specmemcore void @_ssdm_op_SpecMemCore, i1 %end_nblk_strm1, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:880]   --->   Operation 51 'specmemcore' 'specmemcore_ln880' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%specmemcore_ln883 = specmemcore void @_ssdm_op_SpecMemCore, i1 %end_nblk_strm2, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:883]   --->   Operation 52 'specmemcore' 'specmemcore_ln883' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%specmemcore_ln888 = specmemcore void @_ssdm_op_SpecMemCore, i64 %w_strm, i64 666, i64 9, i64 18446744073709551615" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:888]   --->   Operation 53 'specmemcore' 'specmemcore_ln888' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln900 = call void @SHA512Digest<64u, 256u>, i64 %w_strm, i128 %nblk_strm2, i1 %end_nblk_strm2, i256 %core_digest_strm, i1 %core_end_digest_strm" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:900]   --->   Operation 54 'call' 'call_ln900' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln902 = ret" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:902]   --->   Operation 55 'ret' 'ret_ln902' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 1.050ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

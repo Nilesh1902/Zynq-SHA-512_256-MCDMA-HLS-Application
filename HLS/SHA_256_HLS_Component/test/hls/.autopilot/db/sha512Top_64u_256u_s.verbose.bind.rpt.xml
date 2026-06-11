@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'sha512Top_64u_256u_s'" level="0">
+<item name = "Date">Wed Jun 10 15:15:01 2026
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">test</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.686 ns, 1.05 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">111, 111, 1.110 us, 1.110 us, 93, 93, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_preProcessing_64u_s_fu_96">preProcessing_64u_s, 8, 42, 80.000 ns, 0.420 us, 8, 42, no</column>
+<column name="grp_dup_strm_128u_s_fu_109">dup_strm_128u_s, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_generateMsgSchedule_64u_s_fu_119">generateMsgSchedule_64u_s, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
+<column name="grp_SHA512Digest_64u_256u_s_fu_127">SHA512Digest_64u_256u_s, 87, 87, 0.870 us, 0.870 us, 87, 87, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

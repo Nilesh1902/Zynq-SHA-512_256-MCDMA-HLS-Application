@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'axis_to_core'
+================================================================
+* Date:           Wed Jun 10 15:14:55 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.199 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.16>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%msg_len_read = read i128 @_ssdm_op_Read.ap_auto.i128, i128 %msg_len" [test.cpp:50]   --->   Operation 5 'read' 'msg_len_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] ( I:2.16ns O:2.16ns )   --->   "%write_ln56 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %core_end_len_strm, i1 0" [test.cpp:56]   --->   Operation 6 'write' 'write_ln56' <Predicate = true> <Delay = 2.16> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_1 : Operation 7 [1/1] ( I:2.16ns O:2.16ns )   --->   "%write_ln59 = write void @_ssdm_op_Write.ap_fifo.volatile.i128P0A, i128 %core_len_strm, i128 %msg_len_read" [test.cpp:59]   --->   Operation 7 'write' 'write_ln59' <Predicate = true> <Delay = 2.16> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 4> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%zext_ln65 = zext i128 %msg_len_read" [test.cpp:65]   --->   Operation 8 'zext' 'zext_ln65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.71ns)   --->   "%add_ln65 = add i129 %zext_ln65, i129 7" [test.cpp:65]   --->   Operation 9 'add' 'add_ln65' <Predicate = true> <Delay = 1.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i126 @_ssdm_op_PartSelect.i126.i129.i32.i32, i129 %add_ln65, i32 3, i32 128" [test.cpp:65]   --->   Operation 10 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.14>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%fence_ln65 = fence void @_ssdm_op_Fence, i1 %core_end_len_strm, i128 %core_len_strm, i32 4294967295, i64 %msg_strm_V_data_V, i8 %msg_strm_V_keep_V, i8 %msg_strm_V_strb_V, i1 %msg_strm_V_last_V, i3 %msg_strm_V_dest_V, i64 %core_msg_strm" [test.cpp:65]   --->   Operation 11 'fence' 'fence_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [2/2] (2.14ns)   --->   "%call_ln65 = call void @axis_to_core_Pipeline_FEED_LOOP, i126 %trunc_ln, i64 %msg_strm_V_data_V, i8 %msg_strm_V_keep_V, i8 %msg_strm_V_strb_V, i1 %msg_strm_V_last_V, i3 %msg_strm_V_dest_V, i64 %core_msg_strm" [test.cpp:65]   --->   Operation 12 'call' 'call_ln65' <Predicate = true> <Delay = 2.14> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 2.19>
+ST_3 : Operation 13 [1/2] (2.19ns)   --->   "%call_ln65 = call void @axis_to_core_Pipeline_FEED_LOOP, i126 %trunc_ln, i64 %msg_strm_V_data_V, i8 %msg_strm_V_keep_V, i8 %msg_strm_V_strb_V, i1 %msg_strm_V_last_V, i3 %msg_strm_V_dest_V, i64 %core_msg_strm" [test.cpp:65]   --->   Operation 13 'call' 'call_ln65' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 2.16>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i64 %msg_strm_V_data_V, i8 %msg_strm_V_keep_V, i8 %msg_strm_V_strb_V, i1 0, i1 %msg_strm_V_last_V, i1 0, i3 %msg_strm_V_dest_V, void @empty_8"   --->   Operation 14 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %core_end_len_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %core_len_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %core_msg_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %msg_strm_V_dest_V, i1 %msg_strm_V_last_V, i8 %msg_strm_V_strb_V, i8 %msg_strm_V_keep_V, i64 %msg_strm_V_data_V, void @empty_17, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%fence_ln72 = fence void @_ssdm_op_Fence, i64 %msg_strm_V_data_V, i8 %msg_strm_V_keep_V, i8 %msg_strm_V_strb_V, i1 %msg_strm_V_last_V, i3 %msg_strm_V_dest_V, i64 %core_msg_strm, i32 4294967295, i1 %core_end_len_strm" [test.cpp:72]   --->   Operation 19 'fence' 'fence_ln72' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] ( I:2.16ns O:2.16ns )   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %core_end_len_strm, i1 1" [test.cpp:72]   --->   Operation 20 'write' 'write_ln72' <Predicate = true> <Delay = 2.16> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln73 = ret" [test.cpp:73]   --->   Operation 21 'ret' 'ret_ln73' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 1.050ns.
+
+ <State 1>: 2.167ns
+The critical path consists of the following:
+	fifo write operation ('write_ln56', test.cpp:56) on port 'core_end_len_strm' (test.cpp:56) [16]  (2.167 ns)
+
+ <State 2>: 2.149ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln65', test.cpp:65) to 'axis_to_core_Pipeline_FEED_LOOP' [22]  (2.149 ns)
+
+ <State 3>: 2.199ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln65', test.cpp:65) to 'axis_to_core_Pipeline_FEED_LOOP' [22]  (2.199 ns)
+
+ <State 4>: 2.167ns
+The critical path consists of the following:
+	fifo write operation ('write_ln72', test.cpp:72) on port 'core_end_len_strm' (test.cpp:72) [24]  (2.167 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

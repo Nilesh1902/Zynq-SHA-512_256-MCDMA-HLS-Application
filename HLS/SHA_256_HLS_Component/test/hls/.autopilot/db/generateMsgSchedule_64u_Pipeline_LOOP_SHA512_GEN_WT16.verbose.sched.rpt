@@ -1,0 +1,239 @@
+
+
+================================================================
+== Vitis HLS Report for 'generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16'
+================================================================
+* Date:           Wed Jun 10 15:14:59 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.939 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                        |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name       |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- LOOP_SHA512_GEN_WT16  |       16|       16|         2|          1|          1|    16|       yes|
+        +------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.85>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%t = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 5 'alloca' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%W = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 6 'alloca' 'W' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%W_1 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 7 'alloca' 'W_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%W_2 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 8 'alloca' 'W_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%W_3 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 9 'alloca' 'W_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%W_4 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 10 'alloca' 'W_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%W_5 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 11 'alloca' 'W_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%W_6 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 12 'alloca' 'W_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%W_7 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 13 'alloca' 'W_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%W_8 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 14 'alloca' 'W_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%W_9 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 15 'alloca' 'W_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%W_10 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 16 'alloca' 'W_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%W_11 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 17 'alloca' 'W_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%W_12 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 18 'alloca' 'W_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%W_13 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 19 'alloca' 'W_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%W_14 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 20 'alloca' 'W_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%W_15 = alloca i32 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 21 'alloca' 'W_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %w_strm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %w_strm, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%blk_14_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_14" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 24 'read' 'blk_14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%blk_13_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_13" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 25 'read' 'blk_13_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%blk_12_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_12" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 26 'read' 'blk_12_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%blk_11_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_11" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 27 'read' 'blk_11_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%blk_10_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_10" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 28 'read' 'blk_10_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%blk_15_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_15" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 29 'read' 'blk_15_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%blk_9_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_9" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 30 'read' 'blk_9_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%blk_8_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_8" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 31 'read' 'blk_8_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%blk_7_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_7" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 32 'read' 'blk_7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%blk_6_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_6" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 33 'read' 'blk_6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%blk_5_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_5" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 34 'read' 'blk_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%blk_4_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_4" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 35 'read' 'blk_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%blk_3_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_3" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 36 'read' 'blk_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%blk_2_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_2" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 37 'read' 'blk_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%blk_1_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %blk_1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 38 'read' 'blk_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %empty" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:589]   --->   Operation 39 'read' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.48ns)   --->   "%store_ln610 = store i5 0, i5 %t" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 40 'store' 'store_ln610' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 41 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%t_1 = load i5 %t" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 42 'load' 't_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.87ns)   --->   "%icmp_ln610 = icmp_eq  i5 %t_1, i5 16" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 43 'icmp' 'icmp_ln610' <Predicate = true> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.87ns)   --->   "%add_ln610 = add i5 %t_1, i5 1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 44 'add' 'add_ln610' <Predicate = true> <Delay = 0.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln610 = br i1 %icmp_ln610, void %for.inc.split, void %VITIS_LOOP_621_1.preheader.exitStub" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 45 'br' 'br_ln610' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln610 = trunc i5 %t_1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 46 'trunc' 'trunc_ln610' <Predicate = (!icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%specpipeline_ln611 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:611]   --->   Operation 47 'specpipeline' 'specpipeline_ln611' <Predicate = (!icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%speclooptripcount_ln606 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 48 'speclooptripcount' 'speclooptripcount_ln606' <Predicate = (!icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%specloopname_ln610 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 49 'specloopname' 'specloopname_ln610' <Predicate = (!icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.57ns)   --->   "%W_16 = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.16i64.i64.i4, i4 0, i64 %tmp, i4 1, i64 %blk_1_read, i4 2, i64 %blk_2_read, i4 3, i64 %blk_3_read, i4 4, i64 %blk_4_read, i4 5, i64 %blk_5_read, i4 6, i64 %blk_6_read, i4 7, i64 %blk_7_read, i4 8, i64 %blk_8_read, i4 9, i64 %blk_9_read, i4 10, i64 %blk_15_read, i4 11, i64 %blk_10_read, i4 12, i64 %blk_11_read, i4 13, i64 %blk_12_read, i4 14, i64 %blk_13_read, i4 15, i64 %blk_14_read, i64 0, i4 %trunc_ln610" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 50 'sparsemux' 'W_16' <Predicate = (!icmp_ln610)> <Delay = 0.57> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 51 [1/1] (0.86ns)   --->   "%switch_ln613 = switch i4 %trunc_ln610, void %arrayidx9.case.15, i4 0, void %arrayidx9.case.0, i4 1, void %arrayidx9.case.1, i4 2, void %arrayidx9.case.2, i4 3, void %arrayidx9.case.3, i4 4, void %arrayidx9.case.4, i4 5, void %arrayidx9.case.5, i4 6, void %arrayidx9.case.6, i4 7, void %arrayidx9.case.7, i4 8, void %arrayidx9.case.8, i4 9, void %arrayidx9.case.9, i4 10, void %arrayidx9.case.10, i4 11, void %arrayidx9.case.11, i4 12, void %arrayidx9.case.12, i4 13, void %arrayidx9.case.13, i4 14, void %for.inc.split.arrayidx9.exit_crit_edge" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 51 'switch' 'switch_ln613' <Predicate = (!icmp_ln610)> <Delay = 0.86>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_1" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 52 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 14)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 53 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 14)> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_2" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 54 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 13)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 55 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 13)> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_3" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 56 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 12)> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 57 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 12)> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_4" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 58 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 11)> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 59 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 11)> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_5" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 60 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 10)> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 61 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 10)> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_6" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 62 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 9)> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 63 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 9)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_7" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 64 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 8)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 65 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 8)> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_8" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 66 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 7)> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 67 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 7)> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_9" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 68 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 6)> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 69 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 6)> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_10" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 70 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 5)> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 71 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 5)> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_11" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 72 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 4)> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 73 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 4)> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_12" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 74 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 3)> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 75 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 3)> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_13" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 76 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 2)> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 77 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 2)> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_14" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 78 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 1)> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 79 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 1)> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W_15" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 80 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 0)> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 81 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 0)> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%store_ln606 = store i64 %W_16, i64 %W" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606]   --->   Operation 82 'store' 'store_ln606' <Predicate = (!icmp_ln610 & trunc_ln610 == 15)> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln613 = br void %arrayidx9.exit" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:613]   --->   Operation 83 'br' 'br_ln613' <Predicate = (!icmp_ln610 & trunc_ln610 == 15)> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.48ns)   --->   "%store_ln610 = store i5 %add_ln610, i5 %t" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 84 'store' 'store_ln610' <Predicate = (!icmp_ln610)> <Delay = 0.48>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%W_load = load i64 %W"   --->   Operation 87 'load' 'W_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%W_1_load = load i64 %W_1"   --->   Operation 88 'load' 'W_1_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%W_2_load = load i64 %W_2"   --->   Operation 89 'load' 'W_2_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%W_3_load = load i64 %W_3"   --->   Operation 90 'load' 'W_3_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%W_4_load = load i64 %W_4"   --->   Operation 91 'load' 'W_4_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%W_5_load = load i64 %W_5"   --->   Operation 92 'load' 'W_5_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%W_6_load = load i64 %W_6"   --->   Operation 93 'load' 'W_6_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%W_7_load = load i64 %W_7"   --->   Operation 94 'load' 'W_7_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%W_8_load = load i64 %W_8"   --->   Operation 95 'load' 'W_8_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%W_9_load = load i64 %W_9"   --->   Operation 96 'load' 'W_9_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%W_10_load = load i64 %W_10"   --->   Operation 97 'load' 'W_10_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%W_11_load = load i64 %W_11"   --->   Operation 98 'load' 'W_11_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%W_12_load = load i64 %W_12"   --->   Operation 99 'load' 'W_12_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%W_13_load = load i64 %W_13"   --->   Operation 100 'load' 'W_13_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%W_14_load = load i64 %W_14"   --->   Operation 101 'load' 'W_14_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%W_15_load = load i64 %W_15"   --->   Operation 102 'load' 'W_15_load' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_15_out, i64 %W_15_load"   --->   Operation 103 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_14_out, i64 %W_14_load"   --->   Operation 104 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_13_out, i64 %W_13_load"   --->   Operation 105 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_12_out, i64 %W_12_load"   --->   Operation 106 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_11_out, i64 %W_11_load"   --->   Operation 107 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_10_out, i64 %W_10_load"   --->   Operation 108 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_9_out, i64 %W_9_load"   --->   Operation 109 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_8_out, i64 %W_8_load"   --->   Operation 110 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_7_out, i64 %W_7_load"   --->   Operation 111 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_6_out, i64 %W_6_load"   --->   Operation 112 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_5_out, i64 %W_5_load"   --->   Operation 113 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_4_out, i64 %W_4_load"   --->   Operation 114 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_3_out, i64 %W_3_load"   --->   Operation 115 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_2_out, i64 %W_2_load"   --->   Operation 116 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_1_out, i64 %W_1_load"   --->   Operation 117 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i64P0A, i64 %W_out, i64 %W_load"   --->   Operation 118 'write' 'write_ln0' <Predicate = (icmp_ln610)> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 119 'ret' 'ret_ln0' <Predicate = (icmp_ln610)> <Delay = 0.48>
+
+State 2 <SV = 1> <Delay = 1.93>
+ST_2 : Operation 85 [1/1] ( I:1.93ns O:1.93ns )   --->   "%write_ln614 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %w_strm, i64 %W_16" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:614]   --->   Operation 85 'write' 'write_ln614' <Predicate = true> <Delay = 1.93> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32> <FIFO>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln610 = br void %for.inc" [C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610]   --->   Operation 86 'br' 'br_ln610' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 1.050ns.
+
+ <State 1>: 1.856ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln610', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610) of constant 0 on local variable 't', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610 [69]  (0.489 ns)
+	'load' operation 5 bit ('t', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610) on local variable 't', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610 [72]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln610', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610) [73]  (0.878 ns)
+	'store' operation 0 bit ('store_ln610', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610) of variable 'add_ln610', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610 on local variable 't', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:610 [133]  (0.489 ns)
+
+ <State 2>: 1.939ns
+The critical path consists of the following:
+	fifo write operation ('write_ln614', C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:614) on port 'w_strm' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:614) [132]  (1.939 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

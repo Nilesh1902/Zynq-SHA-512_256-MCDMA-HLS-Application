@@ -1,0 +1,153 @@
+
+
+================================================================
+== Vitis HLS Report for 'axis_to_core_Pipeline_FEED_LOOP'
+================================================================
+* Date:           Wed Jun 10 15:15:03 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.199 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- FEED_LOOP  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    272|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     54|    -|
+|Register         |        -|    -|     130|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     130|    326|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+-----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+-----+------------+------------+
+    |i_3_fu_96_p2                           |         +|   0|  0|  133|         126|           1|
+    |ap_block_pp0_stage0_01001_grp1         |       and|   0|  0|    2|           1|           1|
+    |icmp_ln65_fu_91_p2                     |      icmp|   0|  0|  133|         126|         126|
+    |ap_block_state3_pp0_stage0_iter2_grp1  |        or|   0|  0|    2|           1|           1|
+    |ap_enable_pp0                          |       xor|   0|  0|    2|           1|           2|
+    +---------------------------------------+----------+----+---+-----+------------+------------+
+    |Total                                  |          |   0|  0|  272|         255|         131|
+    +---------------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |core_msg_strm_blk_n      |   9|          2|    1|          2|
+    |i_fu_52                  |   9|          2|  126|        252|
+    |msg_strm_TDATA_blk_n     |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|  131|        262|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+-----+----+-----+-----------+
+    |           Name          |  FF | LUT| Bits| Const Bits|
+    +-------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                |    1|   0|    1|          0|
+    |ap_done_reg              |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |    1|   0|    1|          0|
+    |i_fu_52                  |  126|   0|  126|          0|
+    +-------------------------+-----+----+-----+-----------+
+    |Total                    |  130|   0|  130|          0|
+    +-------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+---------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++------------------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  axis_to_core_Pipeline_FEED_LOOP|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  axis_to_core_Pipeline_FEED_LOOP|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  axis_to_core_Pipeline_FEED_LOOP|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  axis_to_core_Pipeline_FEED_LOOP|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  axis_to_core_Pipeline_FEED_LOOP|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  axis_to_core_Pipeline_FEED_LOOP|  return value|
+|msg_strm_TVALID               |   in|    1|        axis|                msg_strm_V_data_V|       pointer|
+|msg_strm_TDATA                |   in|   64|        axis|                msg_strm_V_data_V|       pointer|
+|core_msg_strm_din             |  out|   64|     ap_fifo|                    core_msg_strm|       pointer|
+|core_msg_strm_full_n          |   in|    1|     ap_fifo|                    core_msg_strm|       pointer|
+|core_msg_strm_write           |  out|    1|     ap_fifo|                    core_msg_strm|       pointer|
+|core_msg_strm_num_data_valid  |   in|    7|     ap_fifo|                    core_msg_strm|       pointer|
+|core_msg_strm_fifo_cap        |   in|    7|     ap_fifo|                    core_msg_strm|       pointer|
+|trunc_ln                      |   in|  126|     ap_none|                         trunc_ln|        scalar|
+|msg_strm_TREADY               |  out|    1|        axis|                msg_strm_V_dest_V|       pointer|
+|msg_strm_TDEST                |   in|    3|        axis|                msg_strm_V_dest_V|       pointer|
+|msg_strm_TKEEP                |   in|    8|        axis|                msg_strm_V_keep_V|       pointer|
+|msg_strm_TSTRB                |   in|    8|        axis|                msg_strm_V_strb_V|       pointer|
+|msg_strm_TLAST                |   in|    1|        axis|                msg_strm_V_last_V|       pointer|
++------------------------------+-----+-----+------------+---------------------------------+--------------+
+

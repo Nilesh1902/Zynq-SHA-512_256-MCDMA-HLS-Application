@@ -1,0 +1,29 @@
+[
+  {
+    "directory": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component",
+    "arguments": [
+      "D:\\version_2024.2\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\version_2024.2\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=test",
+      "-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include",
+      "-c",
+      "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp"
+    ],
+    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp"
+  },
+  {
+    "directory": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component",
+    "arguments": [
+      "D:\\version_2024.2\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\version_2024.2\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\version_2024.2\\Vitis\\2024.2\\include",
+      "-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include",
+      "-c",
+      "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\tb.cpp"
+    ],
+    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\tb.cpp"
+  }
+]

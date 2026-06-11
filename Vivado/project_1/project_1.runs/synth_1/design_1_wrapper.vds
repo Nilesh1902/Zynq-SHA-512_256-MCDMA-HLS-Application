@@ -1,0 +1,345 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun 10 16:01:06 2026
+# Process ID         : 31612
+# Current directory  : D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file           : D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file       : D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : nileshnadekar
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-14500
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16833 MB
+# Swap memory        : 8736 MB
+# Total Virtual      : 25569 MB
+# Available Virtual  : 6055 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 798.105 ; gain = 458.594
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/version_2024.2/Vivado/2024.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4788
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2017.598 ; gain = 173.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mcdma_0_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axi_mcdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mcdma_0_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axi_mcdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tuser' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tid' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 'mm2s_ch1_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 'mm2s_ch2_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 'mm2s_ch3_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 'mm2s_ch4_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 's2mm_ch1_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 's2mm_ch2_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 's2mm_ch3_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7071] port 's2mm_ch4_introut' of module 'design_1_axi_mcdma_0_0' is unconnected for instance 'axi_mcdma_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+WARNING: [Synth 8-7023] instance 'axi_mcdma_0' of module 'design_1_axi_mcdma_0_0' has 107 connections declared, but only 95 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:418]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 175 connections declared, but only 164 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:514]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_0_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axis_switch_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_0_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axis_switch_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_decode_err' of module 'design_1_axis_switch_0_0' is unconnected for instance 'axis_switch_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:857]
+WARNING: [Synth 8-7023] instance 'axis_switch_0' of module 'design_1_axis_switch_0_0' has 17 connections declared, but only 16 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:857]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_1_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axis_switch_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_1_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_axis_switch_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'design_1_axis_switch_1_0' is unconnected for instance 'axis_switch_1' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:874]
+WARNING: [Synth 8-7071] port 's_decode_err' of module 'design_1_axis_switch_1_0' is unconnected for instance 'axis_switch_1' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:874]
+WARNING: [Synth 8-7023] instance 'axis_switch_1' of module 'design_1_axis_switch_1_0' has 18 connections declared, but only 16 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:874]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:891]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:891]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:891]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:891]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:891]
+INFO: [Synth 8-6157] synthesizing module 'design_1_test_0_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_test_0_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_test_0_0' is unconnected for instance 'test_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:898]
+WARNING: [Synth 8-7023] instance 'test_0' of module 'design_1_test_0_0' has 34 connections declared, but only 33 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:898]
+INFO: [Synth 8-6157] synthesizing module 'design_1_test_1_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_test_1_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_test_1_0' is unconnected for instance 'test_1' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:932]
+WARNING: [Synth 8-7023] instance 'test_1' of module 'design_1_test_1_0' has 34 connections declared, but only 33 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:932]
+INFO: [Synth 8-6157] synthesizing module 'design_1_test_2_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_test_2_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_test_2_0' is unconnected for instance 'test_2' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:966]
+WARNING: [Synth 8-7023] instance 'test_2' of module 'design_1_test_2_0' has 34 connections declared, but only 33 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:966]
+INFO: [Synth 8-6157] synthesizing module 'design_1_test_3_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_test_3_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_test_3_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_test_3_0' is unconnected for instance 'test_3' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1000]
+WARNING: [Synth 8-7023] instance 'test_3' of module 'design_1_test_3_0' has 34 connections declared, but only 33 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1000]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-31612-nileshnadekar/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'saxigp3_bid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'saxigp3_rid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'ps_pl_irq_uart0' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7071] port 'ps_pl_irq_uart1' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 205 connections declared, but only 197 given [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2140.379 ; gain = 296.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2158.305 ; gain = 314.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2158.305 ; gain = 314.605
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2166.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_mcdma_0_0/design_1_axi_mcdma_0_0/design_1_axi_mcdma_0_0_in_context.xdc] for cell 'design_1_i/axi_mcdma_0'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_mcdma_0_0/design_1_axi_mcdma_0_0/design_1_axi_mcdma_0_0_in_context.xdc] for cell 'design_1_i/axi_mcdma_0'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_0_0/design_1_test_0_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_0'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_0_0/design_1_test_0_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_0'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_1_0/design_1_test_1_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_1'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_1_0/design_1_test_1_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_1'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_2_0/design_1_test_2_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_2'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_2_0/design_1_test_2_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_2'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_3_0/design_1_test_3_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_3'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_test_3_0/design_1_test_3_0/design_1_test_2_0_in_context.xdc] for cell 'design_1_i/test_3'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_switch_0_0/design_1_axis_switch_0_0/design_1_axis_switch_0_0_in_context.xdc] for cell 'design_1_i/axis_switch_0'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_switch_0_0/design_1_axis_switch_0_0/design_1_axis_switch_0_0_in_context.xdc] for cell 'design_1_i/axis_switch_0'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_switch_1_0/design_1_axis_switch_1_0/design_1_axis_switch_1_0_in_context.xdc] for cell 'design_1_i/axis_switch_1'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_switch_1_0/design_1_axis_switch_1_0/design_1_axis_switch_1_0_in_context.xdc] for cell 'design_1_i/axis_switch_1'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/design_1_axi_smc_1_0/design_1_axi_smc_1_0_in_context.xdc] for cell 'design_1_i/axi_smc_1'
+Finished Parsing XDC File [d:/Nilesh_3/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/design_1_axi_smc_1_0/design_1_axi_smc_1_0_in_context.xdc] for cell 'design_1_i/axi_smc_1'
+Parsing XDC File [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2187.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2187.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2187.848 ; gain = 344.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2187.848 ; gain = 344.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mcdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/test_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/test_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/test_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/test_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_switch_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_switch_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2187.848 ; gain = 344.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2187.848 ; gain = 344.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2187.848 ; gain = 344.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2850.188 ; gain = 1006.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2850.188 ; gain = 1006.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2864.559 ; gain = 1020.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_axi_mcdma_0_0       |         1|
+|2     |design_1_axi_smc_0           |         1|
+|3     |design_1_axi_smc_1_0         |         1|
+|4     |design_1_axis_switch_0_0     |         1|
+|5     |design_1_axis_switch_1_0     |         1|
+|6     |design_1_rst_ps8_0_100M_0    |         1|
+|7     |design_1_test_0_0            |         1|
+|8     |design_1_test_1_0            |         1|
+|9     |design_1_test_2_0            |         1|
+|10    |design_1_test_3_0            |         1|
+|11    |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_axi_mcdma_0       |     1|
+|2     |design_1_axi_smc           |     1|
+|3     |design_1_axi_smc_1         |     1|
+|4     |design_1_axis_switch_0     |     1|
+|5     |design_1_axis_switch_1     |     1|
+|6     |design_1_rst_ps8_0_100M    |     1|
+|7     |design_1_test_0            |     1|
+|8     |design_1_test_1            |     1|
+|9     |design_1_test_2            |     1|
+|10    |design_1_test_3            |     1|
+|11    |design_1_zynq_ultra_ps_e_0 |     1|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 3078.074 ; gain = 1204.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3078.074 ; gain = 1234.375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3078.074 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3078.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 45311c8c
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 3078.074 ; gain = 2223.918
+INFO: [Common 17-1381] The checkpoint 'D:/Nilesh_3/Vivado/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 10 16:02:00 2026...

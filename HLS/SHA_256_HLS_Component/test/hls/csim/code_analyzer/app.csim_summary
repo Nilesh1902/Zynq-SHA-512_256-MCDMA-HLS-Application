@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "D:/Nilesh_3\\HLS\\SHA_256_HLS_Component\\test\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jun 10 15:14:06 2026",
+ "timestampMillis": "1781084646199",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jun 10 15:14:06 2026",
+ "timestampMillis": "1781084646200",
+ "buildStep": {
+  "cmdId": "ec057f65-64b0-11f1-95ff-246a0efdbd91",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun 10 15:14:06 2026",
+ "timestampMillis": "1781084646200",
+ "status": {
+  "cmdId": "ec057f65-64b0-11f1-95ff-246a0efdbd91",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun 10 15:14:22 2026",
+ "timestampMillis": "1781084662045",
+ "status": {
+  "cmdId": "ec057f65-64b0-11f1-95ff-246a0efdbd91",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun 10 15:14:22 2026",
+ "timestampMillis": "1781084662046",
+ "report": {
+  "path": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "ec057f65-64b0-11f1-95ff-246a0efdbd91"
+ }
+}
+</ENTRY>

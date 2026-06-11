@@ -1,0 +1,10 @@
+{
+    "clangd.fallbackFlags": [
+        "-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include",
+        "-ID:\\version_2024.2\\Vitis\\2024.2\\include",
+        "-ID:\\version_2024.2\\Vitis\\2024.2\\include\\etc",
+        "-ID:\\version_2024.2\\Vitis\\2024.2\\include\\ap_sysc",
+        "-ID:\\version_2024.2\\Vitis\\2024.2\\win64\\tools\\auto_cc\\include",
+        "-ID:\\version_2024.2\\Vitis\\2024.2\\win64\\tools\\systemc\\include"
+    ]
+}

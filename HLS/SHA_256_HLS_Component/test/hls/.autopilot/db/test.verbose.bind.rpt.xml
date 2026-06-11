@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'test'" level="0">
+<item name = "Date">Wed Jun 10 15:15:03 2026
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">test</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.686 ns, 1.05 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln146_entry_proc_fu_142">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_axis_to_core_fu_149">axis_to_core, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_sha512_t_64u_256u_s_fu_168">sha512_t_64u_256u_s, 112, 112, 1.120 us, 1.120 us, 112, 112, no</column>
+<column name="grp_core_to_axis_fu_177">core_to_axis, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

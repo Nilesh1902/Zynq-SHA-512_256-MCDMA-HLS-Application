@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vitis HLS Report for 'core_to_axis_Pipeline_DRAIN_LOOP'
+================================================================
+* Date:           Wed Jun 10 15:15:09 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        test
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.091 ns|     1.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- DRAIN_LOOP  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      8|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     45|    -|
+|Register         |        -|    -|       6|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       6|     53|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_pp0_stage0_01001_grp1         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001              |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1_grp1  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                          |       xor|   0|  0|   2|           1|           2|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                  |          |   0|  0|   8|           4|           5|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_done_int                 |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1     |   9|          2|    1|          2|
+    |core_digest_strm_blk_n      |   9|          2|    1|          2|
+    |core_end_digest_strm_blk_n  |   9|          2|    1|          2|
+    |digest_strm_TDATA_blk_n     |   9|          2|    1|          2|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  45|         10|    5|         10|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+---+----+-----+-----------+
+    |                    Name                   | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                  |  1|   0|    1|          0|
+    |ap_block_pp0_stage0_subdone_grp1_done_reg  |  1|   0|    1|          0|
+    |ap_done_reg                                |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                    |  1|   0|    1|          0|
+    |out_pkt_dest_cast_reg_99                   |  2|   0|    3|          1|
+    +-------------------------------------------+---+----+-----+-----------+
+    |Total                                      |  6|   0|    7|          1|
+    +-------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+----------------------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |           Source Object          |    C Type    |
++-------------------------------------+-----+-----+------------+----------------------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|  core_to_axis_Pipeline_DRAIN_LOOP|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|  core_to_axis_Pipeline_DRAIN_LOOP|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|  core_to_axis_Pipeline_DRAIN_LOOP|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|  core_to_axis_Pipeline_DRAIN_LOOP|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|  core_to_axis_Pipeline_DRAIN_LOOP|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|  core_to_axis_Pipeline_DRAIN_LOOP|  return value|
+|core_end_digest_strm_dout            |   in|    1|     ap_fifo|              core_end_digest_strm|       pointer|
+|core_end_digest_strm_empty_n         |   in|    1|     ap_fifo|              core_end_digest_strm|       pointer|
+|core_end_digest_strm_read            |  out|    1|     ap_fifo|              core_end_digest_strm|       pointer|
+|core_end_digest_strm_num_data_valid  |   in|    3|     ap_fifo|              core_end_digest_strm|       pointer|
+|core_end_digest_strm_fifo_cap        |   in|    3|     ap_fifo|              core_end_digest_strm|       pointer|
+|core_digest_strm_dout                |   in|  256|     ap_fifo|                  core_digest_strm|       pointer|
+|core_digest_strm_empty_n             |   in|    1|     ap_fifo|                  core_digest_strm|       pointer|
+|core_digest_strm_read                |  out|    1|     ap_fifo|                  core_digest_strm|       pointer|
+|core_digest_strm_num_data_valid      |   in|    3|     ap_fifo|                  core_digest_strm|       pointer|
+|core_digest_strm_fifo_cap            |   in|    3|     ap_fifo|                  core_digest_strm|       pointer|
+|digest_strm_TREADY                   |   in|    1|        axis|              digest_strm_V_data_V|       pointer|
+|digest_strm_TDATA                    |  out|  256|        axis|              digest_strm_V_data_V|       pointer|
+|out_pkt_dest                         |   in|    2|     ap_none|                      out_pkt_dest|        scalar|
+|digest_strm_TVALID                   |  out|    1|        axis|              digest_strm_V_dest_V|       pointer|
+|digest_strm_TDEST                    |  out|    3|        axis|              digest_strm_V_dest_V|       pointer|
+|digest_strm_TKEEP                    |  out|   32|        axis|              digest_strm_V_keep_V|       pointer|
+|digest_strm_TSTRB                    |  out|   32|        axis|              digest_strm_V_strb_V|       pointer|
+|digest_strm_TLAST                    |  out|    1|        axis|              digest_strm_V_last_V|       pointer|
++-------------------------------------+-----+-----+------------+----------------------------------+--------------+
+

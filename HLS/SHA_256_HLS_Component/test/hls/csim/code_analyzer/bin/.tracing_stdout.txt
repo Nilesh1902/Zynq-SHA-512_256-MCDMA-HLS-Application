@@ -1,0 +1,12 @@
+================================================
+  SHA-512/256 Dual-IP HLS Testbench
+  Vitis HLS 2024.2 | xczu3eg-sbva484-1-i
+  syn.top = test | 300 test cases
+================================================
+------------------------------------------------
+  Total tests : 300
+  Passed      : 300
+  Hash errors : 0
+  DEST errors : 0
+------------------------------------------------
+PASS: all 300 tests correct, TDEST routing verified.

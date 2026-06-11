@@ -1,0 +1,214 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6 7 8",
+    "file": "test.cpp",
+    "fileloc": 131,
+    "instructions": 50,
+    "name": "test",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 28935
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "4 15 5 10",
+    "file": "sha512_t.hpp",
+    "fileloc": 848,
+    "instructions": 69,
+    "name": "sha512Top<64, 256>",
+    "total_instructions": 28292
+  },
+  "10": {
+    "basicblocks": 25,
+    "calls": "16 12 14 13",
+    "file": "sha512_t.hpp",
+    "fileloc": 652,
+    "instructions": 989,
+    "loads": {
+      "G": 1,
+      "L": 41
+    },
+    "name": "SHA512Digest<64, 256>",
+    "stores": {
+      "G": 1,
+      "L": 43
+    },
+    "total_instructions": 8336
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "3 3 9",
+    "file": "sha512_t.hpp",
+    "fileloc": 495,
+    "instructions": 39,
+    "loads": {
+      "L": 3
+    },
+    "name": "SSIG0<64>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 423
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 405,
+    "instructions": 27,
+    "name": "Ch<64>",
+    "total_instructions": 198
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 430,
+    "instructions": 36,
+    "name": "Maj<64>",
+    "total_instructions": 271
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "3 3 3",
+    "file": "sha512_t.hpp",
+    "fileloc": 453,
+    "instructions": 39,
+    "loads": {
+      "L": 3
+    },
+    "name": "BSIG0<64>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 517
+  },
+  "15": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 541,
+    "instructions": 45,
+    "name": "dup_strm<128>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 99
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "3 3 3",
+    "file": "sha512_t.hpp",
+    "fileloc": 474,
+    "instructions": 39,
+    "loads": {
+      "L": 3
+    },
+    "name": "BSIG1<64>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 517
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "3 3 9",
+    "file": "sha512_t.hpp",
+    "fileloc": 516,
+    "instructions": 39,
+    "loads": {
+      "L": 3
+    },
+    "name": "SSIG1<64>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 423
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 381,
+    "instructions": 19,
+    "name": "ROTR<64>",
+    "total_instructions": 128
+  },
+  "4": {
+    "basicblocks": 101,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 69,
+    "instructions": 2559,
+    "loads": {
+      "L": 47
+    },
+    "name": "preProcessing<64>",
+    "stores": {
+      "L": 49
+    },
+    "total_instructions": 17984
+  },
+  "5": {
+    "basicblocks": 29,
+    "calls": "2 11",
+    "file": "sha512_t.hpp",
+    "fileloc": 586,
+    "instructions": 198,
+    "loads": {
+      "L": 6
+    },
+    "name": "generateMsgSchedule<64>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 1796
+  },
+  "6": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "test.cpp",
+    "fileloc": 48,
+    "instructions": 66,
+    "name": "axis_to_core",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 374
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "sha512_t.hpp",
+    "fileloc": 1323,
+    "instructions": 2,
+    "name": "sha512_t<64, 256>",
+    "total_instructions": 28294
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "test.cpp",
+    "fileloc": 87,
+    "instructions": 62,
+    "loads": {
+      "L": 5
+    },
+    "name": "core_to_axis",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 212
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 358,
+    "instructions": 3,
+    "name": "SHR<64>",
+    "total_instructions": 34
+  }
+}

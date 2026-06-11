@@ -1,0 +1,473 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-4781" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1364:9" msg_body="'xlx_function_allocation' attribute cannot be applied to a statement">
+        <args ClangWarningOption="ignored-attributes"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4781" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1405:9" msg_body="'xlx_function_allocation' attribute cannot be applied to a statement">
+        <args ClangWarningOption="ignored-attributes"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:861:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:866:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:869:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:872:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:877:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:880:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:883:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:888:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1165:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1228:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1231:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1234:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5577" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1364:45" msg_body="Allocation pragma is ignored, because Instances value is not valid function pointer expression">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5577" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1405:45" msg_body="Allocation pragma is ignored, because Instances value is not valid function pointer expression">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:219:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:340:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:360:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:383:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/version_2024.2/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:98:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 16" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 0 max = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b0.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:150:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:237:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:242:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:321:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b1.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:325:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:362:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHR" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ROTR" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:410:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Ch" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:435:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Maj" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:456:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BSIG0" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:477:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BSIG1" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:498:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SSIG0" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:519:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SSIG1" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:554:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dup_strm" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:555:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dup_strm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:597:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:601:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:603:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:607:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = W complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:611:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:619:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:679:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHA512Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = K complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:685:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHA512Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:729:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHA512Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = H complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:736:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHA512Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:750:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHA512Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:802:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="SHA512Digest" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:856:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:860:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:861:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:865:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:866:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:868:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm1 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:869:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm1 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:871:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm2 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:872:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm2 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:876:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:877:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:879:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm1 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:880:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm1 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:882:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm2 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:883:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm2 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:887:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = w_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:888:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha512Top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = w_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:923:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessingOneTripForHMAC" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:941:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessingOneTripForHMAC" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:947:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessingOneTripForHMAC" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:966:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessingOneTripForHMAC" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1044:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgScheduleOneTrip" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = K type = ROM_1P impl = LUTRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1047:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgScheduleOneTrip" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = H complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1089:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgScheduleOneTrip" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = W" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1092:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgScheduleOneTrip" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1147:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgScheduleOneTrip" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1179:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert32To64OneRound" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1225:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = msg_64_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1228:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = msg_64_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1230:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = len_64_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = len_64_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1233:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1234:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384_2in1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1364:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances = internal::HMAC_SHA384_2in1 limit = 1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1405:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="HMAC_SHA384" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances = internal::HMAC_SHA384_2in1 limit = 1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axis_to_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="core_to_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:138:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=msg_strm depth=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=digest_strm depth=4" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=msg_len bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=dest_id bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:143:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:146:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=core_msg_strm depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=core_len_strm depth=4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=core_end_len_strm depth=4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=core_digest_strm depth=4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:166:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=core_end_digest_strm depth=4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-387" msg_severity="WARNING" msg_loc="test.cpp:136:0" msg_body="Ignore depth setting for top argument 'msg_strm'"/>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-387" msg_severity="WARNING" msg_loc="test.cpp:136:0" msg_body="Ignore depth setting for top argument 'digest_strm'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:521:10" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)' into 'ap_uint&lt;64u&gt; xf::security::internal::SSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 384 Column 0" Caller="ap_uint&lt;64u&gt; xf::security::internal::SSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 518 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:521:44" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::SHR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)' into 'ap_uint&lt;64u&gt; xf::security::internal::SSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::SHR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 361 Column 0" Caller="ap_uint&lt;64u&gt; xf::security::internal::SSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 518 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:500:10" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)' into 'ap_uint&lt;64u&gt; xf::security::internal::SSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 384 Column 0" Caller="ap_uint&lt;64u&gt; xf::security::internal::SSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 497 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:500:42" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::SHR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)' into 'ap_uint&lt;64u&gt; xf::security::internal::SSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::SHR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 361 Column 0" Caller="ap_uint&lt;64u&gt; xf::security::internal::SSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 497 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:620:43" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::SSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)' into 'void xf::security::internal::generateMsgSchedule&lt;64u&gt;(hls::stream&lt;xf::security::internal::blockType, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::SSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 497 Column 0" Caller="void xf::security::internal::generateMsgSchedule&lt;64u&gt;(hls::stream&lt;xf::security::internal::blockType, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 592 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:620:18" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::SSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)' into 'void xf::security::internal::generateMsgSchedule&lt;64u&gt;(hls::stream&lt;xf::security::internal::blockType, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::SSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 518 Column 0" Caller="void xf::security::internal::generateMsgSchedule&lt;64u&gt;(hls::stream&lt;xf::security::internal::blockType, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 592 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:479:10" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)' into 'ap_uint&lt;64u&gt; xf::security::internal::BSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 384 Column 0" Caller="ap_uint&lt;64u&gt; xf::security::internal::BSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 476 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:458:10" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)' into 'ap_uint&lt;64u&gt; xf::security::internal::BSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::ROTR&lt;64u&gt;(unsigned int, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 384 Column 0" Caller="ap_uint&lt;64u&gt; xf::security::internal::BSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 455 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:756:47" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::Maj&lt;64u&gt;(ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;)' into 'void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::Maj&lt;64u&gt;(ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 434 Column 0" Caller="void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 659 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:756:33" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::BSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)' into 'void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::BSIG0&lt;64u&gt;(ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 455 Column 0" Caller="void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 659 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:755:51" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::Ch&lt;64u&gt;(ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;)' into 'void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::Ch&lt;64u&gt;(ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;, ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 409 Column 0" Caller="void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 659 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:755:37" msg_body="Inlining function 'ap_uint&lt;64u&gt; xf::security::internal::BSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)' into 'void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;64u&gt; xf::security::internal::BSIG1&lt;64u&gt;(ap_uint&lt;64u&gt;)" Callee-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 476 Column 0" Caller="void xf::security::internal::SHA512Digest&lt;64u, 256u&gt;(hls::stream&lt;ap_uint&lt;64u&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256u&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 659 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:321:9" msg_body="Adding 'b1' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:237:9" msg_body="Adding 'b276' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b276"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:150:9" msg_body="Adding 'b71' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b71"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:128:9" msg_body="Adding 'b' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:102:9" msg_body="Adding 'b0' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:603:9" msg_body="Adding 'blk' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="blk"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:320:23" msg_body="Disaggregating variable 'b1'">
+        <args Name="b1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:236:23" msg_body="Disaggregating variable 'b276'">
+        <args Name="b276"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:149:23" msg_body="Disaggregating variable 'b71'">
+        <args Name="b71"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:127:23" msg_body="Disaggregating variable 'b'">
+        <args Name="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:101:12" msg_body="Disaggregating variable 'b0'">
+        <args Name="b0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:602:12" msg_body="Disaggregating variable 'blk'">
+        <args Name="blk"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:621:35" msg_body="Loop 'VITIS_LOOP_621_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_621_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:106:13" msg_body="Loop 'LOOP_GEN_ONE_FULL_BLK' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="LOOP_GEN_ONE_FULL_BLK"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:659:0" msg_body="Unrolling loop 'LOOP_SHA512_EMIT' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:801:9) in function 'xf::security::internal::SHA512Digest&lt;64u, 256u&gt;' completely with a factor of 8">
+        <args Factor="8" LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:801:9" LoopName="LOOP_SHA512_EMIT"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:592:0" msg_body="Unrolling loop 'VITIS_LOOP_621_1' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:621:35) in function 'xf::security::internal::generateMsgSchedule&lt;64u&gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:621:35" LoopName="VITIS_LOOP_621_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0" msg_body="Unrolling loop 'LOOP_GEN_ONE_FULL_BLK' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:106:13) in function 'xf::security::internal::preProcessing&lt;64u&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:106:13" LoopName="LOOP_GEN_ONE_FULL_BLK"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0" msg_body="Unrolling loop 'LOOP_COPY_AND_PAD_1' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:241:13) in function 'xf::security::internal::preProcessing&lt;64u&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:241:13" LoopName="LOOP_COPY_AND_PAD_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0" msg_body="Unrolling loop 'LOOP_PAD_14_ZERO_WORDS' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:324:13) in function 'xf::security::internal::preProcessing&lt;64u&gt;' completely with a factor of 14">
+        <args Factor="14" LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:324:13" LoopName="LOOP_PAD_14_ZERO_WORDS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0" msg_body="Unrolling loop 'LOOP_PAD_13_ZERO_WORDS' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:135:13) in function 'xf::security::internal::preProcessing&lt;64u&gt;' completely with a factor of 13">
+        <args Factor="13" LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:135:13" LoopName="LOOP_PAD_13_ZERO_WORDS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:661:0" msg_body="Applying array_partition to '_ZZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_E1K': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_E1K"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:149:23" msg_body="Applying array_partition to 'b71': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b71"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:602:12" msg_body="Applying array_partition to 'blk': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="blk"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606:13" msg_body="Applying array_partition to 'W': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="W"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:687:13" msg_body="Applying array_partition to 'H': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="H"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:859:25" msg_body="Aggregating fifo (hls::stream) variable 'blk_strm' with compact=bit mode in 1024-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1024" HwTyName="fifo (hls::stream)" Name="blk_strm"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5" msg_body="Automatically disabling loop flattening for loop 'LOOP_SHA1_MAIN'.">
+        <args LoopName="LOOP_SHA1_MAIN"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5" msg_body="loop_flatten 0 1 xf::security::internal::SHA512Digest&lt;64u, 256u&gt; C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5LOOP_SHA1_MAIN C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5">
+        <args LoopLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5" LoopLoc-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 684 Column 5" LoopName="LOOP_SHA1_MAIN" PragmaFunction="xf::security::internal::SHA512Digest&lt;64u, 256u&gt;" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5" PragmaSrcLoc-DebugLoc="File {C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp} Line 684 Column 5" PragmaType="loop_flatten"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

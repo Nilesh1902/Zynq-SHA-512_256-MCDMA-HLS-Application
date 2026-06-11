@@ -1,0 +1,520 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Nilesh_3/HLS/SHA_256_HLS_Component/test 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=test.hpp' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Nilesh_3/HLS/SHA_256_HLS_Component/test.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=test.cpp' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Nilesh_3/HLS/SHA_256_HLS_Component/test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.cpp' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'D:/Nilesh_3/HLS/SHA_256_HLS_Component/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=testcases.dat' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file 'D:/Nilesh_3/HLS/SHA_256_HLS_Component/testcases.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-IC:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'syn.top=test' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sbva484-1-i' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [HLS 200-1465] Applying ini 'clock=10' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1.05' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.05ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/Nilesh_3/HLS/SHA_256_HLS_Component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.015 seconds; current allocated memory: 271.496 MB.
+INFO: [HLS 200-10] Analyzing design file 'test.cpp' ... 
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:861:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:866:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:869:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:872:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:877:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:880:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:883:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:888:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1165:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1228:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1231:9)
+WARNING: [HLS 207-5538] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1234:9)
+WARNING: [HLS 207-5577] Allocation pragma is ignored, because Instances value is not valid function pointer expression  (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1364:45)
+WARNING: [HLS 207-4781] 'xlx_function_allocation' attribute cannot be applied to a statement (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1364:9)
+WARNING: [HLS 207-5577] Allocation pragma is ignored, because Instances value is not valid function pointer expression  (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1405:45)
+WARNING: [HLS 207-4781] 'xlx_function_allocation' attribute cannot be applied to a statement (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:1405:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.681 seconds; current allocated memory: 276.375 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 28,935 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,788 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,248 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,933 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,933 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,080 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,585 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,591 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,246 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,329 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,329 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,281 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,243 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,163 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,925 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,185 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/Nilesh_3/HLS/SHA_256_HLS_Component/test/hls/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-387] Ignore depth setting for top argument 'msg_strm' (test.cpp:136:0)
+WARNING: [HLS 214-387] Ignore depth setting for top argument 'digest_strm' (test.cpp:136:0)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)' into 'ap_uint<64u> xf::security::internal::SSIG1<64u>(ap_uint<64u>)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:521:10)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::SHR<64u>(unsigned int, ap_uint<64u>)' into 'ap_uint<64u> xf::security::internal::SSIG1<64u>(ap_uint<64u>)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:521:44)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)' into 'ap_uint<64u> xf::security::internal::SSIG0<64u>(ap_uint<64u>)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:500:10)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::SHR<64u>(unsigned int, ap_uint<64u>)' into 'ap_uint<64u> xf::security::internal::SSIG0<64u>(ap_uint<64u>)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:500:42)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::SSIG0<64u>(ap_uint<64u>)' into 'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:620:43)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::SSIG1<64u>(ap_uint<64u>)' into 'void xf::security::internal::generateMsgSchedule<64u>(hls::stream<xf::security::internal::blockType, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<64u>, 0>&)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:620:18)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)' into 'ap_uint<64u> xf::security::internal::BSIG1<64u>(ap_uint<64u>)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:479:10)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::ROTR<64u>(unsigned int, ap_uint<64u>)' into 'ap_uint<64u> xf::security::internal::BSIG0<64u>(ap_uint<64u>)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:458:10)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::Maj<64u>(ap_uint<64u>, ap_uint<64u>, ap_uint<64u>)' into 'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:756:47)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::BSIG0<64u>(ap_uint<64u>)' into 'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:756:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::Ch<64u>(ap_uint<64u>, ap_uint<64u>, ap_uint<64u>)' into 'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:755:51)
+INFO: [HLS 214-131] Inlining function 'ap_uint<64u> xf::security::internal::BSIG1<64u>(ap_uint<64u>)' into 'void xf::security::internal::SHA512Digest<64u, 256u>(hls::stream<ap_uint<64u>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<bool, 0>&, hls::stream<ap_uint<256u>, 0>&, hls::stream<bool, 0>&)' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:755:37)
+INFO: [HLS 214-377] Adding 'b1' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:321:9)
+INFO: [HLS 214-377] Adding 'b276' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:237:9)
+INFO: [HLS 214-377] Adding 'b71' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:150:9)
+INFO: [HLS 214-377] Adding 'b' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:128:9)
+INFO: [HLS 214-377] Adding 'b0' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:102:9)
+INFO: [HLS 214-377] Adding 'blk' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:603:9)
+INFO: [HLS 214-210] Disaggregating variable 'b1' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:320:23)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'b276' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:236:23)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'b71' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:149:23)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'b' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:127:23)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'b0' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:101:12)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'blk' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:602:12)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_621_1' is marked as complete unroll implied by the pipeline pragma (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:621:35)
+INFO: [HLS 214-291] Loop 'LOOP_GEN_ONE_FULL_BLK' is marked as complete unroll implied by the pipeline pragma (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:106:13)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_SHA512_EMIT' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:801:9) in function 'xf::security::internal::SHA512Digest<64u, 256u>' completely with a factor of 8 (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:659:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_621_1' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:621:35) in function 'xf::security::internal::generateMsgSchedule<64u>' completely with a factor of 15 (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_GEN_ONE_FULL_BLK' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:106:13) in function 'xf::security::internal::preProcessing<64u>' completely with a factor of 16 (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_COPY_AND_PAD_1' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:241:13) in function 'xf::security::internal::preProcessing<64u>' completely with a factor of 16 (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_PAD_14_ZERO_WORDS' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:324:13) in function 'xf::security::internal::preProcessing<64u>' completely with a factor of 14 (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_PAD_13_ZERO_WORDS' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:135:13) in function 'xf::security::internal::preProcessing<64u>' completely with a factor of 13 (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:77:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN2xf8security8internal12SHA512DigestILj64ELj256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi128EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_E1K': Complete partitioning on dimension 1. (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:661:0)
+INFO: [HLS 214-248] Applying array_partition to 'b71': Complete partitioning on dimension 1. (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:149:23)
+INFO: [HLS 214-248] Applying array_partition to 'blk': Complete partitioning on dimension 1. (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:602:12)
+INFO: [HLS 214-248] Applying array_partition to 'W': Complete partitioning on dimension 1. (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:606:13)
+INFO: [HLS 214-248] Applying array_partition to 'H': Complete partitioning on dimension 1. (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:687:13)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'blk_strm' with compact=bit mode in 1024-bits (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:859:25)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'LOOP_SHA1_MAIN'. (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:684:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.938 seconds; current allocated memory: 278.723 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 278.770 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 286.891 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 291.340 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'xf::security::internal::sha512Top<64u, 256u>' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:856:1), detected/extracted 4 process function(s): 
+	 'xf::security::internal::preProcessing<64u>'
+	 'xf::security::internal::dup_strm<128u>'
+	 'xf::security::internal::generateMsgSchedule<64u>'
+	 'xf::security::internal::SHA512Digest<64u, 256u>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'test' (test.cpp:131:1), detected/extracted 4 process function(s): 
+	 'entry_proc'
+	 'axis_to_core'
+	 'xf::security::sha512_t<64u, 256u>'
+	 'core_to_axis'.
+INFO: [XFORM 203-11] Balancing expressions in function 'xf::security::internal::generateMsgSchedule<64u>' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:364:13)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'xf::security::internal::SHA512Digest<64u, 256u>' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:387:13)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.578 seconds; current allocated memory: 316.223 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'LOOP_SHA1_DIGEST_NBLK'(C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:735:9) and 'LOOP_SHA1_UPDATE_80_ROUNDS'(C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:749:13) in function 'xf::security::internal::SHA512Digest<64u, 256u>' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_SHA1_DIGEST_NBLK' (C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include\xf_security/sha512_t.hpp:735:9) in function 'xf::security::internal::SHA512Digest<64u, 256u>'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.497 seconds; current allocated memory: 464.699 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'test' ...
+WARNING: [SYN 201-103] Legalizing function name 'preProcessing<64u>_Pipeline_LOOP_GEN_FULL_BLKS' to 'preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS'.
+WARNING: [SYN 201-103] Legalizing function name 'preProcessing<64u>_Pipeline_LOOP_COPY_TAIL_AND_PAD_1' to 'preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1'.
+WARNING: [SYN 201-103] Legalizing function name 'preProcessing<64u>' to 'preProcessing_64u_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dup_strm<128u>_Pipeline_LOOP_DUP_STREAM' to 'dup_strm_128u_Pipeline_LOOP_DUP_STREAM'.
+WARNING: [SYN 201-103] Legalizing function name 'dup_strm<128u>' to 'dup_strm_128u_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generateMsgSchedule<64u>_Pipeline_LOOP_SHA512_GEN_WT16' to 'generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16'.
+WARNING: [SYN 201-103] Legalizing function name 'generateMsgSchedule<64u>_Pipeline_LOOP_SHA1_GEN_WT64' to 'generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64'.
+WARNING: [SYN 201-103] Legalizing function name 'generateMsgSchedule<64u>' to 'generateMsgSchedule_64u_s'.
+WARNING: [SYN 201-103] Legalizing function name 'SHA512Digest<64u, 256u>' to 'SHA512Digest_64u_256u_s'.
+WARNING: [SYN 201-103] Legalizing function name 'sha512Top<64u, 256u>' to 'sha512Top_64u_256u_s'.
+WARNING: [SYN 201-103] Legalizing function name 'sha512_t<64u, 256u>' to 'sha512_t_64u_256u_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.653 seconds; current allocated memory: 467.664 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 468.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axis_to_core_Pipeline_FEED_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FEED_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'FEED_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 469.668 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 469.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axis_to_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 470.105 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 470.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_GEN_FULL_BLKS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 16, Final II = 16, Depth = 18, loop 'LOOP_GEN_FULL_BLKS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 471.734 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 472.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_COPY_TAIL_AND_PAD_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'LOOP_COPY_TAIL_AND_PAD_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.812 seconds; current allocated memory: 479.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 479.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'preProcessing_64u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 480.207 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 480.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dup_strm_128u_Pipeline_LOOP_DUP_STREAM' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_DUP_STREAM'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'LOOP_DUP_STREAM'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 480.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 480.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dup_strm_128u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 480.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 480.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_SHA512_GEN_WT16'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'LOOP_SHA512_GEN_WT16'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.369 seconds; current allocated memory: 480.918 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 481.027 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_SHA1_GEN_WT64'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOOP_SHA1_GEN_WT64'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 481.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 481.344 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generateMsgSchedule_64u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 481.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 481.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 482.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 483.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SHA512Digest_64u_256u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.569 seconds; current allocated memory: 483.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 484.035 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha512Top_64u_256u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_generateMsgSchedule_64u_U0 (from preProcessing_64u_U0 to generateMsgSchedule_64u_U0) to 3 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_SHA512Digest_64u_256u_U0 (from dup_strm_128u_U0 to SHA512Digest_64u_256u_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 484.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 484.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha512_t_64u_256u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 484.535 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 484.645 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'core_to_axis_Pipeline_DRAIN_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'DRAIN_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'DRAIN_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 484.770 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 484.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'core_to_axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 485.035 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 485.066 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'test' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_core_to_axis_U0 (from entry_proc_U0 to core_to_axis_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 485.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 485.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 486.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axis_to_core_Pipeline_FEED_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'axis_to_core_Pipeline_FEED_LOOP' pipeline 'FEED_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axis_to_core_Pipeline_FEED_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 488.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axis_to_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axis_to_core'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 489.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS' pipeline 'LOOP_GEN_FULL_BLKS' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.618 seconds; current allocated memory: 492.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1' pipeline 'LOOP_COPY_TAIL_AND_PAD_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.229 seconds; current allocated memory: 496.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'preProcessing_64u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'preProcessing_64u_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.315 seconds; current allocated memory: 504.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dup_strm_128u_Pipeline_LOOP_DUP_STREAM' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dup_strm_128u_Pipeline_LOOP_DUP_STREAM' pipeline 'LOOP_DUP_STREAM' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dup_strm_128u_Pipeline_LOOP_DUP_STREAM'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.248 seconds; current allocated memory: 509.781 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dup_strm_128u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dup_strm_128u_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 509.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16' pipeline 'LOOP_SHA512_GEN_WT16' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 510.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64' pipeline 'LOOP_SHA1_GEN_WT64' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.14 seconds; current allocated memory: 512.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generateMsgSchedule_64u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generateMsgSchedule_64u_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.906 seconds; current allocated memory: 516.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS' pipeline 'LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_161_7_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 519.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SHA512Digest_64u_256u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SHA512Digest_64u_256u_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 522.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha512Top_64u_256u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha512Top_64u_256u_s'.
+INFO: [RTMG 210-285] Implementing FIFO 'blk_strm_U(test_fifo_w1024_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'nblk_strm_U(test_fifo_w128_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'end_nblk_strm_U(test_fifo_w1_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'nblk_strm1_U(test_fifo_w128_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'end_nblk_strm1_U(test_fifo_w1_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'nblk_strm2_U(test_fifo_w128_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'end_nblk_strm2_U(test_fifo_w1_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'w_strm_U(test_fifo_w64_d32_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_dup_strm_128u_U0_U(test_start_for_dup_strm_128u_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_generateMsgSchedule_64u_U0_U(test_start_for_generateMsgSchedule_64u_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_SHA512Digest_64u_256u_U0_U(test_start_for_SHA512Digest_64u_256u_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 525.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha512_t_64u_256u_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha512_t_64u_256u_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 525.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'core_to_axis_Pipeline_DRAIN_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'core_to_axis_Pipeline_DRAIN_LOOP' pipeline 'DRAIN_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'core_to_axis_Pipeline_DRAIN_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.407 seconds; current allocated memory: 526.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'core_to_axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'core_to_axis'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 526.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'test' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/msg_strm_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/msg_strm_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/msg_strm_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/msg_strm_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/msg_strm_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/digest_strm_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/digest_strm_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/digest_strm_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/digest_strm_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/digest_strm_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/msg_len' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/dest_id' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'test' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'msg_len', 'dest_id' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'test'.
+INFO: [RTMG 210-285] Implementing FIFO 'dest_id_c_U(test_fifo_w2_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'core_msg_strm_U(test_fifo_w64_d64_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'core_len_strm_U(test_fifo_w128_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'core_end_len_strm_U(test_fifo_w1_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'core_digest_strm_U(test_fifo_w256_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'core_end_digest_strm_U(test_fifo_w1_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_core_to_axis_U0_U(test_start_for_core_to_axis_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_sha512_t_64u_256u_U0_U(test_start_for_sha512_t_64u_256u_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 528.074 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.485 seconds; current allocated memory: 531.500 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.65 seconds; current allocated memory: 539.727 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for test.
+INFO: [VLOG 209-307] Generating Verilog RTL for test.
+INFO: [HLS 200-789] **** Estimated Fmax: 130.10 MHz
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 2 seconds. Total elapsed time: 39.726 seconds; peak allocated memory: 540.781 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 44s

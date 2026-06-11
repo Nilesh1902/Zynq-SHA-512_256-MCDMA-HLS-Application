@@ -1,0 +1,388 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>7.084</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>7.084</CP_FINAL>
+  <CP_ROUTE>7.084</CP_ROUTE>
+  <CP_SYNTH>4.793</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>2.916</SLACK_FINAL>
+  <SLACK_ROUTE>2.916</SLACK_ROUTE>
+  <SLACK_SYNTH>5.207</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>2.916</WNS_FINAL>
+  <WNS_ROUTE>2.916</WNS_ROUTE>
+  <WNS_SYNTH>5.207</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>1934</CLB>
+    <DSP>0</DSP>
+    <FF>12135</FF>
+    <LATCH>0</LATCH>
+    <LUT>7541</LUT>
+    <SRL>196</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>432</BRAM>
+    <CLB>8820</CLB>
+    <DSP>360</DSP>
+    <FF>141120</FF>
+    <LUT>70560</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="test" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="13">axis_to_core_U0 control_s_axi_U core_digest_strm_U core_end_digest_strm_U core_end_len_strm_U core_len_strm_U core_msg_strm_U core_to_axis_U0 dest_id_c_U entry_proc_U0 sha512_t_64u_256u_U0 start_for_core_to_axis_U0_U start_for_sha512_t_64u_256u_U0_U</SubModules>
+    <Resources FF="12135" LUT="7541" LUTRAM="928" LogicLUT="6417" SRL="196"/>
+    <LocalResources FF="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/axis_to_core_U0" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_axis_to_core">
+    <SubModules count="2">grp_axis_to_core_Pipeline_FEED_LOOP_fu_85 regslice_both_msg_strm_V_data_V_U</SubModules>
+    <Resources FF="395" LUT="127" LogicLUT="127"/>
+    <LocalResources FF="132" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/axis_to_core_U0/grp_axis_to_core_Pipeline_FEED_LOOP_fu_85" DEPTH="2" FILE_NAME="test_axis_to_core.v" ORIG_REF_NAME="test_axis_to_core_Pipeline_FEED_LOOP">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="130" LUT="52" LogicLUT="52"/>
+    <LocalResources FF="128" LUT="45" LogicLUT="45"/>
+  </RtlModule>
+  <RtlModule CELL="inst/axis_to_core_U0/grp_axis_to_core_Pipeline_FEED_LOOP_fu_85/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="test_axis_to_core_Pipeline_FEED_LOOP.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/axis_to_core_U0/regslice_both_msg_strm_V_data_V_U" DEPTH="2" FILE_NAME="test_axis_to_core.v" ORIG_REF_NAME="test_regslice_both">
+    <Resources FF="133" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_control_s_axi">
+    <Resources FF="183" LUT="137" LogicLUT="137"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_digest_strm_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_fifo_w256_d4_S">
+    <Resources FF="7" LUT="134" LogicLUT="6" SRL="128"/>
+    <LocalResources FF="7" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_end_digest_strm_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_fifo_w1_d4_S">
+    <Resources FF="7" LUT="9" LogicLUT="8" SRL="1"/>
+    <LocalResources FF="7" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_end_len_strm_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_fifo_w1_d4_S">
+    <Resources FF="7" LUT="11" LogicLUT="10" SRL="1"/>
+    <LocalResources FF="7" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_len_strm_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_fifo_w128_d4_S">
+    <Resources FF="7" LUT="72" LogicLUT="8" SRL="64"/>
+    <LocalResources FF="7" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_msg_strm_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_fifo_w64_d64_A">
+    <Resources FF="93" LUT="118" LUTRAM="74" LogicLUT="44"/>
+    <LocalResources FF="29" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_core_to_axis">
+    <SubModules count="6">grp_core_to_axis_Pipeline_DRAIN_LOOP_fu_60 regslice_both_digest_strm_V_data_V_U regslice_both_digest_strm_V_dest_V_U regslice_both_digest_strm_V_keep_V_U regslice_both_digest_strm_V_last_V_U regslice_both_digest_strm_V_strb_V_U</SubModules>
+    <Resources FF="936" LUT="514" LogicLUT="514"/>
+    <LocalResources FF="330"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/grp_core_to_axis_Pipeline_DRAIN_LOOP_fu_60" DEPTH="2" FILE_NAME="test_core_to_axis.v" ORIG_REF_NAME="test_core_to_axis_Pipeline_DRAIN_LOOP">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="5" LUT="170" LogicLUT="170"/>
+    <LocalResources FF="4" LUT="167" LogicLUT="167"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/grp_core_to_axis_Pipeline_DRAIN_LOOP_fu_60/flow_control_loop_pipe_sequential_init_U" DEPTH="3" FILE_NAME="test_core_to_axis_Pipeline_DRAIN_LOOP.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="1" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/regslice_both_digest_strm_V_data_V_U" DEPTH="2" FILE_NAME="test_core_to_axis.v" ORIG_REF_NAME="test_regslice_both">
+    <Resources FF="517" LUT="264" LogicLUT="264"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/regslice_both_digest_strm_V_dest_V_U" DEPTH="2" FILE_NAME="test_core_to_axis.v" ORIG_REF_NAME="test_regslice_both">
+    <Resources FF="7" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/regslice_both_digest_strm_V_keep_V_U" DEPTH="2" FILE_NAME="test_core_to_axis.v" ORIG_REF_NAME="test_regslice_both">
+    <Resources FF="36" LUT="35" LogicLUT="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/regslice_both_digest_strm_V_last_V_U" DEPTH="2" FILE_NAME="test_core_to_axis.v" ORIG_REF_NAME="test_regslice_both">
+    <Resources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/core_to_axis_U0/regslice_both_digest_strm_V_strb_V_U" DEPTH="2" FILE_NAME="test_core_to_axis.v" ORIG_REF_NAME="test_regslice_both">
+    <Resources FF="36" LUT="35" LogicLUT="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dest_id_c_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_fifo_w2_d4_S">
+    <Resources FF="7" LUT="15" LogicLUT="13" SRL="2"/>
+    <LocalResources FF="7" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/entry_proc_U0" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_entry_proc">
+    <Resources FF="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_sha512_t_64u_256u_s">
+    <SubModules count="1">grp_sha512Top_64u_256u_s_fu_22</SubModules>
+    <Resources FF="10481" LUT="6395" LUTRAM="854" LogicLUT="5541"/>
+    <LocalResources FF="5" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22" DEPTH="2" FILE_NAME="test_sha512_t_64u_256u_s.v" ORIG_REF_NAME="test_sha512Top_64u_256u_s">
+    <SubModules count="15">SHA512Digest_64u_256u_U0 blk_strm_U dup_strm_128u_U0 end_nblk_strm1_U end_nblk_strm2_U end_nblk_strm_U generateMsgSchedule_64u_U0 nblk_strm1_U nblk_strm2_U nblk_strm_U preProcessing_64u_U0 start_for_SHA512Digest_64u_256u_U0_U start_for_dup_strm_128u_U0_U start_for_generateMsgSchedule_64u_U0_U w_strm_U</SubModules>
+    <Resources FF="10476" LUT="6392" LUTRAM="854" LogicLUT="5538"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_SHA512Digest_64u_256u_s">
+    <SubModules count="1">grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145</SubModules>
+    <Resources FF="1942" LUT="2212" LogicLUT="2212"/>
+    <LocalResources FF="255" LUT="134" LogicLUT="134"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145" DEPTH="4" FILE_NAME="test_SHA512Digest_64u_256u_s.v" ORIG_REF_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="1687" LUT="2078" LogicLUT="2078"/>
+    <LocalResources FF="1685" LUT="2025" LogicLUT="2025"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/flow_control_loop_pipe_sequential_init_U" DEPTH="5" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="54" LogicLUT="54"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/blk_strm_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w1024_d32_D">
+    <Resources FF="1071" LUT="629" LUTRAM="586" LogicLUT="43"/>
+    <LocalResources FF="47" LUT="38" LogicLUT="38"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/dup_strm_128u_U0" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_dup_strm_128u_s">
+    <SubModules count="1">grp_dup_strm_128u_Pipeline_LOOP_DUP_STREAM_fu_62</SubModules>
+    <Resources FF="15" LUT="30" LogicLUT="30"/>
+    <LocalResources FF="7" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/dup_strm_128u_U0/grp_dup_strm_128u_Pipeline_LOOP_DUP_STREAM_fu_62" DEPTH="4" FILE_NAME="test_dup_strm_128u_s.v" ORIG_REF_NAME="test_dup_strm_128u_Pipeline_LOOP_DUP_STREAM">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="8" LUT="25" LogicLUT="25"/>
+    <LocalResources FF="6" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/dup_strm_128u_U0/grp_dup_strm_128u_Pipeline_LOOP_DUP_STREAM_fu_62/flow_control_loop_pipe_sequential_init_U" DEPTH="5" FILE_NAME="test_dup_strm_128u_Pipeline_LOOP_DUP_STREAM.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/end_nblk_strm1_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w1_d32_D">
+    <Resources FF="26" LUT="26" LUTRAM="4" LogicLUT="22"/>
+    <LocalResources FF="25" LUT="21" LogicLUT="21"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/end_nblk_strm2_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w1_d32_D">
+    <Resources FF="26" LUT="37" LUTRAM="4" LogicLUT="33"/>
+    <LocalResources FF="25" LUT="29" LogicLUT="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/end_nblk_strm_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w1_d32_D">
+    <Resources FF="26" LUT="29" LUTRAM="4" LogicLUT="25"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_generateMsgSchedule_64u_s">
+    <SubModules count="2">grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254 grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16_fu_216</SubModules>
+    <Resources FF="3622" LUT="1638" LogicLUT="1638"/>
+    <LocalResources FF="1420" LUT="56" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254" DEPTH="4" FILE_NAME="test_generateMsgSchedule_64u_s.v" ORIG_REF_NAME="test_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="1106" LUT="1239" LogicLUT="1239"/>
+    <LocalResources FF="1097" LUT="201" LogicLUT="201"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64_fu_254/flow_control_loop_pipe_sequential_init_U" DEPTH="5" FILE_NAME="test_generateMsgSchedule_64u_Pipeline_LOOP_SHA1_GEN_WT64.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="9" LUT="1040" LogicLUT="1040"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16_fu_216" DEPTH="4" FILE_NAME="test_generateMsgSchedule_64u_s.v" ORIG_REF_NAME="test_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="1096" LUT="343" LogicLUT="343"/>
+    <LocalResources FF="1094" LUT="67" LogicLUT="67"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/generateMsgSchedule_64u_U0/grp_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16_fu_216/flow_control_loop_pipe_sequential_init_U" DEPTH="5" FILE_NAME="test_generateMsgSchedule_64u_Pipeline_LOOP_SHA512_GEN_WT16.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="276" LogicLUT="276"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/nblk_strm1_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w128_d32_D">
+    <Resources FF="147" LUT="96" LUTRAM="72" LogicLUT="24"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/nblk_strm2_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w128_d32_D">
+    <Resources FF="147" LUT="96" LUTRAM="72" LogicLUT="24"/>
+    <LocalResources FF="25" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/nblk_strm_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w128_d32_D">
+    <Resources FF="147" LUT="96" LUTRAM="72" LogicLUT="24"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/preProcessing_64u_U0" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_preProcessing_64u_s">
+    <SubModules count="2">grp_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1_fu_343 grp_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS_fu_334</SubModules>
+    <Resources FF="3204" LUT="1422" LogicLUT="1422"/>
+    <LocalResources FF="1192" LUT="196" LogicLUT="196"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/preProcessing_64u_U0/grp_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1_fu_343" DEPTH="4" FILE_NAME="test_preProcessing_64u_s.v" ORIG_REF_NAME="test_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="909" LUT="173" LogicLUT="173"/>
+    <LocalResources FF="907" LUT="156" LogicLUT="156"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/preProcessing_64u_U0/grp_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1_fu_343/flow_control_loop_pipe_sequential_init_U" DEPTH="5" FILE_NAME="test_preProcessing_64u_Pipeline_LOOP_COPY_TAIL_AND_PAD_1.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/preProcessing_64u_U0/grp_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS_fu_334" DEPTH="4" FILE_NAME="test_preProcessing_64u_s.v" ORIG_REF_NAME="test_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="1103" LUT="1054" LogicLUT="1054"/>
+    <LocalResources FF="1101" LUT="1008" LogicLUT="1008"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/preProcessing_64u_U0/grp_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS_fu_334/flow_control_loop_pipe_sequential_init_U" DEPTH="5" FILE_NAME="test_preProcessing_64u_Pipeline_LOOP_GEN_FULL_BLKS.v" ORIG_REF_NAME="test_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/start_for_SHA512Digest_64u_256u_U0_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_start_for_SHA512Digest_64u_256u_U0">
+    <Resources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/start_for_dup_strm_128u_U0_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_start_for_dup_strm_128u_U0">
+    <Resources FF="4" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/start_for_generateMsgSchedule_64u_U0_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_start_for_generateMsgSchedule_64u_U0">
+    <Resources FF="5" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/w_strm_U" DEPTH="3" FILE_NAME="test_sha512Top_64u_256u_s.v" ORIG_REF_NAME="test_fifo_w64_d32_D">
+    <Resources FF="89" LUT="64" LUTRAM="40" LogicLUT="24"/>
+    <LocalResources FF="25" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_core_to_axis_U0_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_start_for_core_to_axis_U0">
+    <Resources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_sha512_t_64u_256u_U0_U" DEPTH="1" FILE_NAME="test.v" ORIG_REF_NAME="test_start_for_sha512_t_64u_256u_U0">
+    <Resources FF="4" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="7.063" DATAPATH_LOGIC_DELAY="2.607" DATAPATH_NET_DELAY="4.456" ENDPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[63]/D" LOGIC_LEVELS="21" MAX_FANOUT="223" SLACK="2.916" STARTPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="779"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[39]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[8]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_98" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_73" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_sha512Top_64u_256u_s.v" LINE_NUMBER="293"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_21" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="906"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[63]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.062" DATAPATH_LOGIC_DELAY="2.606" DATAPATH_NET_DELAY="4.456" ENDPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[61]/D" LOGIC_LEVELS="21" MAX_FANOUT="223" SLACK="2.917" STARTPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="779"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[39]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[8]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_98" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_73" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_sha512Top_64u_256u_s.v" LINE_NUMBER="293"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_21" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="906"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[61]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.047" DATAPATH_LOGIC_DELAY="2.590" DATAPATH_NET_DELAY="4.457" ENDPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[62]/D" LOGIC_LEVELS="21" MAX_FANOUT="223" SLACK="2.932" STARTPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="779"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[39]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[8]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_98" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_73" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_sha512Top_64u_256u_s.v" LINE_NUMBER="293"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_21" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="906"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[62]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.025" DATAPATH_LOGIC_DELAY="2.570" DATAPATH_NET_DELAY="4.455" ENDPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[60]/D" LOGIC_LEVELS="21" MAX_FANOUT="223" SLACK="2.954" STARTPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="779"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[39]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[8]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_98" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_73" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_sha512Top_64u_256u_s.v" LINE_NUMBER="293"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_21" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="906"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[60]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="7.022" DATAPATH_LOGIC_DELAY="2.565" DATAPATH_NET_DELAY="4.457" ENDPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[59]/D" LOGIC_LEVELS="21" MAX_FANOUT="223" SLACK="2.956" STARTPOINT_PIN="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="779"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[39]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[8]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_98" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_73" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[23]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_sha512Top_64u_256u_s.v" LINE_NUMBER="293"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_21" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="904"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="906"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="test_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[59]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="test_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS.v" LINE_NUMBER="788"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/test_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/test_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/test_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/test_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/test_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/test_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/test_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/test_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

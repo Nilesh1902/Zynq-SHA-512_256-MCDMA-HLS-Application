@@ -1,0 +1,3 @@
+relativeroot=D:/Nilesh_3/HLS/SHA_256_HLS_Component
+original_argv=--mode hls --impl --config D:\Nilesh_3\HLS\SHA_256_HLS_Component\hls_config.cfg --work_dir test 
+

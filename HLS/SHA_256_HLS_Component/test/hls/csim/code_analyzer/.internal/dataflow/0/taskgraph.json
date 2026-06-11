@@ -1,0 +1,1308 @@
+[
+    {
+        "name": "_Z4testRN3hls6streamINS_4axisI7ap_uintILi64EELy0ELy0ELy3ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi256EELy0ELy0ELy3ELh56ELb0EEELi0EEES2_ILi128EES2_ILi2EE",
+        "df_function": "%F1541",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 131,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 194,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 131,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 194,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 test) BB 'codeRepl' [Atomic] 'Outline_T3_F1541_R2_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 154,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 158,
+                        "column": 76
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": []
+                },
+                "metrics": {
+                    "initiation_interval": 27
+                },
+                "subregions": [
+                    {
+                        "id": "%F1558_R2",
+                        "description": "<atomic 'entry_iso0'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 154,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 158,
+                                "column": 76
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 test) BB 'codeRepl1' [Call] 'Outline_T4_F1541_R3_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 171,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 176,
+                        "column": 26
+                    }
+                },
+                "display_name": "axis_to_core()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 132,
+                                    "column": 0
+                                },
+                                "id": "VId_4804_*0(0,64)arg",
+                                "name": "msg_strm",
+                                "display_name": "hls::stream<hls::axis<ap_uint<64>, 0ULL, 0ULL, 3ULL, (unsigned char)'8', false>, 0> &msg_strm"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 67,
+                                        "column": 45
+                                    },
+                                    "access_type": "%\"struct.hls::axis.39\"",
+                                    "access_bit_width": 116,
+                                    "exec_count": 14
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 154,
+                                    "column": 31
+                                },
+                                "id": "VId_4808_.A0(0,64)",
+                                "name": "core_msg_strm.Handle",
+                                "display_name": "ap_uint<64> *stream<ap_uint<64>, 0>::Handle"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 68,
+                                        "column": 23
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 155,
+                                    "column": 31
+                                },
+                                "id": "VId_4809_!c?(?,?)",
+                                "name": "core_len_strm",
+                                "display_name": "hls::stream<ap_uint<128>, 0> core_len_strm"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 59,
+                                        "column": 19
+                                    },
+                                    "access_type": "%struct.ap_uint.43",
+                                    "access_bit_width": 128,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 156,
+                                    "column": 31
+                                },
+                                "id": "VId_4810_.A0(0,64)",
+                                "name": "core_end_len_strm.Handle",
+                                "display_name": "bool *stream<bool, 0>::Handle"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 56,
+                                        "column": 23
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 72,
+                                        "column": 23
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 134,
+                                    "column": 0
+                                },
+                                "id": "VId_4806_!c?(?,?)",
+                                "name": "msg_len",
+                                "display_name": "ap_uint<128> msg_len"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 40
+                },
+                "subregions": [
+                    {
+                        "id": "%F1559_R2",
+                        "description": "<call 'axis_to_core'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 171,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 176,
+                                "column": 26
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1542",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 171,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 176,
+                                "column": 26
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 39,
+                            "max": 39
+                        },
+                        "ureg_id": "%F1542",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 171,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 176,
+                                "column": 26
+                            }
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 test) BB 'codeRepl2' [Call] 'Outline_T5_F1541_R4_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 181,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 186,
+                        "column": 29
+                    }
+                },
+                "display_name": "xf::security::sha512_t<64u, 256u>()",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 154,
+                                    "column": 31
+                                },
+                                "id": "VId_4808_.A0(0,64)",
+                                "name": "core_msg_strm.Handle",
+                                "display_name": "ap_uint<64> *stream<ap_uint<64>, 0>::Handle"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 108,
+                                        "column": 41
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 157,
+                                        "column": 45
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 175,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 181,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 187,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 194,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 201,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 209,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 217,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 14
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 245,
+                                        "column": 45
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 263,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 269,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 275,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 282,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 289,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 297,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 305,
+                                        "column": 49
+                                    },
+                                    "access_type": "%struct.ap_int_base.4",
+                                    "access_bit_width": 64,
+                                    "exec_count": 16
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 155,
+                                    "column": 31
+                                },
+                                "id": "VId_4809_!c?(?,?)",
+                                "name": "core_len_strm",
+                                "display_name": "hls::stream<ap_uint<128>, 0> core_len_strm"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 84,
+                                        "column": 37
+                                    },
+                                    "access_type": "%struct.ap_uint.43",
+                                    "access_bit_width": 128,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 156,
+                                    "column": 31
+                                },
+                                "id": "VId_4810_.A0(0,64)",
+                                "name": "core_end_len_strm.Handle",
+                                "display_name": "bool *stream<bool, 0>::Handle"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 78,
+                                        "column": 33
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 338,
+                                        "column": 32
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 157,
+                                    "column": 31
+                                },
+                                "id": "VId_4811_!c?(?,?)",
+                                "name": "core_digest_strm",
+                                "display_name": "hls::stream<ap_uint<256>, 0> core_digest_strm"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 819,
+                                        "column": 21
+                                    },
+                                    "access_type": "%struct.ap_uint.39",
+                                    "access_bit_width": 256,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 158,
+                                    "column": 31
+                                },
+                                "id": "VId_4812_.A0(0,64)",
+                                "name": "core_end_digest_strm.Handle",
+                                "display_name": "bool *stream<bool, 0>::Handle"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 825,
+                                        "column": 21
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                },
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\nileshnadekar\\.Xilinx\\Vitis\\2024.2\\vitis_libraries\\security\\L1\\include\\xf_security\\sha512_t.hpp",
+                                        "line": 820,
+                                        "column": 25
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 3039
+                },
+                "subregions": [
+                    {
+                        "id": "%F1560_R2",
+                        "description": "<call 'xf::security::sha512_t<64u, 256u>'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 181,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 186,
+                                "column": 29
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1543",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 181,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 186,
+                                "column": 29
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 3038,
+                            "max": 3038
+                        },
+                        "ureg_id": "%F1543",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 181,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 186,
+                                "column": 29
+                            }
+                        }
+                    }
+                ]
+            },
+            "6": {
+                "id": "6",
+                "name": "Region<OutlineCall(R5 test) BB 'codeRepl3' [Call] 'Outline_T6_F1541_R5_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 189,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                        "line": 193,
+                        "column": 16
+                    }
+                },
+                "display_name": "core_to_axis()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 157,
+                                    "column": 31
+                                },
+                                "id": "VId_4811_!c?(?,?)",
+                                "name": "core_digest_strm",
+                                "display_name": "hls::stream<ap_uint<256>, 0> core_digest_strm"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 103,
+                                        "column": 53
+                                    },
+                                    "access_type": "%struct.ap_uint.39",
+                                    "access_bit_width": 256,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 158,
+                                    "column": 31
+                                },
+                                "id": "VId_4812_.A0(0,64)",
+                                "name": "core_end_digest_strm.Handle",
+                                "display_name": "bool *stream<bool, 0>::Handle"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 96,
+                                        "column": 46
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 133,
+                                    "column": 0
+                                },
+                                "id": "VId_4805_*0(0,64)arg",
+                                "name": "digest_strm",
+                                "display_name": "hls::stream<hls::axis<ap_uint<256>, 0ULL, 0ULL, 3ULL, (unsigned char)'8', false>, 0> &digest_strm"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 112,
+                                        "column": 21
+                                    },
+                                    "access_type": "%\"struct.hls::axis.38\"",
+                                    "access_bit_width": 372,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                    "line": 135,
+                                    "column": 0
+                                },
+                                "id": "VId_4807_!c?(?,?)",
+                                "name": "dest_id",
+                                "display_name": "ap_uint<2> dest_id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 9
+                },
+                "subregions": [
+                    {
+                        "id": "%F1561_R2",
+                        "description": "<call 'core_to_axis'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 189,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 193,
+                                "column": 16
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1544",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 189,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 193,
+                                "column": 16
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 8,
+                            "max": 8
+                        },
+                        "ureg_id": "%F1544",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 189,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                                "line": 193,
+                                "column": 16
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "msg_strm_RAW_1_4_#0": {
+                "name": "msg_strm_RAW_1_4_#0",
+                "variable_id": "VId_4804_*0(0,64)arg",
+                "variable_name": "msg_strm",
+                "declaration": "hls::stream<hls::axis<ap_uint<64>, 0ULL, 0ULL, 3ULL, (unsigned char)'8', false>, 0> &msg_strm",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 116,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 132,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 1624,
+                    "channel_rate": 5.343863112866074E-1
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "msg_len_RAW_1_4_#1": {
+                "name": "msg_len_RAW_1_4_#1",
+                "variable_id": "VId_4806_!c?(?,?)",
+                "variable_name": "msg_len",
+                "declaration": "ap_uint<128> msg_len",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 128,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 134,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 128,
+                    "channel_rate": 4.211911813096413E-2
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "core_msg_strm.Handle_RAW_4_5_#2": {
+                "name": "core_msg_strm.Handle_RAW_4_5_#2",
+                "variable_id": "VId_4808_.A0(0,64)",
+                "variable_name": "core_msg_strm.Handle",
+                "declaration": "ap_uint<64> *stream<ap_uint<64>, 0>::Handle",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 64,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 154,
+                    "column": 31
+                },
+                "metrics": {
+                    "volume": 15360,
+                    "channel_rate": 5.054294175715696E0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "core_len_strm_RAW_4_5_#3": {
+                "name": "core_len_strm_RAW_4_5_#3",
+                "variable_id": "VId_4809_!c?(?,?)",
+                "variable_name": "core_len_strm",
+                "declaration": "hls::stream<ap_uint<128>, 0> core_len_strm",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 128,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 155,
+                    "column": 31
+                },
+                "metrics": {
+                    "volume": 128,
+                    "channel_rate": 4.211911813096413E-2
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "core_end_len_strm.Handle_RAW_4_5_#4": {
+                "name": "core_end_len_strm.Handle_RAW_4_5_#4",
+                "variable_id": "VId_4810_.A0(0,64)",
+                "variable_name": "core_end_len_strm.Handle",
+                "declaration": "bool *stream<bool, 0>::Handle",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 156,
+                    "column": 31
+                },
+                "metrics": {
+                    "volume": 2,
+                    "channel_rate": 6.581112207963146E-4
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "dest_id_RAW_1_6_#5": {
+                "name": "dest_id_RAW_1_6_#5",
+                "variable_id": "VId_4807_!c?(?,?)",
+                "variable_name": "dest_id",
+                "declaration": "ap_uint<2> dest_id",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 2,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 135,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 2,
+                    "channel_rate": 6.581112207963146E-4
+                },
+                "source": "1",
+                "sink": "6"
+            },
+            "core_digest_strm_RAW_5_6_#6": {
+                "name": "core_digest_strm_RAW_5_6_#6",
+                "variable_id": "VId_4811_!c?(?,?)",
+                "variable_name": "core_digest_strm",
+                "declaration": "hls::stream<ap_uint<256>, 0> core_digest_strm",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 256,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 157,
+                    "column": 31
+                },
+                "metrics": {
+                    "volume": 256,
+                    "channel_rate": 8.423823626192826E-2
+                },
+                "source": "5",
+                "sink": "6"
+            },
+            "core_end_digest_strm.Handle_RAW_5_6_#7": {
+                "name": "core_end_digest_strm.Handle_RAW_5_6_#7",
+                "variable_id": "VId_4812_.A0(0,64)",
+                "variable_name": "core_end_digest_strm.Handle",
+                "declaration": "bool *stream<bool, 0>::Handle",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 158,
+                    "column": 31
+                },
+                "metrics": {
+                    "volume": 2,
+                    "channel_rate": 6.581112207963146E-4
+                },
+                "source": "5",
+                "sink": "6"
+            },
+            "digest_strm_RAW_6_2_#8": {
+                "name": "digest_strm_RAW_6_2_#8",
+                "variable_id": "VId_4805_*0(0,64)arg",
+                "variable_name": "digest_strm",
+                "declaration": "hls::stream<hls::axis<ap_uint<256>, 0ULL, 0ULL, 3ULL, (unsigned char)'8', false>, 0> &digest_strm",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 372,
+                "src_loc": {
+                    "file": "D:\\Nilesh_3\\HLS\\SHA_256_HLS_Component\\test.cpp",
+                    "line": 133,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 372,
+                    "channel_rate": 1.2240868706811452E-1
+                },
+                "source": "6",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "5",
+                "sink": "6"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "6",
+                "sink": "2"
+            }
+        ]
+    }
+]

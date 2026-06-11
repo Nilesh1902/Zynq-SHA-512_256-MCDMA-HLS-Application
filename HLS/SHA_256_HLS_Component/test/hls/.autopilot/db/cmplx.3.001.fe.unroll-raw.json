@@ -1,0 +1,108 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 4 8",
+    "file": "test.cpp",
+    "fileloc": 131,
+    "instructions": 26,
+    "name": "test",
+    "total_instructions": 3788
+  },
+  "1": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 586,
+    "instructions": 197,
+    "loads": {
+      "L": 25
+    },
+    "name": "generateMsgSchedule<64>",
+    "stores": {
+      "L": 33
+    },
+    "total_instructions": 197
+  },
+  "2": {
+    "basicblocks": 480,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 69,
+    "instructions": 2918,
+    "loads": {
+      "L": 80
+    },
+    "name": "preProcessing<64>",
+    "stores": {
+      "L": 220
+    },
+    "total_instructions": 2918
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2 7 1 6",
+    "file": "sha512_t.hpp",
+    "fileloc": 848,
+    "instructions": 37,
+    "name": "sha512Top<64, 256>",
+    "total_instructions": 3673
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "sha512_t.hpp",
+    "fileloc": 1323,
+    "instructions": 2,
+    "name": "sha512_t<64, 256>",
+    "total_instructions": 3675
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "test.cpp",
+    "fileloc": 48,
+    "instructions": 54,
+    "loads": {
+      "L": 1
+    },
+    "name": "axis_to_core",
+    "total_instructions": 54
+  },
+  "6": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 652,
+    "instructions": 505,
+    "loads": {
+      "G": 1,
+      "L": 16
+    },
+    "name": "SHA512Digest<64, 256>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 505
+  },
+  "7": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "sha512_t.hpp",
+    "fileloc": 541,
+    "instructions": 16,
+    "name": "dup_strm<128>",
+    "total_instructions": 16
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "test.cpp",
+    "fileloc": 87,
+    "instructions": 33,
+    "name": "core_to_axis",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 33
+  }
+}

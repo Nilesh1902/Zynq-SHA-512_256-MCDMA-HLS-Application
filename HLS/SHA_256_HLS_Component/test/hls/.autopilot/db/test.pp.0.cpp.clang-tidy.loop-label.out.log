@@ -1,0 +1,104 @@
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:2259:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:2259:5: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:2273:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:2273:5: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:2287:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:2287:5: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:3921:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:3921:7: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10204:17: warning: Added loop label VITIS_LOOP_621_1:   [xilinx-label-all-loops]
+                for (ap_uint<5> i = 0; i < 15; i++) {
+                ^~~
+                VITIS_LOOP_621_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10204:17: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10390:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = blk_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10395:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = nblk_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10398:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = nblk_strm1 core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10401:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = nblk_strm2 core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10406:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = end_nblk_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10409:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = end_nblk_strm1 core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10412:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = end_nblk_strm2 core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10417:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = w_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10451:9: warning: Added loop label VITIS_LOOP_922_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 16; i++) {
+        ^~~
+        VITIS_LOOP_922_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10451:9: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10469:9: warning: Added loop label VITIS_LOOP_940_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < 16; i++) {
+        ^~~
+        VITIS_LOOP_940_2: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10469:9: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10475:9: warning: Added loop label VITIS_LOOP_946_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < hash_width / 64; i++) {
+        ^~~
+        VITIS_LOOP_946_3: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10475:9: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10494:9: warning: Added loop label VITIS_LOOP_965_4:   [xilinx-label-all-loops]
+        while (tmp_len[4] != 1) {
+        ^~~~~
+        VITIS_LOOP_965_4: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10494:9: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10538:9: warning: Added loop label VITIS_LOOP_1009_5:   [xilinx-label-all-loops]
+        for (ap_uint<5> z = 0; z < z_rounds; z++) {
+        ^~~
+        VITIS_LOOP_1009_5: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10538:9: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10573:46: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable = K type = ROM_1P impl = LUTRAM
+                                             ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10620:5: warning: Added loop label VITIS_LOOP_1091_1:   [xilinx-label-all-loops]
+    while (run || counter != 0) {
+    ^~~~~
+    VITIS_LOOP_1091_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10620:5: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10643:13: warning: Added loop label VITIS_LOOP_1114_2:   [xilinx-label-all-loops]
+            for (ap_uint<5> i = 0; i < 15; i++) {
+            ^~~
+            VITIS_LOOP_1114_2: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10643:13: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10694:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = blk_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10707:5: warning: Added loop label VITIS_LOOP_1178_1:   [xilinx-label-all-loops]
+    while (run) {
+    ^~~~~
+    VITIS_LOOP_1178_1: 
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10707:5: note: FIX-IT applied suggested code changes
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10757:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = msg_64_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10760:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = len_64_strm core = FIFO_LUTRAM
+        ^
+D:\Nilesh_3\HLS\SHA_256_HLS_Component\test\hls\.autopilot\db\test.pp.0.cpp:10763:9: error: Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = blk_strm core = FIFO_LUTRAM
+        ^

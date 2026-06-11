@@ -1,0 +1,25 @@
+parallelismSelector::WARNG: Variable 'b0' C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:101:0 VariableId 4900 is not part of the design space!--
+                            
+parallelismSelector::WARNG: Variable 'b' C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:127:0 VariableId 4904 is not part of the design space!--
+                            
+parallelismSelector::WARNG: Variable 'b' C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:149:0 VariableId 4906 is not part of the design space!--
+                            
+parallelismSelector::WARNG: Variable 'b' C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:236:0 VariableId 4917 is not part of the design space!--
+                            
+parallelismSelector::WARNG: Variable 'b1' C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:320:0 VariableId 4928 is not part of the design space!--
+                            
+parallelismSelector::WARNG: Variable 'blk' C:/Users/nileshnadekar/.Xilinx/Vitis/2024.2/vitis_libraries/security/L1/include/xf_security/sha512_t.hpp:602:0 VariableId 5366 is not part of the design space!--
+                            
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:98:1) as loop pipeline pragma is only valid if:
+                            - All the subloops of the loop to be pipelined can be fully unrolled
+                            - All the subloops are perfectly nested in the loop to be pipelined.
+parallelismSelector::WARNG: WARNING: [HLS 211-200] C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:601:1: Pragma 'tripcount' has been kept but may be incorrect: The maximum tripcount in the pragma (1) is less than the maximum dynamic tripcount computed for the loop (3)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:736:1: Pragma 'tripcount' has been kept but may be incorrect: The maximum tripcount in the pragma (1) is less than the maximum dynamic tripcount computed for the loop (3)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:102:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable b0)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:128:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable b)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:150:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable b)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:237:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable b)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:321:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable b1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\nileshnadekar\.Xilinx\Vitis\2024.2\vitis_libraries\security\L1\include\xf_security\sha512_t.hpp:603:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable blk)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] D:/Nilesh_3/HLS/SHA_256_HLS_Component\test.cpp:65:5: the dynamic loop had a trip count of min=0 max=32 during C simulation. (#pragma HLS loop_tripcount min=0 max=32)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] D:/Nilesh_3/HLS/SHA_256_HLS_Component\test.cpp:94:5: the dynamic loop had a trip count of min=1 max=1 during C simulation. (#pragma HLS loop_tripcount min=1 max=1)

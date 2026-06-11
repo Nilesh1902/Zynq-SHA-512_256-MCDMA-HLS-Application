@@ -1,0 +1,1009 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date              : Wed Jun 10 15:35:37 2026
+| Host              : nileshnadekar running 64-bit major release  (build 9200)
+| Command           : report_timing -max_paths 10 -file ./report/test_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : I
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.207ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[63]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.774ns  (logic 2.068ns (43.318%)  route 2.706ns (56.682%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.146     4.780 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[7]
+                         net (fo=1, unplaced)         0.031     4.811    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_12
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[63]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[63]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[63]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.811    
+  -------------------------------------------------------------------
+                         slack                                  5.207    
+
+Slack (MET) :             5.208ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[61]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.773ns  (logic 2.067ns (43.306%)  route 2.706ns (56.694%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.145     4.779 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[5]
+                         net (fo=1, unplaced)         0.031     4.810    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_14
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[61]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[61]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[61]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.810    
+  -------------------------------------------------------------------
+                         slack                                  5.208    
+
+Slack (MET) :             5.223ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[62]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.758ns  (logic 2.051ns (43.106%)  route 2.707ns (56.894%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.129     4.763 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[6]
+                         net (fo=1, unplaced)         0.032     4.795    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_13
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[62]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[62]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[62]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.795    
+  -------------------------------------------------------------------
+                         slack                                  5.223    
+
+Slack (MET) :             5.244ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[55]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.737ns  (logic 2.038ns (43.023%)  route 2.699ns (56.977%))
+  Logic Levels:           21  (CARRY8=10 LUT2=1 LUT3=2 LUT4=2 LUT5=2 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.310 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/O[0]
+                         net (fo=2, unplaced)         0.214     2.524    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_19
+                         LUT5 (Prop_LUT5_I3_O)        0.040     2.564 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.778    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.817 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.842    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.087 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.094    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.203 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.427    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[36]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.467 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.681    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.719 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.750    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.959 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[39]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     3.966    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[39]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.063 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.281    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[41]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.320 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[40]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.345    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[40]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.590 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[40]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.597    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[40]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.146     4.743 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/O[7]
+                         net (fo=1, unplaced)         0.031     4.774    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_12
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[55]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[55]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.774    
+  -------------------------------------------------------------------
+                         slack                                  5.244    
+
+Slack (MET) :             5.245ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[53]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.736ns  (logic 2.037ns (43.011%)  route 2.699ns (56.989%))
+  Logic Levels:           21  (CARRY8=10 LUT2=1 LUT3=2 LUT4=2 LUT5=2 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.310 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/O[0]
+                         net (fo=2, unplaced)         0.214     2.524    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_19
+                         LUT5 (Prop_LUT5_I3_O)        0.040     2.564 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.778    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.817 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.842    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.087 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.094    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.203 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.427    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[36]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.467 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.681    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.719 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.750    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.959 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[39]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     3.966    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[39]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.063 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.281    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[41]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.320 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[40]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.345    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[40]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.590 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[40]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.597    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[40]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.145     4.742 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/O[5]
+                         net (fo=1, unplaced)         0.031     4.773    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_14
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[53]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[53]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[53]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.773    
+  -------------------------------------------------------------------
+                         slack                                  5.245    
+
+Slack (MET) :             5.245ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[60]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.736ns  (logic 2.031ns (42.884%)  route 2.705ns (57.116%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     4.743 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[4]
+                         net (fo=1, unplaced)         0.030     4.773    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_15
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[60]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[60]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[60]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.773    
+  -------------------------------------------------------------------
+                         slack                                  5.245    
+
+Slack (MET) :             5.248ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[59]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.733ns  (logic 2.026ns (42.806%)  route 2.707ns (57.194%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.104     4.738 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[3]
+                         net (fo=1, unplaced)         0.032     4.770    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_16
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[59]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[59]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[59]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.770    
+  -------------------------------------------------------------------
+                         slack                                  5.248    
+
+Slack (MET) :             5.256ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[57]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.725ns  (logic 2.019ns (42.730%)  route 2.706ns (57.270%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.731 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[1]
+                         net (fo=1, unplaced)         0.031     4.762    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_18
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[57]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[57]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[57]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.762    
+  -------------------------------------------------------------------
+                         slack                                  5.256    
+
+Slack (MET) :             5.260ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[54]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.721ns  (logic 2.021ns (42.809%)  route 2.700ns (57.191%))
+  Logic Levels:           21  (CARRY8=10 LUT2=1 LUT3=2 LUT4=2 LUT5=2 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.310 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/O[0]
+                         net (fo=2, unplaced)         0.214     2.524    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_19
+                         LUT5 (Prop_LUT5_I3_O)        0.040     2.564 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.778    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.817 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.842    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[31]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.087 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.094    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.203 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.427    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[36]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.467 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.681    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.719 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.750    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[39]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.959 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[39]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     3.966    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[39]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.063 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.281    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[41]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.320 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[40]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.345    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[40]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.590 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[40]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.597    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[40]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.129     4.726 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/O[6]
+                         net (fo=1, unplaced)         0.032     4.758    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_13
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[54]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[54]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.758    
+  -------------------------------------------------------------------
+                         slack                                  5.260    
+
+Slack (MET) :             5.266ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[58]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.715ns  (logic 2.008ns (42.587%)  route 2.707ns (57.413%))
+  Logic Levels:           22  (CARRY8=11 LUT2=1 LUT3=2 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.037     0.037    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456_reg[1]/Q
+                         net (fo=223, unplaced)       0.207     0.337    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[1]
+                         LUT2 (Prop_LUT2_I0_O)        0.122     0.459 f  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3/O
+                         net (fo=24, unplaced)        0.267     0.726    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/t_fu_456[4]_i_3_n_4
+                         LUT6 (Prop_LUT6_I3_O)        0.040     0.766 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2/O
+                         net (fo=111, unplaced)       0.302     1.068    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[44]_i_2_n_4
+                         LUT3 (Prop_LUT3_I1_O)        0.040     1.108 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/g_1_fu_440[41]_i_1/O
+                         net (fo=5, unplaced)         0.232     1.340    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/trunc_ln387_4_fu_926_p1[41]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.380 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     1.594    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_97_n_4
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.634 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72/O
+                         net (fo=2, unplaced)         0.214     1.848    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_72_n_4
+                         LUT4 (Prop_LUT4_I3_O)        0.039     1.887 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79/O
+                         net (fo=1, unplaced)         0.025     1.912    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[15]_i_79_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     2.157 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.007     2.164    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[15]_i_39_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.194 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37/CO[7]
+                         net (fo=1, unplaced)         0.007     2.201    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[23]_i_37_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.231 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38/CO[7]
+                         net (fo=1, unplaced)         0.007     2.238    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[31]_i_38_n_4
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.030     2.268 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48/CO[7]
+                         net (fo=1, unplaced)         0.007     2.275    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_48_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     2.347 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39/O[0]
+                         net (fo=2, unplaced)         0.214     2.561    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_39_n_19
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.601 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17/O
+                         net (fo=2, unplaced)         0.214     2.815    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_17_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.039     2.854 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25/O
+                         net (fo=1, unplaced)         0.025     2.879    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444[39]_i_25_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     3.124 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.131    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[39]_i_2_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.109     3.240 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/f_1_fu_444_reg[47]_i_2/O[4]
+                         net (fo=4, unplaced)         0.224     3.464    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/p_3_in[44]
+                         LUT5 (Prop_LUT5_I4_O)        0.040     3.504 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4/O
+                         net (fo=2, unplaced)         0.214     3.718    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_4_n_4
+                         LUT6 (Prop_LUT6_I0_O)        0.038     3.756 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12/O
+                         net (fo=1, unplaced)         0.031     3.787    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580[47]_i_12_n_4
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.209     3.996 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.003    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[47]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.097     4.100 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/a_3_reg_580_reg[55]_i_1/O[1]
+                         net (fo=3, unplaced)         0.218     4.318    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/in[49]
+                         LUT4 (Prop_LUT4_I0_O)        0.039     4.357 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8/O
+                         net (fo=1, unplaced)         0.025     4.382    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488[48]_i_8_n_4
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.245     4.627 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.007     4.634    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[48]_i_1_n_4
+                         CARRY8 (Prop_CARRY8_CI_O[2])
+                                                      0.086     4.720 r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1/O[2]
+                         net (fo=1, unplaced)         0.032     4.752    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[56]_i_1_n_17
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[58]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=14292, unset)        0.026    10.026    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[58]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/sha512_t_64u_256u_U0/grp_sha512Top_64u_256u_s_fu_22/SHA512Digest_64u_256u_U0/grp_SHA512Digest_Pipeline_LOOP_SHA1_DIGEST_NBLK_LOOP_SHA1_UPDATE_80_ROUNDS_fu_145/add_ln7788_fu_488_reg[58]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.752    
+  -------------------------------------------------------------------
+                         slack                                  5.266    
+
+
+
+

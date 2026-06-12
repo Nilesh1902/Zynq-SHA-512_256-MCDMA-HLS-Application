@@ -63,30 +63,113 @@ The Zynq UltraScale+ combines:
 
 ```
 Zynq-SHA-512_256-MCDMA-HLS-Application/
-├── README.md                 # This file
-├── docs/                     # Documentation
-│   ├── architecture.md       # Detailed architecture documentation
-│   ├── design_specs.md       # Design specifications
-│   └── performance.md        # Performance metrics and benchmarks
-├── hls/                      # Vitis HLS source code
-│   ├── sha512_core.cpp       # SHA-512/256 core algorithm
-│   ├── sha512_core.h         # Header files
-│   └── testbench/            # HLS testbenches
-├── hardware/                 # Vivado project files
-│   ├── vivado/               # Vivado project directory
-│   ├── ip_cores/             # Custom IP cores
-│   └── constraints/          # Timing and placement constraints
-├── software/                 # ARM embedded software
-│   ├── drivers/              # MCDMA and accelerator drivers
-│   ├── apps/                 # Application code
-│   └── petalinux/            # Petalinux project
-├── simulation/               # Simulation and testbenches
-│   ├── vhdl_tb/              # VHDL testbenches
-│   ├── verilog_tb/           # Verilog testbenches
-│   └── scripts/              # Simulation scripts
-└── results/                  # Performance results and reports
-    ├── benchmarks/           # Benchmark data
-    └── reports/              # Synthesis/implementation reports
+│
+├── .gitignore
+├── README.md
+│
+├── Application/
+│   ├── .gitignore
+│   ├── _ide/
+│   ├── app_component/
+│   │   ├── .gitignore
+│   │   ├── _ide/
+│   │   ├── compile_commands.json
+│   │   ├── vitis-comp.json
+│   │   └── src/
+│   │       ├── .cache/
+│   │       ├── .clangd
+│   │       ├── CMakeLists.txt
+│   │       ├── Empty_applicationExample.cmake
+│   │       ├── README.txt
+│   │       ├── UserConfig.cmake
+│   │       ├── app.yaml
+│   │       ├── compile_commands.json
+│   │       ├── lscript.ld
+│   │       ├── main_user.c
+│   │       ├── sha_api.c
+│   │       ├── sha_api.h
+│   │       └── sha_config.h
+│   └── platform/
+│       ├── .gitignore
+│       ├── vitis-comp.json
+│       ├── hw/
+│       │   ├── design_1_wrapper.xsa
+│       │   └── sdt/
+│       ├── psu_cortexa53_0/
+│       │   └── standalone_psu_cortexa53_0/
+│       ├── resources/
+│       └── zynqmp_fsbl/
+│
+├── Application_1/
+│   ├── .gitignore
+│   ├── _ide/
+│   ├── app_component/
+│   │   ├── .gitignore
+│   │   ├── _ide/
+│   │   ├── compile_commands.json
+│   │   ├── vitis-comp.json
+│   │   └── src/
+│   └── platform/
+│       ├── .gitignore
+│       ├── vitis-comp.json
+│       ├── hw/
+│       ├── psu_cortexa53_0/
+│       ├── resources/
+│       └── zynqmp_fsbl/
+│
+├── HLS/
+│   ├── .gitignore
+│   ├── _ide/
+│   └── SHA_256_HLS_Component/
+│       ├── .cache/
+│       ├── .gitignore
+│       ├── compile_commands.json
+│       ├── hls_config.cfg
+│       ├── tb.cpp
+│       ├── test.cpp
+│       ├── test.hpp
+│       ├── testcases.dat
+│       ├── vitis-comp.json
+│       └── test/
+│           ├── hls/
+│           ├── reports/
+│           ├── test.hlscompile_summary
+│           ├── test.hlsrun_cosim_summary
+│           ├── test.hlsrun_csim_summary
+│           ├── test.hlsrun_impl_summary
+│           ├── test.hlsrun_package_summary
+│           └── test.zip
+│
+├── Images/
+│   ├── Application_Result/
+│   │   ├── Test_0_Result.png
+│   │   ├── Test_1_Result.png
+│   │   ├── Test_2_Result.png
+│   │   └── Test_3_Result.png
+│   └── Vivado_Design/
+│       ├── AXI_Switch_0_Config.png
+│       ├── AXI_Switch_0_Routing.png
+│       ├── AXI_Switch_1_Config.png
+│       ├── AXI_Switch_1_Routing.png
+│       ├── Address_Editor_Network_0.png
+│       ├── Address_Editor_Network_1.png
+│       ├── Address_Map_Network_1.png
+│       ├── Block_Design.png
+│       ├── MCDMA_Config.png
+│       ├── Network_0.png
+│       ├── PS_PL_Config.png
+│       ├── Platform_Config.png
+│       └── Project_Summary.png
+│
+└── Vivado/
+    └── project_1/
+        ├── design_1_wrapper.xsa
+        ├── project_1.cache/
+        ├── project_1.gen/
+        ├── project_1.hw/
+        ├── project_1.runs/
+        ├── project_1.srcs/
+        ├── project_1.xpr
 ```
 
 ## Getting Started

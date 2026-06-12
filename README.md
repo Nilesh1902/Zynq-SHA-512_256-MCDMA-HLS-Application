@@ -145,6 +145,8 @@ Zynq-SHA-512_256-MCDMA-HLS-Application/
 │
 ├── Images/
 │   ├── Application_Result/
+│   │   ├── Before_Program_Board.jpg
+│   │   ├── After_Program_Board.jpg
 │   │   ├── Test_0_Result.png
 │   │   ├── Test_1_Result.png
 │   │   ├── Test_2_Result.png
@@ -162,7 +164,9 @@ Zynq-SHA-512_256-MCDMA-HLS-Application/
 │       ├── Network_0.png
 │       ├── PS_PL_Config.png
 │       ├── Platform_Config.png
-│       └── Project_Summary.png
+│       ├── Project_Summary.png
+│       ├── Implementation_Design.png
+│       └── Power_Summary.png
 │
 └── Vivado/
     └── project_1/
@@ -460,6 +464,14 @@ All four selected-IP tests passed successfully.
 
 ![Test 3 Result](Images/Application_Result/Test_3_Result.png)
 
+### Board Programming Images
+
+The following images show the Ultra96-V2 board status before programming and after programming/running the hardware design.
+
+![Before Program Board](Images/Application_Result/Before_Program_Board.jpg)
+
+![After Program Board](Images/Application_Result/After_Program_Board.jpg)
+
 ---
 
 ## Vivado Implementation Summary
@@ -478,6 +490,28 @@ The design was synthesized and implemented successfully.
 Reference image:
 
 ![Project Summary](Images/Vivado_Design/Project_Summary.png)
+
+
+### Implemented Design View
+
+The implemented device view confirms successful placement and routing of the SHA-512/256 MCDMA hardware design on the Zynq UltraScale+ MPSoC device.
+
+![Implementation Design](Images/Vivado_Design/Implementation_Design.png)
+
+### Power Summary
+
+The implemented design reports an estimated total on-chip power of `2.616 W`. The dynamic power is `2.299 W`, and the static power is `0.317 W`. The reported junction temperature is `32.2 °C`.
+
+| Power Item | Value |
+|---|---:|
+| Total On-Chip Power | `2.616 W` |
+| Dynamic Power | `2.299 W` |
+| Static Power | `0.317 W` |
+| Junction Temperature | `32.2 °C` |
+| Thermal Margin | `67.8 °C` |
+| Confidence Level | Medium |
+
+![Power Summary](Images/Vivado_Design/Power_Summary.png)
 
 ---
 

@@ -69,6 +69,7 @@ Zynq-SHA-512_256-MCDMA-HLS-Application/
 │
 ├── .gitignore
 ├── README.md
+├── LICENSE
 │
 ├── Application/
 │   ├── .gitignore
@@ -628,6 +629,28 @@ Suggested future measurements:
 - Latency comparison between single-IP and four-IP selected routing.
 - Resource utilization comparison for different channel counts.
 
+## Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+To contribute:
+
+1. Fork this repository.
+2. Create a new branch for your changes.
+3. Make your updates or improvements.
+4. Test the design or application flow where applicable.
+5. Submit a pull request with a clear description of the changes.
+
+Suggested contribution areas:
+
+* Performance benchmarking with different input message sizes.
+* Additional SHA-512/256 test vectors.
+* Improved error handling for DMA timeout or transfer failure cases.
+* Documentation improvements for Vivado/Vitis setup.
+* Extension examples for adding more SHA IP instances or modifying MCDMA channel usage.
+
+Please keep the original project structure unchanged while contributing.
+
 ---
 
 ## References
@@ -638,6 +661,14 @@ Suggested future measurements:
 - Xilinx Vitis HLS documentation
 - NIST FIPS 180-4 Secure Hash Standard
 - Ultra96-V2 board documentation
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
